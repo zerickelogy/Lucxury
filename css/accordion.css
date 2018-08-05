@@ -1,0 +1,105 @@
+.half {
+  width: 75%;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  position: relative;
+  display: block;
+  padding: 25px 15px;
+  background: #fff;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #333;
+  font-weight: 400;
+  border-bottom: 1px solid #333;
+}
+/*.blue label {
+  background: #2980b9;
+}*/
+.tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.tab-content {
+  background: #fff;
+  color: #999;
+}
+.tab-content p {
+  margin: 35px 16px;
+  font-size: 18px;
+  line-height: 32px;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 70em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+input[type=checkbox] + label::after {
+  content: "+";
+  padding: 10px 10px;
+  font-size: 30px;
+  color: #333;
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+@media (max-width: 1000px) {
+  .half {
+    width: 88%;
+  }
+  label {
+    padding: 30px 10px;
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  
+}
+
+@media (max-width: 600px) {
+  input[type=checkbox] + label::after {
+    display: none;
+  }
+}

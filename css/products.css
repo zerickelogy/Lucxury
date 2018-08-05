@@ -1,0 +1,41 @@
+.product-container {
+	/*padding-top: 100px;
+	padding-bottom: 100px;*/
+	width: 100%;
+	background: #fff;
+}
+
+/*.product-selector {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 8px;
+	position: absolute;
+	left: 48%;
+	top: 17px;
+	color: #999;
+	font-weight: 400;
+}
+
+.product-selector select {
+ 	display: none;
+}
+
+.select-selected {
+	background-color: #C6C6C6;
+}*/
+
+
+.grid-item {
+	float: left;
+	display: block;
+	position: relative;
+	width: 30vw;
+	height: 20vw;
+	background: #123;
+}
+
+.grid {
+	margin-top: 100px;
+}

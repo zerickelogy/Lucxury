@@ -1,0 +1,147 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    position: absolute;
+    background-color: #eee;
+    margin: 10vh auto 0 auto;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 40%;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    overflow: hidden;
+    max-height: 75vh;
+    padding: 10px;
+}
+
+.modal h2 {
+	font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #333;
+    font-weight: 700;
+    width: 100%;
+	text-align: center;
+    padding-top: 50px;
+}
+
+.modal p {
+	width: 80%;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.modal h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.modal h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.modal a {
+	text-decoration: none;
+	color: #333;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+}
+
+.modal-header img {
+    width: 100%;
+}
+
+.modal-logo-image {
+    width: 40%;
+    margin: 80px auto 40px auto;
+    display: none;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.QR-container {
+    width: 50%;
+    margin: 40px auto 0px auto;
+    padding-bottom: 80px;
+}
+
+.QR-container img {
+    width: 100%;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@media (max-width: 1000px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+@media (max-width: 420px) {
+    .modal-content {
+        width: 80%;
+        margin: 5vh auto 0 auto;
+        overflow-y: scroll;
+        max-height: 85vh;
+    }
+}
