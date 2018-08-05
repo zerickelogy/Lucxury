@@ -1084,6 +1084,27 @@ span#product-colour, span#product-condition {
     margin-bottom: 10px;
 }
 
+.selector-form-mobile-container select {
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 20px 20px;
+    -webkit-appearance: none; 
+   	-moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: #EFEFEF;
+    /*margin-bottom: 10px;*/
+    /*margin-top: 20px;*/
+}
+
+
 
 
 .gender-container {
@@ -1533,7 +1554,7 @@ span#product-colour, span#product-condition {
 
 /*iphone 8 plus*/
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
 	.nav-left {
 		left: 20px;
 	}

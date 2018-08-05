@@ -4,6 +4,14 @@
   
 }
 
+.selector-form-mobile-container {
+  display: none;
+  width: 100%;
+  margin: 50px auto 0px auto;
+  padding-bottom: 20px;
+  float: left;
+}
+
 
 .selector-form-container {
   width: 100%;
@@ -12,7 +20,7 @@
   float: left;
 }
 
-.selector-form-container h4 {
+.selector-form-container h4, .selector-form-mobile-container h4 {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   color: #333;
@@ -20,6 +28,10 @@
   width: 100%;
   padding-bottom: 20px;
 }
+
+/*.country-selector {
+  margin: 30px auto 0px auto;
+}*/
 
 /* ///  END DECORATION CSS  ///  */
 .icon_select_mate {
@@ -123,4 +135,14 @@
   font-size: 11px;
   letter-spacing: 4px;
   font-weight: 400;
+}
+
+@media (max-width: 1231px) {
+  .selector-form-container {
+    display: none;
+  }
+
+  .selector-form-mobile-container {
+    display: block;
+  }
 }
