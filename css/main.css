@@ -5,6 +5,7 @@
 
 }
 
+
 body {
    font-family: 'Playfair Display', serif;
    color: #333333;
@@ -15,10 +16,10 @@ body {
 
 }
 
-::-webkit-scrollbar { 
+/*::-webkit-scrollbar { 
     display: none; 
 }
-
+*/
 a {
 	text-decoration: none;
 }
@@ -673,7 +674,7 @@ main {
 
 
 .pedro {
-	width: 25vw;
+	width: 25%;
 	height: 50vw;
 	background: url(../img/merchants1.png) no-repeat;
 	background-size: cover;
@@ -682,7 +683,7 @@ main {
 }
 
 .calvin-klein {
-	width: 25vw;
+	width: 25%;
 	height: 25vw;
 	background: url(../img/merchants2.png) no-repeat;
 	background-size: cover;
@@ -690,7 +691,7 @@ main {
 }
 
 .ralph-lauren {
-	width: 50vw;
+	width: 50%;
 	height: 25vw;
 	background: url(../img/merchants3.png) no-repeat;
 	background-size: cover;
@@ -698,7 +699,7 @@ main {
 }
 
 .tommy-hilfiger {
-	width: 50vw;
+	width: 50%;
 	height: 25vw;
 	background: url(../img/merchants4.png) no-repeat;
 	background-size: cover;
@@ -706,7 +707,7 @@ main {
 }
 
 .more-merchant-btn {
-	width: 25vw;
+	width: 25%;
 	height: 25vw;
 	background: #1D2D58;
 	font-family: 'Montserrat', sans-serif;
@@ -1188,7 +1189,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.pedro {
-		width: 50vw;
+		width: 50%;
 		height: 80vw;
 		background: url(../img/mobile-merchants1.png) no-repeat;
 		background-size: cover;
@@ -1196,7 +1197,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.calvin-klein {
-		width: 50vw;
+		width: 50%;
 		height: 40vw;
 		background: url(../img/mobile-merchants2.png) no-repeat;
 		background-size: cover;
@@ -1204,7 +1205,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.ralph-lauren {
-		width: 50vw;
+		width: 50%;
 		height: 40vw;
 		background: url(../img/mobile-merchants4.png) no-repeat;
 		background-size: cover;
@@ -1212,7 +1213,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.tommy-hilfiger {
-		width: 100vw;
+		width: 100%;
 		height: 50vw;
 		background: url(../img/merchants4.png) no-repeat;
 		background-size: cover;
@@ -1220,7 +1221,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.more-merchant-btn {
-		width: 100vw;
+		width: 100%;
 		height: 25vw;
 		line-height: 25vw;
 		font-size: 14px;
@@ -1477,7 +1478,7 @@ span#product-colour, span#product-condition {
 	}*/
 
 	.pedro {
-		width: 100vw;
+		width: 100%;
 		height: 115vw;
 		background: url(../img/mobile-merchants1.png) no-repeat;
 		background-size: cover;
@@ -1485,7 +1486,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.calvin-klein {
-		width: 100vw;
+		width: 100%;
 		height: 80vw;
 		background: url(../img/mobile-merchants2.png) no-repeat;
 		background-size: cover;
@@ -1493,7 +1494,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.ralph-lauren {
-		width: 100vw;
+		width: 100%;
 		height: 80vw;
 		background: url(../img/mobile-merchants3.png) no-repeat;
 		background-size: cover;
@@ -1501,7 +1502,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.tommy-hilfiger {
-		width: 100vw;
+		width: 100%;
 		height: 80vw;
 		background: url(../img/mobile-merchants4.png) no-repeat;
 		background-size: cover;
@@ -1509,7 +1510,7 @@ span#product-colour, span#product-condition {
 	}
 
 	.more-merchant-btn {
-		width: 100vw;
+		width: 100%;
 		height: 25vw;
 		line-height: 25vw;
 	}
