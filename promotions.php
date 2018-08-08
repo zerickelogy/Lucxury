@@ -39,7 +39,7 @@
         <!-- only put content into main tag -->
 
         <main>
-            <nav id="navigation-bar">
+<!--            <nav id="navigation-bar">
                 <div class="hamburger-menu nav-left hidden-xs">
                     <div class="button" id="btn">
                         <div class="top bar"></div>
@@ -78,7 +78,7 @@
 
             </div>
                 
-            </nav>
+            </nav>-->
 
             <div class="container promotions-container container-header">
                 <h2>Promotions</h2>
@@ -277,7 +277,7 @@
 
         <!-- end of main tag = end of content  -->
 
-        <div class="sidebar">
+<!--        <div class="sidebar">
 
             <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
 
@@ -293,7 +293,7 @@
 
             <div class="sidebar-item logout-btn"><a href="#">Logout</a></div>
 
-        </div>
+        </div>-->
 
         <script>
             $(document).ready(function() {
