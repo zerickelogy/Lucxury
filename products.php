@@ -92,8 +92,8 @@
                     <div class="select_mate" data-mate-select="active" >
                         <select name="" onclick="return false;" id="">
                             <option value="0" data-filter="*">Price</option>
-                            <option value=".metal" data-filter=".metal">High - Low</option>
-                            <option value=".transition" data-filter=".transition">Low - High</option>
+                            <option value="descending" data-filter=".metal">High - Low</option>
+                            <option value="ascending" data-filter=".transition">Low - High</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -114,9 +114,9 @@
                     <div class="select_mate" data-mate-select="active" >
                         <select name="" onclick="return false;" id="">
                             <option value="0">Brands</option>
-                            <option value="1">Hollister</option>
-                            <option value="2" >a&f</option>
-                            <option value="3" >BOSS</option>
+                            <option value="Hollister">Hollister</option>
+                            <option value="a&f" >a&f</option>
+                            <option value="BOSS" >BOSS</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
