@@ -21,6 +21,83 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-scrollto.js"></script>
+
+    <!--start of glenns script-->
+    <script>
+        $(document).ready(function () {
+            getAllBrands();
+            getAllColors();
+            getAllMerchants();
+        });
+        
+        function filter(){
+            
+        }
+
+        function getAllBrands() {
+            $.ajax({
+                type: "GET",
+                url: "Webservices/getAllBrands.php",
+                cache: false,
+                dataType: "JSON",
+                success: function (response) {
+                    for (var i = 0; i < response.length; i++) {
+                        var x = response[i]['brand'];
+                        $("#brands_container").append('<option value="' + x + '">' + x + '</option>');
+                        $("#brands_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        console.log(x);
+                    }
+                },
+                error: function (obj, textStatus, errorThrown) {
+                    console.log("Error " + textStatus + ": " + errorThrown);
+                    alert("fail to generate clicks");
+                }
+            });
+        }
+
+        function getAllColors() {
+            $.ajax({
+                type: "GET",
+                url: "Webservices/getAllColors.php",
+                cache: false,
+                dataType: "JSON",
+                success: function (response) {
+                    for (var i = 0; i < response.length; i++) {
+                        var x = response[i]['color'];
+                        $("#color_container").append('<option value="' + x + '">' + x + '</option>');
+                        $("#color_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        console.log(x);
+                    }
+                },
+                error: function (obj, textStatus, errorThrown) {
+                    console.log("Error " + textStatus + ": " + errorThrown);
+                    alert("fail to generate clicks");
+                }
+            });
+        }
+
+        function getAllMerchants() {
+            $.ajax({
+                type: "GET",
+                url: "Webservices/getAllMerchants.php",
+                cache: false,
+                dataType: "JSON",
+                success: function (response) {
+                    for (var i = 0; i < response.length; i++) {
+                        var x = response[i]['merchant_name'];
+                        $("#merchant_container").append('<option value="' + x + '">' + x + '</option>');
+                        $("#merchant_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        console.log(x);
+                    }
+                },
+                error: function (obj, textStatus, errorThrown) {
+                    console.log("Error " + textStatus + ": " + errorThrown);
+                    alert("fail to generate clicks");
+                }
+            });
+        }
+    </script>
+    <!--end of glenns script-->
 </head>
 
 <body>
@@ -92,8 +169,8 @@
                     <div class="select_mate" data-mate-select="active" >
                         <select name="" onclick="return false;" id="">
                             <option value="0" data-filter="*">Price</option>
-                            <option value="descending" data-filter=".metal">High - Low</option>
-                            <option value="ascending" data-filter=".transition">Low - High</option>
+                            <option value="DESC" data-filter=".metal">High - Low</option>
+                            <option value="ASC" data-filter=".transition">Low - High</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -112,11 +189,8 @@
                 <div class="product-selector">
                     <!-- Custom select structure --> 
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="">
+                        <select name="brands_container" onclick="return false;" id="brands_container">
                             <option value="0">Brands</option>
-                            <option value="Hollister">Hollister</option>
-                            <option value="a&f" >a&f</option>
-                            <option value="BOSS" >BOSS</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -134,11 +208,8 @@
                 <div class="product-selector">
                     <!-- Custom select structure --> 
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="">
+                        <select name="color_container" onclick="return false;" id="color_container">
                             <option value="0">Colours</option>
-                            <option value="1">Black</option>
-                            <option value="2" >White</option>
-                            <option value="3" >Grey</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +227,7 @@
                 <div class="product-selector">
                     <!-- Custom select structure --> 
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="">
+                        <select name="condition_container" onclick="return false;" id="condition_container">
                             <option value="0">Condition</option>
                             <option value="1">Brand New</option>
                             <option value="2" >Used</option>
@@ -177,10 +248,8 @@
                 <div class="product-selector">
                     <!-- Custom select structure --> 
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="">
+                        <select name="merchant_container" onclick="return false;" id="merchant_container">
                             <option value="0">Merchant</option>
-                            <option value="1">eBay</option>
-                            <option value="2" >Amazon</option>
                         </select>
 
                         <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -211,32 +280,24 @@
                                     <option value=".transition" data-filter=".transition">Low - High</option>
                                 </select>
 
-                                <select name="" onclick="return false;" id="">
+                                <select name="brands_container_mobile" onclick="return false;" id="brands_container_mobile">
                                     <option value="0">Brands</option>
-                                    <option value="1">Hollister</option>
-                                    <option value="2" >a&f</option>
-                                    <option value="3" >BOSS</option>
                                 </select>
 
-                                <select name="" onclick="return false;" id="">
+                                <select name="color_container_mobile" onclick="return false;" id="color_container_mobile">
                                     <option value="0">Colours</option>
-                                    <option value="1">Black</option>
-                                    <option value="2" >White</option>
-                                    <option value="3" >Grey</option>
                                 </select>
 
 
-                                <select name="" onclick="return false;" id="">
+                                <select name="condition_container_mobile" onclick="return false;" id="condition_container_mobile">
                                     <option value="0">Condition</option>
                                     <option value="1">Brand New</option>
                                     <option value="2" >Used</option>
                                 </select>
 
 
-                                <select name="" onclick="return false;" id="">
+                                <select name="merchant_container_mobile" onclick="return false;" id="merchant_container_mobile">
                                     <option value="0">Merchant</option>
-                                    <option value="1">eBay</option>
-                                    <option value="2" >Amazon</option>
                                 </select>
                             </div>       
 
