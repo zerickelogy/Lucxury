@@ -40,7 +40,6 @@
 
     <main>
         <?php include 'white-menubar.php'; ?>
-
         <!--            <nav id="navigation-bar">
                         <div class="hamburger-menu nav-left hidden-xs">
                             <div class="button" id="btn">
