@@ -6,9 +6,9 @@
 
     <ul class="sidebar-list">
         <li class="sidebar-item"><a href="https://lucxury.com/lucxury_wp/" class="sidebar-anchor">News / Media</a></li>
-        <li class="sidebar-item"><a href="promotions.html" class="sidebar-anchor">Promotions</a></li>
-        <li class="sidebar-item"><a href="faq.html" class="sidebar-anchor">FAQs</a></li>
-        <li class="sidebar-item"><a href="edit-profile.html" class="sidebar-anchor">Edit profile</a></li>
+        <li class="sidebar-item"><a href="promotions.php" class="sidebar-anchor">Promotions</a></li>
+        <li class="sidebar-item"><a href="faq.php" class="sidebar-anchor">FAQs</a></li>
+        <li class="sidebar-item"><a href="edit-profile.php" class="sidebar-anchor">Edit profile</a></li>
     </ul>
 
 
