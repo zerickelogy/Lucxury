@@ -40,7 +40,7 @@
     <!-- only put content into main tag -->
 
     <main>
-        <?php include 'white-menubar.php'; ?>
+        <?php include 'blue-section.php'; ?>
         <!--        <nav id="navigation-bar">
                     <div class="hamburger-menu nav-left hidden-xs">
                         <div class="button" id="btn">
@@ -734,7 +734,7 @@
     </main>
 
     <!-- end of main tag = end of content  -->
-    <?php include 'blue-section.php'; ?>
+    <?php include 'white-menubar.php'; ?>
     <!--    <div class="sidebar">
     
             <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
