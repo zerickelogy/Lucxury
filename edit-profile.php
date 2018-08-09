@@ -729,8 +729,6 @@
             <p id="credits-left">© 2018 Lucxury</p>
             <p id="credits-right">All Rights Reserved.</p>
         </div>
-
-
     </main>
 
     <!-- end of main tag = end of content  -->
