@@ -29,7 +29,7 @@
 
         <div class="overlay-content" method="post">
             <form action="product_page.php">
-                <input name="search_item" type="text" placeholder="Search for products..." name="search">
+                <input name="search_item" type="text" placeholder="Search for products...">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
