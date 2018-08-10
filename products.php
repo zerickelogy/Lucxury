@@ -90,7 +90,7 @@
                             output += '<div class="product-card">' +
                                     '<div class="product-img">' +
                                     '<div class="product-merchant">'+merchant_name+'</div>' +
-                                    '<img src="../'+ image_url+'">' +
+                                    '<a href='+merchant_url+'><img src="../'+ image_url+'"></a>' +
                                     '</div>' +
                                     '<div class="product-des">' +
                                     '<h3>[Title]</h3>' +
@@ -100,7 +100,7 @@
 
                             var output2 = '<div class="w3-third card">' +
                                     '<br/>' +
-                                    '<a href='+merchant_url+'><img class="thumbnail1" src="../' + image_url + '"></a>' +
+                                    '<img class="thumbnail1" src="../' + image_url + '">' +
                                     '<br/>' +
                                     '<div class="" id="product_name"><h6 id="product_nameh6">PRODUCT NAME: ' + product_name + '</h6>' +
                                     '<h6 style="font-weight: bold">PRICE: ' + product_price_currency + " " + product_price_amount + '</h6>' +
