@@ -89,28 +89,14 @@
 
                             output += '<div class="product-card">' +
                                     '<div class="product-img">' +
-                                    '<div class="product-merchant">'+merchant_name+'</div>' +
-                                    '<a target="_blank" href='+merchant_url+'><img src="../'+ image_url+'"></a>' +
+                                    '<div class="product-merchant">' + merchant_name + '</div>' +
+                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
                                     '</div>' +
                                     '<div class="product-des">' +
-                                    '<h3>[Title]</h3>' +
-                                    '<span id="product-price">'+product_price_amount+'</span>|<span id="product-colour">'+product_color+'</span>,<span id=product-condition>'+product_condition+'</span>' +
+                                    '<h3>'+product_name+'</h3>' +
+                                    '<span id="product-price">' + product_price_amount + '</span>|<span id="product-colour">' + product_color + '</span>,<span id=product-condition>' + product_condition + '</span>' +
                                     '</div>' +
                                     '</div>';
-
-                            var output2 = '<div class="w3-third card">' +
-                                    '<br/>' +
-                                    '<img class="thumbnail1" src="../' + image_url + '">' +
-                                    '<br/>' +
-                                    '<div class="" id="product_name"><h6 id="product_nameh6">PRODUCT NAME: ' + product_name + '</h6>' +
-                                    '<h6 style="font-weight: bold">PRICE: ' + product_price_currency + " " + product_price_amount + '</h6>' +
-                                    '<h6 id="brand">BRAND: ' + product_brand + '</h6><h6 id="color">COLOR: ' + product_color + '</h6>' +
-                                    '<h6>CONDITION: ' + product_condition + '</h6><h6>MERCHANT: ' + merchant_name + '</h6>' +
-//                                        '<div>View Count: 99</div>' +
-                                    '<br/>' +
-                                    '<a href="' + merchant_url + '" target="_blank" onclick="generateClicks(' + item_id + ')" class="w3-button w3-block w3-border">More Information</a>' +
-                                    '</div>' +
-                                    '</div>'
                         }
 
 
