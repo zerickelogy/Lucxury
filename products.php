@@ -34,7 +34,7 @@
         function filter() {
             $.ajax({
                 type: "GET",
-                async: false,
+//                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {merchant: "51 label", search: "CAPITAL MEN WHOLECUT -BLACK"},
@@ -76,6 +76,7 @@
                                 async: false,
                                 dataType: "JSON",
                                 success: function (response) {
+                                    console.log("image grabbing success");
                                     for (var i = 0; i < response.length; i++) {
                                         image_url = response[i]["itemfilter_image_url"];
                                     }
