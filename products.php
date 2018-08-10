@@ -87,7 +87,18 @@
                                 }
                             });
 
-                            output += '<div class="w3-third card">' +
+                            output += '<div class="product-card">' +
+                                    '<div class="product-img">' +
+                                    '<div class="product-merchant">taobao</div>' +
+                                    '<img src="../'+ image_url+'">' +
+                                    '</div>' +
+                                    '<div class="product-des">' +
+                                    '<h3>[Title]</h3>' +
+                                    '<span id="product-price">$69.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>' +
+                                    '</div>' +
+                                    '</div>';
+
+                            var output2 += '<div class="w3-third card">' +
                                     '<br/>' +
                                     '<img class="thumbnail1" src="../' + image_url + '">' +
                                     '<br/>' +
