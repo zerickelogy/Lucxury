@@ -37,7 +37,7 @@
                 async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
-                data: {merchant: "51 label", search: "CAPITAL MEN WHOLECUT -BLACK"},
+                data: {merchant: "51 label"},
                 dataType: "JSON",
                 success: function (response) {
                     var output = "";
