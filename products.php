@@ -100,7 +100,7 @@
 
                             var output2 = '<div class="w3-third card">' +
                                     '<br/>' +
-                                    '<a href=''><img class="thumbnail1" src="../' + image_url + '"></a>' +
+                                    '<a href='+merchant_url+'><img class="thumbnail1" src="../' + image_url + '"></a>' +
                                     '<br/>' +
                                     '<div class="" id="product_name"><h6 id="product_nameh6">PRODUCT NAME: ' + product_name + '</h6>' +
                                     '<h6 style="font-weight: bold">PRICE: ' + product_price_currency + " " + product_price_amount + '</h6>' +
