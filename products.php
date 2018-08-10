@@ -79,6 +79,7 @@
                                     console.log("image grabbing success");
                                     for (var i = 0; i < response.length; i++) {
                                         image_url = response[i]["itemfilter_image_url"];
+                                        console.log(image_url);
                                     }
                                 },
                                 error: function (obj, textStatus, errorThrown) {
