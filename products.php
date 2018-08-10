@@ -28,10 +28,91 @@
             getAllBrands();
             getAllColors();
             getAllMerchants();
+            filter();
         });
-        
-        function filter(){
-            
+
+        function filter() {
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "Webservices/multiple_filter.php",
+                cache: false,
+                data: {merchant: "51 label", search: "CAPITAL MEN WHOLECUT -BLACK"},
+                dataType: "JSON",
+                success: function (response) {
+                    var output = "";
+                    var item_id = "";
+                    var image_url = "";
+                    var product_name = "";
+                    var product_price_currency = "";
+                    var product_price_amount = "";
+                    var product_brand = "";
+                    var product_color = "";
+                    var product_condition = "";
+                    var merchant_name = "";
+                    var merchant_type = "";
+                    var merchant_url = "";
+
+                    for (var i = 0; i < response.length; i++) {
+                        // to filter if a merchant does not have any items yet; avoids the NULL NULL object appearing                
+                        if (response[i]['itemfilter_id'] != null) {
+                            item_id = response[i]['itemfilter_id'];
+                            image_url = response[i]['itemfilter_image_url'];
+                            product_name = response[i]['itemfilter_name'];
+                            product_price_amount = response[i]['itemfilter_price_amount'];
+                            product_price_currency = response[i]['itemfilter_price_currency'];
+                            product_brand = response[i]['itemfilter_brand'];
+                            product_color = response[i]['itemfilter_color'];
+                            product_condition = response[i]['itemfilter_condition'];
+                            merchant_name = response[i]['merchant_name'];
+                            merchant_type = response[i]['merchant_type'];
+                            merchant_url = response[i]['itemfilter_more_info_url']
+
+                            $.ajax({
+                                type: "GET",
+                                url: "Webservices/getImageUrlFromItemFilterId.php",
+                                data: {itemfilter_id: item_id},
+                                cache: false,
+                                async: false,
+                                dataType: "JSON",
+                                success: function (response) {
+                                    for (var i = 0; i < response.length; i++) {
+                                        image_url = response[i]["itemfilter_image_url"];
+                                    }
+                                },
+                                error: function (obj, textStatus, errorThrown) {
+                                    console.log("Error " + textStatus + ": " + errorThrown);
+                                }
+                            });
+
+                            output += '<div class="w3-third card">' +
+                                    '<br/>' +
+                                    '<img class="thumbnail1" src="' + image_url + '">' +
+                                    '<br/>' +
+                                    '<div class="" id="product_name"><h6 id="product_nameh6">PRODUCT NAME: ' + product_name + '</h6>' +
+                                    '<h6 style="font-weight: bold">PRICE: ' + product_price_currency + " " + product_price_amount + '</h6>' +
+                                    '<h6 id="brand">BRAND: ' + product_brand + '</h6><h6 id="color">COLOR: ' + product_color + '</h6>' +
+                                    '<h6>CONDITION: ' + product_condition + '</h6><h6>MERCHANT: ' + merchant_name + '</h6>' +
+//                                        '<div>View Count: 99</div>' +
+                                    '<br/>' +
+                                    '<a href="' + merchant_url + '" target="_blank" onclick="generateClicks(' + item_id + ')" class="w3-button w3-block w3-border">More Information</a>' +
+                                    '</div>' +
+                                    '</div>'
+                        }
+
+
+
+                    }
+
+
+                    $("#some_container").append(output);
+
+                },
+                error: function (obj, textStatus, errorThrown) {
+                    console.log("Error " + textStatus + ": " + errorThrown);
+                    // alert("fail to filter items");
+                }
+            });
         }
 
         function getAllBrands() {
@@ -45,7 +126,6 @@
                         var x = response[i]['brand'];
                         $("#brands_container").append('<option value="' + x + '">' + x + '</option>');
                         $("#brands_container_mobile").append('<option value="' + x + '">' + x + '</option>');
-                        console.log(x);
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -66,7 +146,6 @@
                         var x = response[i]['color'];
                         $("#color_container").append('<option value="' + x + '">' + x + '</option>');
                         $("#color_container_mobile").append('<option value="' + x + '">' + x + '</option>');
-                        console.log(x);
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -87,7 +166,6 @@
                         var x = response[i]['merchant_name'];
                         $("#merchant_container").append('<option value="' + x + '">' + x + '</option>');
                         $("#merchant_container_mobile").append('<option value="' + x + '">' + x + '</option>');
-                        console.log(x);
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -266,7 +344,6 @@
                 </div>      
             </div>
 
-
             <div class="mobile-selector">
                 <div class="half">
                     <div class="tab">
@@ -308,7 +385,7 @@
 
 
 
-            <div class="product-card-container">
+            <div id="some_container" class="product-card-container">
                 <div class="product-card">
                     <div class="product-img">
                         <div class="product-merchant">ebay</div>
@@ -316,7 +393,7 @@
                     </div>
                     <div class="product-des">
                         <h3>[Title]</h3>
-                        <span id="product-price">$29.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
+                        <span id="product-price">$29.95</span>|<span id="product-colour">Whiteeeee</span>,<span id=product-condition>Brand New</span>
                     </div>
                 </div>
 
@@ -339,72 +416,6 @@
                     <div class="product-des">
                         <h3>[Title]</h3>
                         <span id="product-price">$69.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
                     </div>
                 </div>
 
