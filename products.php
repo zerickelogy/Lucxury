@@ -98,7 +98,7 @@
                                     '</div>' +
                                     '</div>';
 
-                            var output2 += '<div class="w3-third card">' +
+                            var output2 = '<div class="w3-third card">' +
                                     '<br/>' +
                                     '<img class="thumbnail1" src="../' + image_url + '">' +
                                     '<br/>' +
@@ -118,7 +118,7 @@
                     }
 
 
-                    $("#some_container").append(output);
+                    $("#some_container").html(output);
 
                 },
                 error: function (obj, textStatus, errorThrown) {
