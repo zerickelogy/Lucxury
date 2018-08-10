@@ -34,7 +34,7 @@
         function filter() {
             $.ajax({
                 type: "GET",
-//                async: false,
+                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {merchant: "51 label", search: "CAPITAL MEN WHOLECUT -BLACK"},
@@ -89,18 +89,18 @@
 
                             output += '<div class="product-card">' +
                                     '<div class="product-img">' +
-                                    '<div class="product-merchant">taobao</div>' +
+                                    '<div class="product-merchant">'+merchant_name+'</div>' +
                                     '<img src="../'+ image_url+'">' +
                                     '</div>' +
                                     '<div class="product-des">' +
                                     '<h3>[Title]</h3>' +
-                                    '<span id="product-price">$69.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>' +
+                                    '<span id="product-price">'+product_price_amount+'</span>|<span id="product-colour">'+product_color+'</span>,<span id=product-condition>'+product_condition+'</span>' +
                                     '</div>' +
                                     '</div>';
 
                             var output2 = '<div class="w3-third card">' +
                                     '<br/>' +
-                                    '<img class="thumbnail1" src="../' + image_url + '">' +
+                                    '<a href=''><img class="thumbnail1" src="../' + image_url + '"></a>' +
                                     '<br/>' +
                                     '<div class="" id="product_name"><h6 id="product_nameh6">PRODUCT NAME: ' + product_name + '</h6>' +
                                     '<h6 style="font-weight: bold">PRICE: ' + product_price_currency + " " + product_price_amount + '</h6>' +
