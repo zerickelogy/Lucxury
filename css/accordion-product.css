@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-input {
+.tab input {
   position: absolute;
   opacity: 0;
   z-index: -1;
