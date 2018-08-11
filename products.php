@@ -29,6 +29,11 @@
             getAllColors();
             getAllMerchants();
             filter();
+            
+            $('#priceSort').change(function(){
+               var x = $('#priceSort').val();
+               console.log(x);
+            });
         });
 
         function filter() {
@@ -37,7 +42,7 @@
                 async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
-                data: {merchant: "51 label"},
+//                data: {merchant: "51 label"},
                 dataType: "JSON",
                 success: function (response) {
                     var output = "";
@@ -76,10 +81,8 @@
                                 async: false,
                                 dataType: "JSON",
                                 success: function (response) {
-                                    console.log("image grabbing success");
                                     for (var i = 0; i < response.length; i++) {
                                         image_url = response[i]["itemfilter_image_url"];
-                                        console.log(image_url);
                                     }
                                 },
                                 error: function (obj, textStatus, errorThrown) {
@@ -90,7 +93,7 @@
                             output += '<div class="product-card">' +
                                     '<div class="product-img">' +
                                     '<div class="product-merchant">' + merchant_name + '</div>' +
-                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
+//                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
                                     '</div>' +
                                     '<div class="product-des">' +
                                     '<h3>'+product_name+'</h3>' +
@@ -244,7 +247,7 @@
                 <div class="product-selector">
                     <!-- Custom select structure --> 
                     <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="">
+                        <select name="" onclick="return false;" id="priceSort">
                             <option value="0" data-filter="*">Price</option>
                             <option value="DESC" data-filter=".metal">High - Low</option>
                             <option value="ASC" data-filter=".transition">Low - High</option>
