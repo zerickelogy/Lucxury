@@ -1078,25 +1078,6 @@ span#product-colour, span#product-condition {
 	margin-top: 20px;
 }
 
-.mobile-selector select {
-	width: 100%;
-	font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;
-    padding: 20px 20px;
-    -webkit-appearance: none; 
-   	-moz-appearance: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    border-radius: 0;
-    background: #EFEFEF;
-    margin-bottom: 10px;
-}
-
 .selector-form-mobile-container select {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
@@ -1299,6 +1280,10 @@ span#product-colour, span#product-condition {
 		min-height: 20vh;
 		height: 30vh;
 		max-height: 50vh;
+	}
+
+	.product-card-container {
+		margin: 80px auto;
 	}
 
 
