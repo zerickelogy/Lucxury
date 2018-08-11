@@ -1042,6 +1042,11 @@ span#product-colour, span#product-condition {
 .promo-card img, .product-card img  {
 	width: 100%;
 	position: relative;
+
+}
+
+.product-card img {
+	height: 42vh;
 }
 
 .product-merchant {
