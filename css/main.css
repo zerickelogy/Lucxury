@@ -1045,8 +1045,9 @@ span#product-colour, span#product-condition {
 
 }
 
-.product-card img {
-	height: 42vh;
+.product-card {
+	max-height: 42vh;
+	overflow: hidden;
 }
 
 .product-merchant {
