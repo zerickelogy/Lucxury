@@ -1000,6 +1000,12 @@ a.options-light {
 	position: relative;
 }
 
+.product-card {
+	min-height: 20vh;
+	height: 50vh;
+	max-height: 50vh;
+}
+
 .promo-des {
 	text-align: center;
 }
@@ -1046,7 +1052,7 @@ span#product-colour, span#product-condition {
 }
 
 .product-img {
-	max-height: 42vh;
+	max-height: 38vh;
 	overflow: hidden;
 }
 
