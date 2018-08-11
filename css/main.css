@@ -1295,6 +1295,13 @@ span#product-colour, span#product-condition {
 	    top: 30px;
 	}
 
+	.product-card {
+		min-height: 20vh;
+		height: 30vh;
+		max-height: 50vh;
+	}
+
+
 
 }
 
@@ -1413,7 +1420,11 @@ span#product-colour, span#product-condition {
 /* ipad */
 
 @media (max-width: 769px) {
-
+	.product-card {
+		min-height: 20vh;
+		height: 42vh;
+		max-height: 50vh;
+	}
 }
 
 
@@ -1555,6 +1566,12 @@ span#product-colour, span#product-condition {
 
 	.split:hover {
 		background: #F7F7F7;
+	}
+
+	.product-card {
+		min-height: 20vh;
+		height: auto;
+		max-height: 50vh;
 	}
 
 }
