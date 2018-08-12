@@ -20,8 +20,10 @@ $("#priceSort2").on("click", function (event) {
 });
 
 $("#brands_container2").on("click", function (event) {
-    var x = $("#brands_container2").attr('data value');
-    console.log(x);
+    var x = $("#brands_container2").attr('data-value');
+    var y = $(".data-class").data('class');
+    console.log("x is: "+x);
+    console.log("x is: "+y);
 });
 
 $("#condition_container2").on("click", function (event) {

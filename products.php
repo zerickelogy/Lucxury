@@ -121,7 +121,7 @@
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['brand'];
-                        $("#brands_container2").append('<li><data value="'+x+'">' + x + '</data></li>');
+                        $("#brands_container2").append('<li data-class="liclass" data-value="' + x + '">' + x + '</li>');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -290,8 +290,6 @@
                     </ul>
                 </div>
             </div>
-
-
 
             <div id="some_container" class="product-card-container">
                 <div class="product-card">

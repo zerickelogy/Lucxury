@@ -96,7 +96,6 @@
             </div>
         </div>
 
-
         <div class="container merchants-container">
             <div class="merchant-box pedro"></div>
             <div class="merchant-box calvin-klein"></div>
