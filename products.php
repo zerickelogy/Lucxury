@@ -9,11 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/selector.js"></script>
     <link rel="stylesheet" href="css/accordion-product.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/selector.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <!-- <link rel="stylesheet" href="css/selector-mobile.css"> -->
 
 
@@ -29,10 +28,10 @@
             getAllColors();
             getAllMerchants();
             filter();
-            
-            $('#priceSort').change(function(){
-               var x = $('#priceSort').val();
-               console.log(x);
+
+            $('#priceSort').change(function () {
+                var x = $('#priceSort').val();
+                console.log(x);
             });
         });
 
@@ -96,7 +95,7 @@
 //                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
                                     '</div>' +
                                     '<div class="product-des">' +
-                                    '<h3>'+product_name+'</h3>' +
+                                    '<h3>' + product_name + '</h3>' +
                                     '<span id="product-price">' + product_price_amount + '</span>|<span id="product-colour">' + product_color + '</span>,<span id=product-condition>' + product_condition + '</span>' +
                                     '</div>' +
                                     '</div>';
@@ -242,160 +241,80 @@
         <div class="container product-container container-header">
             <h2>Clothings</h2>
 
-            <div class="selector-container">
-
-                <div class="product-selector">
-                    <!-- Custom select structure --> 
-                    <div class="select_mate" data-mate-select="active" >
-                        <select name="" onclick="return false;" id="priceSort">
-                            <option value="0" data-filter="*">Price</option>
-                            <option value="DESC" data-filter=".metal">High - Low</option>
-                            <option value="ASC" data-filter=".transition">Low - High</option>
-                        </select>
-
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg></span>
-
-                        <div class="cont_list_select_mate">
-
-                            <ul class="cont_select_int"> </ul> 
-                        </div>
-
+            <div class="dropdown-container">
+                <div class="dropdown db-price">
+                    <div id="" class="select">
+                        <span>Price</span>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li>Male</li>
+                        <li>Female</li>
+                    </ul>
                 </div>
 
-                <div class="product-selector">
-                    <!-- Custom select structure --> 
-                    <div class="select_mate" data-mate-select="active" >
-                        <select name="brands_container" onclick="return false;" id="brands_container">
-                            <option value="0">Brands</option>
-                        </select>
-
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg></span>
-
-                        <div class="cont_list_select_mate">
-
-                            <ul class="cont_select_int"> </ul> 
-                        </div>
-
+                <div class="dropdown db-brands">
+                    <div class="select">
+                        <span>Brands</span>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li>Hollister</li>
+                        <li>A&F</li>
+                        <li>Dolce & Gabbana</li>
+                    </ul>
                 </div>
-                <div class="product-selector">
-                    <!-- Custom select structure --> 
-                    <div class="select_mate" data-mate-select="active" >
-                        <select name="color_container" onclick="return false;" id="color_container">
-                            <option value="0">Colours</option>
-                        </select>
 
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg></span>
-
-                        <div class="cont_list_select_mate">
-
-                            <ul class="cont_select_int"> </ul> 
-                        </div>
-
+                <div class="dropdown db-colours">
+                    <div class="select">
+                        <span>Colours</span>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">Male</li>
+                        <li id="female">Female</li>
+                    </ul>
                 </div>
-                <div class="product-selector">
-                    <!-- Custom select structure --> 
-                    <div class="select_mate" data-mate-select="active" >
-                        <select name="condition_container" onclick="return false;" id="condition_container">
-                            <option value="0">Condition</option>
-                            <option value="1">Brand New</option>
-                            <option value="2" >Used</option>
-                        </select>
 
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg></span>
-
-                        <div class="cont_list_select_mate">
-
-                            <ul class="cont_select_int"> </ul> 
-                        </div>
-
+                <div class="dropdown db-condition">
+                    <div class="select">
+                        <span>Condition</span>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">Brand New</li>
+                        <li id="female">Used</li>
+                    </ul>
                 </div>
-                <div class="product-selector">
-                    <!-- Custom select structure --> 
-                    <div class="select_mate" data-mate-select="active" >
-                        <select name="merchant_container" onclick="return false;" id="merchant_container">
-                            <option value="0">Merchant</option>
-                        </select>
 
-                        <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" ><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
-                            <path d="M0-.75h24v24H0z" fill="none"/>
-                            </svg></span>
-
-                        <div class="cont_list_select_mate">
-
-                            <ul class="cont_select_int"> </ul> 
-                        </div>
-
+                <div class="dropdown db-merchant">
+                    <div class="select">
+                        <span>Merchant</span>
+                        <i class="fa fa-chevron-down"></i>
                     </div>
-                </div>      
-            </div>
-
-            <div class="mobile-selector">
-                <div class="half">
-                    <div class="tab">
-                        <input id="tab-one" type="checkbox" name="tabs">
-                        <label for="tab-one">Filter</label>
-                        <div class="tab-content">
-                            <div class="drop-down">
-                                <select name="" onclick="return false;" id="">
-                                    <option value="0" data-filter="*">Price</option>
-                                    <option value=".metal" data-filter=".metal">High - Low</option>
-                                    <option value=".transition" data-filter=".transition">Low - High</option>
-                                </select>
-
-                                <select name="brands_container_mobile" onclick="return false;" id="brands_container_mobile">
-                                    <option value="0">Brands</option>
-                                </select>
-
-                                <select name="color_container_mobile" onclick="return false;" id="color_container_mobile">
-                                    <option value="0">Colours</option>
-                                </select>
-
-
-                                <select name="condition_container_mobile" onclick="return false;" id="condition_container_mobile">
-                                    <option value="0">Condition</option>
-                                    <option value="1">Brand New</option>
-                                    <option value="2" >Used</option>
-                                </select>
-
-
-                                <select name="merchant_container_mobile" onclick="return false;" id="merchant_container_mobile">
-                                    <option value="0">Merchant</option>
-                                </select>
-                            </div>       
-
-                        </div>
-                    </div>
+                    <input type="hidden" name="gender">
+                    <ul class="dropdown-menu">
+                        <li id="male">Male</li>
+                        <li id="female">Female</li>
+                    </ul>
                 </div>
             </div>
 
 
 
-            <div id="some_container" class="product-card-container">
+            <div class="product-card-container">
                 <div class="product-card">
                     <div class="product-img">
                         <div class="product-merchant">ebay</div>
                         <img src="img/product1.png">
                     </div>
                     <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">$29.95</span>|<span id="product-colour">Whiteeeee</span>,<span id=product-condition>Brand New</span>
+                        <h3>HASTE MEN DOUBLE MONK STRAP - BRUGUNDY</h3>
+                        <span id="product-price">$29.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
                     </div>
                 </div>
 
@@ -421,75 +340,82 @@
                     </div>
                 </div>
 
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-img">
+                        <div class="product-merchant">insert</div>
+                        <img src="img/product4.png">
+                    </div>
+                    <div class="product-des">
+                        <h3>[Title]</h3>
+                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <!-- end of content  -->
 
-
-        <div class="container footer">
-            <div class="footer-item sitemap">
-                <h5>Sitemap</h5>
-                <div class="footer-subitem">
-                    <a href="#">Home</a><br/>
-                    <a href="#">Merchants</a><br/>
-                    <a href="#">Promotions</a><br/>
-                    <a href="#">FAQs</a><br/>
-                </div>
-            </div>
-            <div class="footer-item my-account">
-                <h5>My Account</h5>
-                <div class="footer-subitem">
-                    <a href="#">Edit Your Details</a><br/>
-                    <a href="#">Forget Password</a><br/>
-                </div>
-            </div>
-            <div class="footer-item lucxury">
-                <h5>Lucxury</h5>
-                <div class="footer-subitem">
-                    <a href="#">Terms & Conditions</a><br/>
-                    <a href="#">Privacy Policy</a><br/>
-                    <a href="#">Contact Us</a><br/>
-                </div>
-            </div>
-            <div class="footer-item find-us">
-                <h5>Find Us</h5>
-                <div class="footer-subitem">
-                    <a href="https://www.facebook.com/lucxuryglobal" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/lucxuryglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/lucxuryglobal" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCeGiwGkYZ9p8kxj8YwN4fIw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container footer-credits">
-            <p id="credits-left">© 2018 Lucxury</p>
-            <p id="credits-right">All Rights Reserved.</p>
-        </div>
-
-
+        <?php include 'footer.php'; ?>
     </main>
 
     <!-- end of main tag = end of content  -->
     <?php include 'blue-section.php'; ?>
-    <!--        <div class="sidebar">
-    
-                <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
-    
-                <div class="sidebar-item category cat-selector"><a href="#">Men</a><a href="#">Women</a></div>
-    
-                <ul class="sidebar-list">
-                    <li class="sidebar-item"><a href="https://lucxury.com/lucxury_wp/" class="sidebar-anchor">News / Media</a></li>
-                    <li class="sidebar-item"><a href="promotions.html" class="sidebar-anchor">Promotions</a></li>
-                    <li class="sidebar-item"><a href="faq.html" class="sidebar-anchor">FAQs</a></li>
-                    <li class="sidebar-item"><a href="edit-profile.html" class="sidebar-anchor">Edit profile</a></li>
-                </ul>
-    
-    
-                <div class="sidebar-item logout-btn"><a href="#">Logout</a></div>
-    
-            </div>-->
 
     <script>
         $(document).ready(function () {
@@ -512,13 +438,17 @@
 
         });
 
-        // if ($(".mobile-selector").css("display") == "block") {
-        //     $(".selecionado_opcion").click(function(){
-        //         $(".select_mate").attr("data-selec-open", "true");
-        //         $(".icon_select_mate").css("transform", "rotate(180deg)");
-        //         $(".cont_select_int").css("height", "150px");
-        //     });
-        // }
+        $(document).ready(function () {
+            if ($(window).width() < 1049) {
+                $('.dropdown-container').wrapAll('<div class="drop-down">');
+                $('.drop-down').wrapAll('<div class="tab-content">');
+                $('<label for="tab-one" id="label-tab-one">Filter</label>').insertBefore($('.tab-content'));
+                $('<input id="tab-one" type="checkbox" name="tabs">').insertBefore($('.tab-content'));
+                $('#label-tab-one, #tab-one, .tab-content').wrapAll('<div class="tab">');
+                $('.tab').wrapAll('<div class="half">');
+
+            }
+        });
 
     </script>
 
@@ -538,6 +468,8 @@
         AOS.init();
     </script>
 
+
+    <script src="js/dropdown.js"></script>
 
 
 </body>
