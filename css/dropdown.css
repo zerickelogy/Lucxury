@@ -1,50 +1,50 @@
 
 .dropdown-container {
-  width: 100%;
-  /*margin: 50px auto 0;*/
-  text-align: center
+    width: 100%;
+    /*margin: 50px auto 0;*/
+    text-align: center
 }
 
 /*Styling Selectbox*/
 .dropdown {
-  outline: none;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-size: 9px;
-  letter-spacing: 5px;
-  font-weight: 400;
-  /*min-width: 250px;*/
-  /*padding: 12px 0;*/
-  display: inline-block;
-  background-color: #EFEFEF;
-  border-radius: 0px;
-  box-shadow: 0 0 2px rgb(204, 204, 204);
-  transition: all .5s ease;
-  position: relative;
-  color: #474747;
-  line-height: 30px;
-  text-align: center
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    /*min-width: 250px;*/
+    /*padding: 12px 0;*/
+    display: inline-block;
+    background-color: #EFEFEF;
+    border-radius: 0px;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    transition: all .5s ease;
+    position: relative;
+    color: #474747;
+    line-height: 30px;
+    text-align: center
 }
 
 .db-brands {
-  min-width: 320px
+    min-width: 320px
 }
 
 .db-colours {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 .db-price {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 .db-condition {
-  min-width: 200px;
+    min-width: 200px;
 }
 
 
 .db-merchant {
-  min-width: 250px;
+    min-width: 250px;
 }
 
 .dropdown .select {
@@ -97,7 +97,7 @@
     padding: 10px;
     transition: all .2s ease-in-out;
     cursor: pointer
-    /*max-height: 20px;*/
+        /*max-height: 20px;*/
 } 
 .dropdown .dropdown-menu {
     padding: 0;
@@ -112,17 +112,17 @@
 
 
 @media (max-width: 1049px) {
-  .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
-    min-width: 100%
-  }
-  .dropdown .dropdown-menu {
-    position: relative;
-  }
+    .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
+        min-width: 100%
+    }
+    .dropdown .dropdown-menu {
+        position: relative;
+    }
 
-  .dropdown {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 6px;
+    .dropdown {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 6px;
 
-  }
+    }}

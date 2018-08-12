@@ -13,11 +13,7 @@
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/animate.css">
-
-
-        
         <link rel="stylesheet" href="css/aos.css">
-        
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery-scrollto.js"></script>
         <script src="js/owl.carousel.min.js"></script>

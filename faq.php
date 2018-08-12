@@ -40,45 +40,6 @@
 
     <main>
 
-<!--        <nav id="navigation-bar">
-            <div class="hamburger-menu nav-left hidden-xs">
-                <div class="button" id="btn">
-                    <div class="top bar"></div>
-                    <div class="middle bar"></div>
-                    <div class="bottom bar"></div>
-                </div>
-            </div>
-
-            <div id="logo"><a href="index.html"><img id="logo-img" src="img/logo-black.png"></a></div>
-
-            <div id="men-women">
-                <a href="#" class="cat-active">men</a>
-                <a href="#">women</a>
-            </div>
-
-            <div class="user-id user-nav">
-                <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
-            </div>
-
-
-            <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>
-
-            <div id="myOverlay" class="overlay">
-
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
-                    <span class="stroke left"></span>
-                    <span class="stroke right"></span>
-                </span>
-
-                <div class="overlay-content" method="post">
-                    <form action="product_page.php">
-                        <input name="search_item" type="text" placeholder="Search for products..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </nav>-->
-
         <div class="container accordion-container container-header">
             <h2>FAQ</h2>
             <div class="half">
@@ -147,70 +108,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="container footer">
-            <div class="footer-item sitemap">
-                <h5>Sitemap</h5>
-                <div class="footer-subitem">
-                    <a href="index.html">Home</a><br/>
-                    <a href="#">Merchants</a><br/>
-                    <a href="promotions.html">Promotions</a><br/>
-                    <a href="#">FAQs</a><br/>
-                </div>
-            </div>
-            <div class="footer-item my-account">
-                <h5>My Account</h5>
-                <div class="footer-subitem">
-                    <a href="edit-profile.html">Edit Your Details</a><br/>
-                    <a href="#">Forget Password</a><br/>
-                </div>
-            </div>
-            <div class="footer-item lucxury">
-                <h5>Lucxury</h5>
-                <div class="footer-subitem">
-                    <a href="#">Terms & Conditions</a><br/>
-                    <a href="#">Privacy Policy</a><br/>
-                    <a href="#">Contact Us</a><br/>
-                </div>
-            </div>
-            <div class="footer-item find-us">
-                <h5>Find Us</h5>
-                <div class="footer-subitem">
-                    <a href="https://www.facebook.com/lucxuryglobal" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/lucxuryglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/lucxuryglobal" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCeGiwGkYZ9p8kxj8YwN4fIw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="container footer-credits">
-            <p id="credits-left">© 2018 Lucxury</p>
-            <p id="credits-right">All Rights Reserved.</p>
-        </div>
-
-
+        <?php include 'footer.php'; ?>
     </main>
 
     <!-- end of main tag = end of content  -->
-
-<!--    <div class="sidebar">
-
-        <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
-
-        <div class="sidebar-item category cat-selector"><a href="#">Men</a><a href="#">Women</a></div>
-
-        <ul class="sidebar-list">
-            <li class="sidebar-item"><a href="https://lucxury.com/lucxury_wp/" class="sidebar-anchor">News / Media</a></li>
-            <li class="sidebar-item"><a href="promotions.html" class="sidebar-anchor">Promotions</a></li>
-            <li class="sidebar-item"><a href="#" class="sidebar-anchor">FAQs</a></li>
-            <li class="sidebar-item"><a href="edit-profile.html" class="sidebar-anchor">Edit profile</a></li>
-        </ul>
-
-
-        <div class="sidebar-item logout-btn"><a href="#">Logout</a></div>
-
-    </div>-->
 
     <script>
         $(document).ready(function () {

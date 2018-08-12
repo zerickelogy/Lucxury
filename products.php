@@ -23,16 +23,12 @@
 
     <!--start of glenns script-->
     <script>
+
         $(document).ready(function () {
             getAllBrands();
             getAllColors();
             getAllMerchants();
             filter();
-
-            $('#priceSort').change(function () {
-                var x = $('#priceSort').val();
-                console.log(x);
-            });
         });
 
         function filter() {
@@ -41,7 +37,7 @@
                 async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
-//                data: {merchant: "51 label"},
+                data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
                 dataType: "JSON",
                 success: function (response) {
                     var output = "";
@@ -92,7 +88,7 @@
                             output += '<div class="product-card">' +
                                     '<div class="product-img">' +
                                     '<div class="product-merchant">' + merchant_name + '</div>' +
-                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
+//                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
                                     '</div>' +
                                     '<div class="product-des">' +
                                     '<h3>' + product_name + '</h3>' +
@@ -125,8 +121,7 @@
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['brand'];
-                        $("#brands_container").append('<option value="' + x + '">' + x + '</option>');
-                        $("#brands_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        $("#brands_container2").append('<li><data value="'+x+'">' + x + '</data></li>');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -145,8 +140,7 @@
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['color'];
-                        $("#color_container").append('<option value="' + x + '">' + x + '</option>');
-                        $("#color_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        $("#color_container2").append('<li>' + x + '</li>');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -165,8 +159,7 @@
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['merchant_name'];
-                        $("#merchant_container").append('<option value="' + x + '">' + x + '</option>');
-                        $("#merchant_container_mobile").append('<option value="' + x + '">' + x + '</option>');
+                        $("#merchant_container2").append('<li>' + x + '</li>');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -239,18 +232,19 @@
         <!-- start of content  -->
 
         <div class="container product-container container-header">
-            <h2>Clothings</h2>
+            <h2 id="test">Clothings</h2>
 
             <div class="dropdown-container">
-                <div class="dropdown db-price">
+                <div class="dropdown db-price" class="t" >
                     <div id="" class="select">
                         <span>Price</span>
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
-                        <li>Male</li>
-                        <li>Female</li>
+                    <input type="hidden" id="priceSort">
+                    <ul class="dropdown-menu" id="priceSort2">
+                        <li id="111">Ascending</li>
+                        <li id="222 c">Descending</li>
+                        <li id="222e.">Rescending</li>
                     </ul>
                 </div>
 
@@ -259,11 +253,8 @@
                         <span>Brands</span>
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
-                        <li>Hollister</li>
-                        <li>A&F</li>
-                        <li>Dolce & Gabbana</li>
+                    <input type="hidden" id="brands_container">
+                    <ul class="dropdown-menu" id="brands_container2">
                     </ul>
                 </div>
 
@@ -272,10 +263,8 @@
                         <span>Colours</span>
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
-                        <li id="male">Male</li>
-                        <li id="female">Female</li>
+                    <input type="hidden" name="gender" id="color_container">
+                    <ul class="dropdown-menu" id="color_container2">
                     </ul>
                 </div>
 
@@ -284,8 +273,8 @@
                         <span>Condition</span>
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
+                    <input type="hidden" name="gender" id="condition_container">
+                    <ul class="dropdown-menu" id="condition_container2">
                         <li id="male">Brand New</li>
                         <li id="female">Used</li>
                     </ul>
@@ -296,10 +285,8 @@
                         <span>Merchant</span>
                         <i class="fa fa-chevron-down"></i>
                     </div>
-                    <input type="hidden" name="gender">
-                    <ul class="dropdown-menu">
-                        <li id="male">Male</li>
-                        <li id="female">Female</li>
+                    <input type="hidden" name="gender" id="merchant_container">
+                    <ul class="dropdown-menu" id="merchant_container2">
                     </ul>
                 </div>
             </div>
@@ -337,72 +324,6 @@
                     <div class="product-des">
                         <h3>[Title]</h3>
                         <span id="product-price">$69.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">insert</div>
-                        <img src="img/product4.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">[price]</span>|<span id="product-colour">[colour]</span>,<span id=product-condition>[condition]</span>
                     </div>
                 </div>
 

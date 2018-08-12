@@ -7,7 +7,7 @@
         </div>
     </div>
 
-    <div id="logo"><a href="index.php"><img id="logo-img" src="img/logo-black.png"></a></div>
+    <div id="logo"><a href="https://www.lucxury.com/"><img id="logo-img" src="img/logo-black.png"></a></div>
 
     <div id="men-women">
         <a href="#" class="cat-active">men</a>
