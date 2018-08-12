@@ -306,7 +306,7 @@
 
 
 
-            <div class="product-card-container">
+            <div id="some_container" class="product-card-container">
                 <div class="product-card">
                     <div class="product-img">
                         <div class="product-merchant">ebay</div>
