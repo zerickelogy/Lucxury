@@ -5,6 +5,37 @@
     text-align: center
 }
 
+<<<<<<< HEAD
+/*custom */
+
+
+.custom-select {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  min-width: 250px;
+  /*width: 250px;*/
+  display: inline-block;
+}
+
+.db-brands {
+  width: 260px
+}
+
+.db-colours {
+  width: 140px;
+}
+
+.db-price {
+  width: 140px;
+}
+
+.db-condition {
+  width: 140px;
+=======
 /*Styling Selectbox*/
 .dropdown {
     outline: none;
@@ -40,10 +71,19 @@
 
 .db-condition {
     min-width: 200px;
+>>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
 }
 
 
 .db-merchant {
+<<<<<<< HEAD
+  width: 180px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+
+=======
     min-width: 250px;
 }
 
@@ -102,15 +142,82 @@
 .dropdown .dropdown-menu {
     padding: 0;
     list-style: none
+>>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
 }
-.dropdown .dropdown-menu li:hover {
-    background-color: #f2f2f2
+.select-selected {
+  background-color: #efefef;
 }
-.dropdown .dropdown-menu li:active {
-    background-color: #e2e2e2
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  right: 22px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #333 transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #333 transparent;
+  top: 19px;
+  right: 22px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #333;
+  padding: 25px 0px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #efefef;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  max-height: 250px;
+  overflow: scroll;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 
+<<<<<<< HEAD
+
+
+@media (max-width: 1278px) {
+  .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .dropdown .dropdown-menu {
+    position: relative;
+  }
+  .select-items {
+    position: relative;
+  }
+
+  /*.dropdown {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 6px;
+
+  }*/
+
+}
+=======
 @media (max-width: 1049px) {
     .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
         min-width: 100%
@@ -126,3 +233,4 @@
         letter-spacing: 6px;
 
     }}
+>>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923

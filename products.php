@@ -232,6 +232,54 @@
         <!-- start of content  -->
 
         <div class="container product-container container-header">
+<<<<<<< HEAD
+                <h2>Clothings</h2>
+
+                <div class="dropdown-container">
+                    <div class="custom-select db-price">
+                        <select>
+                            <option value="0">All Prices</option>
+                            <option value="1">High - Low</option>
+                            <option value="2">Low - High</option>
+                        </select>
+                    </div>
+                    <div class="custom-select db-brands">
+                        <select>
+                            <option value="0">All Brands</option>
+                            <option value="1">Hollister</option>
+                            <option value="2">A&F</option>
+                            <option value="3">Tommy Hilfiger</option>
+                            <option value="4">Tom Ford</option>
+                            <option value="5">Gucci</option>
+                        </select>
+                    </div>
+                    <div class="custom-select db-colours">
+                        <select>
+                            <option value="0">All Colours</option>
+                            <option value="1">Black</option>
+                            <option value="2">Blue</option>
+                            <option value="3">Green</option>
+                            <option value="4">Red</option>
+                            <option value="5">White</option>
+                            <option value="6">Yellow</option>
+                        </select>
+                    </div>
+                    <div class="custom-select db-condition">
+                        <select>
+                            <option value="0">All Condition</option>
+                            <option value="1">Brand New</option>
+                            <option value="2">Used</option>
+                        </select>
+                    </div>
+                    <div class="custom-select db-merchant">
+                        <select>
+                            <option value="0">All Merchants</option>
+                            <option value="1">eBay</option>
+                            <option value="2">Amazon</option>
+                            <option value="3">Tao Bao</option>
+                            <option value="4">ezBuy</option>
+                        </select>
+=======
             <h2 id="test">Clothings</h2>
 
             <div class="dropdown-container">
@@ -272,6 +320,7 @@
                     <div class="select">
                         <span>Condition</span>
                         <i class="fa fa-chevron-down"></i>
+>>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
                     </div>
                     <input type="hidden" name="gender" id="condition_container">
                     <ul class="dropdown-menu" id="condition_container2">
