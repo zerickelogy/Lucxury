@@ -1,11 +1,10 @@
 
 .dropdown-container {
-    width: 100%;
-    /*margin: 50px auto 0;*/
-    text-align: center
+  width: 100%;
+  /*margin: 50px auto 0;*/
+  text-align: center
 }
 
-<<<<<<< HEAD
 /*custom */
 
 
@@ -35,114 +34,16 @@
 
 .db-condition {
   width: 140px;
-=======
-/*Styling Selectbox*/
-.dropdown {
-    outline: none;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 9px;
-    letter-spacing: 5px;
-    font-weight: 400;
-    /*min-width: 250px;*/
-    /*padding: 12px 0;*/
-    display: inline-block;
-    background-color: #EFEFEF;
-    border-radius: 0px;
-    box-shadow: 0 0 2px rgb(204, 204, 204);
-    transition: all .5s ease;
-    position: relative;
-    color: #474747;
-    line-height: 30px;
-    text-align: center
-}
-
-.db-brands {
-    min-width: 320px
-}
-
-.db-colours {
-    min-width: 200px;
-}
-
-.db-price {
-    min-width: 200px;
-}
-
-.db-condition {
-    min-width: 200px;
->>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
 }
 
 
 .db-merchant {
-<<<<<<< HEAD
   width: 180px;
 }
 
 .custom-select select {
   display: none; /*hide original SELECT element:*/
 
-=======
-    min-width: 250px;
-}
-
-.dropdown .select {
-    cursor: pointer;
-    display: block;
-    min-height: 60px;
-    line-height: 60px;
-    /*padding: 0 20px;*/
-}
-.dropdown .select > i {
-    font-size: 13px;
-    color: #888;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    float: right;
-    line-height: 60px;
-    position: absolute;
-    right: 15px;
-}
-.dropdown:hover {
-    box-shadow: 0 0 4px rgb(204, 204, 204)
-}
-.dropdown:active {
-    background-color: #EFEFEF
-}
-.dropdown.active:hover,
-.dropdown.active {
-    box-shadow: 0 0 4px rgb(204, 204, 204);
-    border-radius: 5px 5px 0 0;
-    background-color: #f8f8f8
-}
-.dropdown.active .select > i {
-    transform: rotate(-180deg) translate(6px,0px);
-}
-.dropdown .dropdown-menu {
-    position: absolute;
-    background-color: #EFEFEF;
-    width: 100%;
-    left: 0;
-    margin-top: 1px;
-    box-shadow: 0 1px 2px rgb(204, 204, 204);
-    /*border-radius: 0 1px 5px 5px;*/
-    overflow: hidden;
-    display: none;
-    max-height: 250px;
-    overflow-y: scroll;
-    z-index: 9
-}
-.dropdown .dropdown-menu li {
-    padding: 10px;
-    transition: all .2s ease-in-out;
-    cursor: pointer
-        /*max-height: 20px;*/
-} 
-.dropdown .dropdown-menu {
-    padding: 0;
-    list-style: none
->>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
 }
 .select-selected {
   background-color: #efefef;
@@ -193,7 +94,6 @@
 }
 
 
-<<<<<<< HEAD
 
 
 @media (max-width: 1278px) {
@@ -217,20 +117,3 @@
   }*/
 
 }
-=======
-@media (max-width: 1049px) {
-    .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
-        min-width: 100%
-    }
-    .dropdown .dropdown-menu {
-        position: relative;
-    }
-
-    .dropdown {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: uppercase;
-        font-size: 10px;
-        letter-spacing: 6px;
-
-    }}
->>>>>>> bc81b1b5cf6dc358b278a105327e7d7e55950923
