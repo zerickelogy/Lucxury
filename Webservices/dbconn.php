@@ -1,9 +1,9 @@
 <?php
 // lucxury.com
-//$host = "localhost";
-//$user = "lucxuryc";
-//$pass = "Luc@D3v3!";
-//$db = "lucxuryc_lucxury_db";
+$host = "localhost";
+$user = "lucxuryc";
+$pass = "Luc@D3v3!";
+$db = "lucxuryc_lucxury_db";
 
 // localhost
 $host = "localhost";
