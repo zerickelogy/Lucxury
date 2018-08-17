@@ -45,65 +45,86 @@
             <div class="half">
                 <div class="tab">
                     <input id="tab-one" type="checkbox" name="tabs">
-                    <label for="tab-one">How do I track my order?</label>
+                    <label for="tab-one">Are prices shown on LUCXURY platform inclusive of shipping fee?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>Prices shown are not inclusive of shipping fee.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-two" type="checkbox" name="tabs">
-                    <label for="tab-two">General Enquiries</label>
+                    <label for="tab-two">How do I check the shipping rates?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>Once click on a product, shipping rates will be reflected on the merchant's website if applicable.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-three" type="checkbox" name="tabs">
-                    <label for="tab-three">How to Use?</label>
+                    <label for="tab-three">How do I track my purchasing information?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>LUCXURY does not integrate purchase onto its platform. Purchasing information can be track on the merchant's website.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-four" type="checkbox" name="tabs">
-                    <label for="tab-four">Payments</label>
+                    <label for="tab-four">How do I purchase a product?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>Search and click on the item where you will be directed to the merchant's website. Add the item to cart and proceed to payment method.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-five" type="checkbox" name="tabs">
-                    <label for="tab-five">Contact Us</label>
+                    <label for="tab-five">Are the items shown on LUCXURY platform authentic?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>LUCXURY handpicks its merchants and verifies that merchants carry proper business license in Singapore and are authorised to sell Luxury products locally and internationally.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-six" type="checkbox" name="tabs">
-                    <label for="tab-six">How do I get in as a merchant?</label>
+                    <label for="tab-six">Is my personal information secure with LUCXURY?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>We protect your personal information by implementing access control to restrict access to your personal information. For more information refer to our Privacy Policy.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-seven" type="checkbox" name="tabs">
-                    <label for="tab-seven">What are the benefits  I get as a member?</label>
+                    <label for="tab-seven">What is LUCXURY?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>Lucxury is an Online e-commerce aggregator that features Singapore made luxury brands that founders and owners are from Singapore. This platform is not only a platform which features these Singapore made luxury products but also educates the current and future generation on what Singapore fashion is.</p>
                     </div>
                 </div>
 
                 <div class="tab">
                     <input id="tab-eight" type="checkbox" name="tabs">
-                    <label for="tab-eight">What if I do not like the products I bought?</label>
+                    <label for="tab-eight">How do I check if the products are New or Pre-Owned?</label>
                     <div class="tab-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, architecto, explicabo perferendis nostrum, maxime impedit atque odit sunt pariatur illo obcaecati soluta molestias iure facere dolorum adipisci eum? Saepe, itaque.</p>
+                        <p>New or Pre-Owned products will be displayed on the item description.</p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-nine" type="checkbox" name="tabs">
+                    <label for="tab-nine">How does LUCXURY work?</label>
+                    <div class="tab-content">
+                        <p>LUCXURY is a technology platform. which allows users to search and purchase new or pre-owned products effortlessly among the global e-commerce platforms provided both locally and internationally. </p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-ten" type="checkbox" name="tabs">
+                    <label for="tab-ten">How can I become a merchant with LUCXURY?</label>
+                    <div class="tab-content">
+                        <p>LUCXURY is constantly looking for new merchants to come onboard. Interested potential merchants please kindly contact <a href="mailto:info@lucxury.com" target="_top">info@lucxury.com</a></p>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-eleven" type="checkbox" name="tabs">
+                    <label for="tab-eleven">Are LUCXURY prices higher than merchant's website?</label>
+                    <div class="tab-content">
+                        <p>LUCXURY does not govern the price range of each specific product.</p>
                     </div>
                 </div>
             </div>

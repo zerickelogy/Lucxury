@@ -51,6 +51,11 @@ label {
   font-size: 18px;
   line-height: 32px;
 }
+
+.tab-content a {
+  color: #273E7C;
+  text-decoration: underline;
+}
 /* :checked */
 input:checked ~ .tab-content {
   max-height: 70em;
