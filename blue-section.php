@@ -1,5 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+//    header('Location: ./login.php');
+}
+?>
 <div class="sidebar">
-    <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
+    <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, <?php echo $_SESSION["username"]; ?></a></div>
 
     <div class="sidebar-item category cat-selector"><a href="#">Men</a><a href="#">Women</a></div>
 

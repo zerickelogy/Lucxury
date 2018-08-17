@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-include 'Webservices/dbconn.php';
+session_start();
+include './dbconn.php';
 $email = $_POST["email"];
 $username = $_POST["username"];
 $password = $_POST["password"];
@@ -20,6 +21,8 @@ $result = mysqli_query($link, $query);
 
 if ($result) {
     $response["result"] = "success";
+    $_SESSION['username'] = $username;
+    $_SESSION['gender'] = $gender;
 } else {
     $response["result"] = "fail";
 }
@@ -30,14 +33,19 @@ mysqli_close($link);
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="refresh" content="0.1; URL=home_page.php">
+        <!--<meta http-equiv="refresh" content="0.1; URL=../index.php">-->
         <meta name="keywords" content="automatic redirection">
         <title></title>
-        <?php include 'scripts/bootstrap_scripts/bootstrap_scripts.php'; ?>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <script>
             $(document).ready(function () {
-                var gender = "<?php echo $gender ?>";
-                alert("Account created! Please wait..");
+                var result = "<?php echo $response['result'] ?>";
+                if (confirm("Account creation: " + result)) {
+                    window.location.replace("../index.php");
+                } else {
+                    window.history.back();
+                }
             });
         </script>
     </head>

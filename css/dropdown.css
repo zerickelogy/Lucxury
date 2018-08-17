@@ -41,10 +41,10 @@
   width: 180px;
 }
 
-.custom-select select {
-  display: none; /*hide original SELECT element:*/
+/*.custom-select select {*/
+/*  display: none; hide original SELECT element:*/
 
-}
+/*}*/
 .select-selected {
   background-color: #efefef;
 }
