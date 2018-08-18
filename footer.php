@@ -13,7 +13,7 @@
             <a href="./faq.php">FAQs</a><br/>
         </div>
     </div>
-    <div class="footer-item my-account">
+    <div style="visibility: hidden" class="footer-item my-account">
         <h5>My Account</h5>
         <div class="footer-subitem">
             <a href="#">Edit Your Details</a><br/>
@@ -23,8 +23,8 @@
     <div class="footer-item lucxury">
         <h5>Lucxury</h5>
         <div class="footer-subitem">
-            <a href="./TermsOfUseANDPtePoli/Terms Of Use v0.1.docx">Terms & Conditions</a><br/>
-            <a href="./TermsOfUseANDPtePoli/Privacy Policy v0.2-Edit.docx">Privacy Policy</a><br/>
+            <a href="./terms-condition.php">Terms & Conditions</a><br/>
+            <a href="./privacy-policy.php">Privacy Policy</a><br/>
             <a href="#">Contact Us</a><br/>
         </div>
     </div>
