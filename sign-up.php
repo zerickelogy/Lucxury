@@ -36,19 +36,19 @@
         <!-- only put content into main tag -->
 
         <main>
-            <?php // include 'white-menubar.php'; ?>
+            <?php // include ''; ?>
             <div class="container signup-container container-header">
                 <h2>Sign Up</h2>
                 <form action="Webservices/do_customer_profile_signup.php" method="post" class="profile-form">
                     <div class="edit-profile" id="top-form">
                         <label>Email</label>
-                        <input type="email" name="email" placeholder="Enter Email">
+                        <input id="email" type="email" name="email" placeholder="Enter Email">
 
                         <label>Username</label>
-                        <input type="text" name="username" placeholder="Enter Username">
+                        <input id="username" type="text" name="username" placeholder="Enter Username">
 
                         <label>Password</label>
-                        <input type="password" name="password" placeholder="Enter Password">
+                        <input id="password" type="password" name="password" placeholder="Enter Password">
 
                         <label>Confirm Password</label>
                         <input class="form-padding-btm" type="password" name="password2" placeholder="Enter Password">
@@ -137,9 +137,34 @@
                         toggleSidebar();
                     }
                 });
-                
-                
-                
+
+                $('#email').blur(function () {
+                    if ($(this).val()) {
+                        var emailToBeTested = $(this).val();
+                        $.ajax({
+                            type: "GET",
+                            url: "./Webservices/checkExistingEmail.php",
+                            data: {email: emailToBeTested},
+                            cache: false,
+                            dataType: "JSON",
+                            success: function (response) {
+                                if (response == "no email found") {
+                                    console.log(emailToBeTested + " is available.");
+                                } else {
+                                    var x = response[0];
+                                    console.log("Sorry, " + emailToBeTested +" is taken.")
+                                }
+
+
+                            },
+                            error: function (obj, textStatus, errorThrown) {
+                                console.log("Error " + textStatus + ": " + errorThrown);
+                                alert("fail to generate clicks");
+                            }
+                        });
+                    }
+
+                });
             }); // end of document.ready
 
             function getAllCountries() {
