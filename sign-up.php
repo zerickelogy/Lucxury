@@ -39,21 +39,35 @@
             <?php // include ''; ?>
             <div class="container signup-container container-header">
                 <h2>Sign Up</h2>
-                <form action="Webservices/do_customer_profile_signup.php" method="post" class="profile-form">
+                <form action="#" class="profile-form">
                     <div class="edit-profile" id="top-form">
-                        <label>Email</label>
-                        <input id="email" type="email" name="email" placeholder="Enter Email">
+                        <div class="profile-fills">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter Email" id="enter-email" required>
+                            <div class="error error-email">Please enter a valid email address.</div>
+                        </div>
 
-                        <label>Username</label>
-                        <input id="username" type="text" name="username" placeholder="Enter Username">
+                        <div class="profile-fills">
+                            <label>Username</label>
+                            <input type="text" name="userid" placeholder="Enter Username" id="enter-username" required>
+                            <div class="error"><span class="error">This field is required</span></div>
+                        </div>
 
-                        <label>Password</label>
-                        <input id="password" type="password" name="password" placeholder="Enter Password">
 
-                        <label>Confirm Password</label>
-                        <input class="form-padding-btm" type="password" name="password2" placeholder="Enter Password">
+                        <div class="profile-fills">
+                            <label>Password</label>
+                            <input type="password" name="password" placeholder="Enter Password" id="enter-password" required>
+                            <div class="error error-password">Please make sure there's at at least six characters, at least one number, one lowercase and one uppercase letter.</div>
+                        </div>
+
+                        <div class="profile-fills">
+                            <label>Confirm Password</label>
+                            <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password" id="reenter-password" required>
+                            <div class="error error-repassword">This field is required</div>
+                        </div>
                     </div>
 
+                    
                     <h3>Personal Particulars</h3>
 
                     <div class="edit-profile" id="bottom-form">
