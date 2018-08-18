@@ -49,6 +49,9 @@
 
                         <label>Password</label>
                         <input class="form-padding-btm" type="password" name="password" placeholder="Enter Password">
+
+                        <label>Confirm Password</label>
+                        <input class="form-padding-btm" type="password" name="password2" placeholder="Enter Password">
                     </div>
 
                     <h3>Personal Particulars</h3>
@@ -153,7 +156,7 @@
 
                         for (var i = 0; i < response.length; i++) {
                             var x = response[i]['country'];
-                            $("#countries_container").append('<option value="'+x+'">'+x+'</option>');
+                            $("#countries_container").append('<option value="' + x + '">' + x + '</option>');
                         }
                     },
                     error: function (obj, textStatus, errorThrown) {

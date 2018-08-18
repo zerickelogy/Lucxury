@@ -34,7 +34,7 @@
         function filter() {
             $.ajax({
                 type: "GET",
-                async: false,
+//                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
@@ -73,7 +73,7 @@
                                 url: "Webservices/getImageUrlFromItemFilterId.php",
                                 data: {itemfilter_id: item_id},
                                 cache: false,
-                                async: false,
+//                                async: false,
                                 dataType: "JSON",
                                 success: function (response) {
                                     for (var i = 0; i < response.length; i++) {
@@ -202,8 +202,8 @@
                         <option value="2">Low - High</option>
                     </select>
                 </div>
-                <div class="custom-select db-brands" id="brands_container2">
-                    <select>
+                <div class="custom-select db-brands">
+                    <select id="brands_container2">
                         <option value="0">All Brands</option>
                         <option value="1">Hollister</option>
                         <option value="2">A&F</option>
