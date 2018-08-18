@@ -48,7 +48,7 @@
                         <input type="text" name="username" placeholder="Enter Username">
 
                         <label>Password</label>
-                        <input class="form-padding-btm" type="password" name="password" placeholder="Enter Password">
+                        <input type="password" name="password" placeholder="Enter Password">
 
                         <label>Confirm Password</label>
                         <input class="form-padding-btm" type="password" name="password2" placeholder="Enter Password">
@@ -121,19 +121,12 @@
                     $(".sidebar-item").toggleClass("active");
                 }
 
-                $('#countries_container').change(function () {
-                    console.log($(this).val());
-                });
-
                 $('input[type="radio"]').change(function () {
                     if ($(this).is(':checked'))
                     {
                         console.log($(this).val());
                     }
                 });
-
-                var x = $('input[name=radio1]:checked').val();
-                console.log(x);
 
                 $(".button").on("click tap", function () {
                     toggleSidebar();
@@ -144,7 +137,10 @@
                         toggleSidebar();
                     }
                 });
-            });
+                
+                
+                
+            }); // end of document.ready
 
             function getAllCountries() {
                 $.ajax({
