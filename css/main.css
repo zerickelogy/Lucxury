@@ -868,6 +868,39 @@ main {
 	padding-right: 10%;
 }
 
+.terms-and-conditions {
+	width: 100%;
+	background: #fff
+}
+
+.terms-container {
+	width: 65%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.terms-container a {
+	color: #273E7C;
+  	text-decoration: underline;
+}
+
+.terms-container li {
+	padding-bottom: 40px;
+	line-height: 1.8;
+}
+
+.terms-container ul {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+ol.number-indent {
+	margin-left: 40px;
+}
+
+ul.point-indent {
+	margin-left: 60px;
+}
 
 .login-container p {
 	font-family: 'Montserrat', sans-serif;
@@ -1387,6 +1420,9 @@ span#product-colour, span#product-condition {
 		height: 42vh;
 		max-height: 50vh;
 	}
+	.terms-container {
+		width: 75%;
+	}
 }
 
 
@@ -1685,6 +1721,19 @@ span#product-colour, span#product-condition {
 		background-size: cover;
 		background-position: center;
 		overflow-y: scroll;
+	}
+
+	.terms-container ul {
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+	ol.number-indent {
+		margin-left: 20px;
+	}
+
+	ul.point-indent {
+		margin-left: 40px;
 	}
 
 }
