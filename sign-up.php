@@ -202,6 +202,68 @@
             }
 
         </script>
+
+        <script>
+            $(document).ready(function() {
+            
+                $('#enter-email').on('input', function() {
+                    var input=$(this);
+                    var is_name=input.val();
+                    if(is_name){input.removeClass("invalid").addClass("valid");}
+                    else{input.removeClass("valid").addClass("invalid");}
+                });
+                
+      
+                $('#enter-email').on('input', function() {
+                    var input=$(this);
+                    var span = $('.error-email')
+                    var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    var is_email=re.test(input.val());
+                    if(is_email){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
+                    else{input.removeClass("valid").addClass("invalid"); span.css("display", "block")}
+                });
+
+                $('#enter-password').on('input', function() {
+                    var input=$(this);
+                    var span = $('.error-password')
+                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+                    var is_password=pw.test(input.val());
+                    if(is_password){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
+                    else{input.removeClass("valid").addClass("invalid");span.css("display", "block")
+                    }
+                });
+
+                $('#reenter-password').on('input', function() {
+                    var input=$(this);
+                    var span = $('.error-repassword')
+                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+                    var is_password=pw.test(input.val());
+                    if(is_password){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
+                    else{input.removeClass("valid").addClass("invalid");span.css("display", "block")
+                    }
+                });
+
+                $('#enter-firstname').on('input', function() {
+                    var input=$(this);
+                    var is_name=input.val();
+                    if(is_name){input.removeClass("invalid").addClass("valid");}
+                    else{input.removeClass("valid").addClass("invalid");}
+                });
+
+                $('#enter-lastname').on('input', function() {
+                    var input=$(this);
+                    var is_name=input.val();
+                    if(is_name){input.removeClass("invalid").addClass("valid");}
+                    else{input.removeClass("valid").addClass("invalid");}
+                });
+                
+
+            
+            
+            
+        });
+
+        </script>
         <script>
             function openSearch() {
                 $("#myOverlay").fadeIn(500).css("display", "block");
