@@ -23,8 +23,8 @@
     <div class="footer-item lucxury">
         <h5>Lucxury</h5>
         <div class="footer-subitem">
-            <a href="#">Terms & Conditions</a><br/>
-            <a href="#">Privacy Policy</a><br/>
+            <a href="./TermsOfUseANDPtePoli/Terms Of Use v0.1.docx">Terms & Conditions</a><br/>
+            <a href="./TermsOfUseANDPtePoli/Privacy Policy v0.2-Edit.docx">Privacy Policy</a><br/>
             <a href="#">Contact Us</a><br/>
         </div>
     </div>

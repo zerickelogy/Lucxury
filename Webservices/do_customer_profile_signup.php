@@ -18,7 +18,6 @@ $query = "INSERT INTO `user`(`email`, `username`, `password`,`user_type`, `first
         "VALUES ('$email', '$username',SHA1('$password'),'user', '$first_name','$last_name',null , '$country', null,'$gender', null, null)";
 
 $result = mysqli_query($link, $query);
-
 if ($result) {
     $response["result"] = "success";
     $_SESSION['username'] = $username;
@@ -28,6 +27,7 @@ if ($result) {
 }
 //echo json_encode($response);
 mysqli_close($link);
+
 ?>
 <html>
     <head>
@@ -42,7 +42,7 @@ mysqli_close($link);
             $(document).ready(function () {
                 var result = "<?php echo $response['result'] ?>";
                 if (confirm("Account creation: " + result)) {
-                    window.location.replace("../index.php");
+                    window.location.replace("../login.php");
                 } else {
                     window.history.back();
                 }

@@ -102,7 +102,7 @@
                     }
 
 
-                    $("#some_container").html(output);
+                    $("#some_container22").html(output);
 
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -121,7 +121,7 @@
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['brand'];
-                        $("#brands_container2").append('<li data-class="liclass" data-value="' + x + '">' + x + '</li>');
+                        $("#brands_container2").append('<option value="'+x+'">'+x+'</option');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
