@@ -182,7 +182,7 @@
                 <div class="footer-item lucxury">
                     <h5>Lucxury</h5>
                     <div class="footer-subitem">
-                        <a href="#">Terms & Conditions</a><br/>
+                        <a href="#">Terms of Use</a><br/>
                         <a href="#">Privacy Policy</a><br/>
                         <a href="#">Contact Us</a><br/>
                     </div>
