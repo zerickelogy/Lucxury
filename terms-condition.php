@@ -169,7 +169,7 @@
                         <a href="./login.php">Home</a><br/>
                         <a href="./login.php">Merchants</a><br/>
                         <a href="./login.php">Promotions</a><br/>
-                        <a href="#">FAQs</a><br/>
+                        <a href="./faq.php">FAQs</a><br/>
                     </div>
                 </div>
                 <div class="footer-item my-account">
