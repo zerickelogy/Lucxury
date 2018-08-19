@@ -56,15 +56,15 @@
 
                         <div class="profile-fills">
                             <label >Password</label>
-                            <input class="password-padding" type="password" name="password" placeholder="Enter Password" id="enter-password" required>
+                            <input class="form-padding-btm" type="password" name="password" placeholder="Enter Password" id="enter-password" required>
                             <div class="error error-password">Passwords are case sensitive and must contain: at least 8 characters, one number, one lowercase and one uppercase letter.</div>
                         </div>
 
-                        <div class="profile-fills">
+                        <!--<div class="profile-fills">
                             <label>Confirm Password</label>
                             <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password" id="reenter-password" required>
                             <div class="error error-repassword">This field is required</div>
-                        </div>
+                        </div>-->
                     </div>
 
 
