@@ -42,11 +42,11 @@ mysqli_close($link);
         <script>
             $(document).ready(function () {
                 var result = "<?php echo $response['result'] ?>";
-//                if (confirm("Account creation: " + result+". A Confirmation Email will be sent within 24hrs")) {
-//                    window.location.replace("../login.php");
-//                } else {
-//                    window.history.back();
-//                }
+                if (confirm("Account creation: " + result+". A Confirmation Email will be sent within 24hrs")) {
+                    window.location.replace("../login.php");
+                } else {
+                    window.history.back();
+                }
             });
         </script>
     </head>

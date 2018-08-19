@@ -56,17 +56,16 @@
 
                         <div class="profile-fills">
                             <label >Password</label>
-                            <input class="form-padding-btm" type="password" name="password" placeholder="Enter Password" id="enter-password" required>
+                            <input type="password" name="password" placeholder="Enter Password" id="enter-password" required>
                             <div class="error error-password">Passwords are case sensitive and must contain: at least 8 characters, one number, one lowercase and one uppercase letter.</div>
                         </div>
 
-                        <!--<div class="profile-fills">
+                        <div class="profile-fills">
                             <label>Confirm Password</label>
                             <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password" id="reenter-password" required>
                             <div class="error error-repassword">This field is required</div>
-                        </div>-->
+                        </div>
                     </div>
-
 
                     <h3>Personal Particulars</h3>
 
@@ -115,11 +114,11 @@
                     </div>
 
                     <div class="before-submitting">
-                    <p>*By clicking on the Register button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        <p>*By clicking on the Register button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
                     </div>
 
                     <div class="submit-line-btn">
-                        <button type="submit">register <i class="fas fa-chevron-right"></i></button>
+                        <button id="submit" type="submit">register <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </form>
             </div>
@@ -133,6 +132,8 @@
         <script>
             $(document).ready(function () {
                 getAllCountries();
+                $("button[type=submit]").attr("disabled", "disabled");
+
                 function toggleSidebar() {
                     $(".button").toggleClass("active");
                     $("main").toggleClass("move-to-right");
@@ -174,7 +175,8 @@
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-email").text(emailToBeTested + " is available");
-                                    $("#enter-email").css("border-bottom", "1px solid green").css("color","green");
+                                    $("#enter-email").css("border-bottom", "1px solid green").css("color", "green");
+
                                 } else {
                                     console.log("Sorry, " + emailToBeTested + " is taken.")
 
@@ -183,7 +185,7 @@
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
                                     $("#error-email").text("Sorry, " + emailToBeTested + " is taken.");
-                                    $("#enter-email").css("border-bottom", "1px solid red").css("color","red");
+                                    $("#enter-email").css("border-bottom", "1px solid red").css("color", "red");
                                 }
                             },
                             error: function (obj, textStatus, errorThrown) {
@@ -212,7 +214,8 @@
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-username").text(usernameToBeTested + " is available");
-                                    $("#enter-username").css("border-bottom", "1px solid green").css("color","green");
+                                    $("#enter-username").css("border-bottom", "1px solid green").css("color", "green");
+
                                 } else {
                                     console.log("Sorry, " + usernameToBeTested + " is taken.")
 
@@ -221,10 +224,8 @@
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
                                     $("#error-username").text("Sorry, " + usernameToBeTested + " is taken.");
-                                    $("#enter-username").css("border-bottom", "1px solid red").css("color","red");
+                                    $("#enter-username").css("border-bottom", "1px solid red").css("color", "red");
                                 }
-
-
                             },
                             error: function (obj, textStatus, errorThrown) {
                                 console.log("Error " + textStatus + ": " + errorThrown);
@@ -232,8 +233,8 @@
                             }
                         });
                     }
-
                 });
+
             }); // end of document.ready
 
             function getAllCountries() {
@@ -261,66 +262,68 @@
         <script>
             $(document).ready(function () {
 
-                // $('#enter-email').on('input', function () {
-                //     var input = $(this);
-                //     var is_name = input.val();
-                //     if (is_name) {
-                //         input.removeClass("invalid").addClass("valid");
-                //     } else {
-                //         input.removeClass("valid").addClass("invalid");
-                //         $("#error-email").text("Please enter an email address");
-                //     }
-                // });
+                $('#enter-email').on('input', function () {
+                    var input = $(this);
+                    var is_name = input.val();
+                    if (is_name) {
+                        input.removeClass("invalid").addClass("valid");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        $("#error-email").text("Please enter an email address");
+                    }
+                });
 
-
-                // $('#enter-email').on('input', function () {
-                //     var input = $(this);
-                //     var span = $('.error-email')
-                //     var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                //     var is_email = re.test(input.val());
-                //     if (is_email) {
-                //         input.removeClass("invalid").addClass("valid");
-                //         span.css("display", "none")
-                //     } else {
-                //         input.removeClass("valid").addClass("invalid");
-                //         span.css("display", "block")
-                //         $("#error-email").text("Please enter an email address");
-                //     }
-                // });
+                $('#enter-email').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-email')
+                    var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    var is_email = re.test(input.val());
+                    if (is_email) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none")
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block")
+                        $("#error-email").text("Please enter an email address");
+                    }
+                });
 
                 $('#enter-password').on('input', function () {
                     var input = $(this);
                     var span = $('.error-password')
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
                     var is_password = pw.test(input.val());
+                    console.log(is_password);
                     if (is_password) {
                         input.removeClass("invalid").addClass("valid");
                         span.css("display", "none");
-                        $("#enter-password").css("border-bottom", "1px solid green").css("color","green");
+                        $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
 
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block");
-                        $("#enter-password").css("border-bottom", "1px solid red").css("color","red");
+                        $("#enter-password").css("border-bottom", "1px solid red").css("color", "red");
                         $(":input.password-padding").css("margin-bottom", "80px;");
+                        $("input[type=submit]").attr("disabled", "disabled");
 
                     }
                 });
 
-                $('#reenter-password').on('input', function () {
-                    var input = $(this);
-                    var span = $('.error-repassword')
-                    var is_repassword = pw.test(input.val());
-                    if ( is_repassword == "#enter-password") {
-                        input.removeClass("invalid").addClass("valid");
-                        span.css("display", "none");
-                        $("#reenter-password").css("border-bottom", "1px solid green").css("color","green");
-                    } else {
-                        input.removeClass("valid").addClass("invalid");
-                        span.css("display", "block");
-                        $("#reenter-password").css("border-bottom", "1px solid red").css("color","red");
-                    }
-                });
+//                $('#reenter-password').on('input', function () {
+//                    var input = $(this);
+//                    var span = $('.error-repassword')
+//                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+//                    var is_repassword = pw.test(input.val());
+//                    if (is_repassword == "#enter-password") {
+//                        input.removeClass("invalid").addClass("valid");
+//                        span.css("display", "none");
+//                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+//                    } else {
+//                        input.removeClass("valid").addClass("invalid");
+//                        span.css("display", "block");
+//                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+//                    }
+//                });
 
                 // $('#enter-firstname').on('input', function () {
                 //     var input = $(this);
@@ -342,12 +345,7 @@
                 //     }
                 // });
 
-
-
-
-
             });
-
         </script>
         <script>
             function openSearch() {
@@ -364,8 +362,6 @@
         <script>
             AOS.init();
         </script>
-
-
         <script src="js/dropdown.js"></script>
 
     </body>
