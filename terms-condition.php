@@ -166,17 +166,17 @@
                 <div class="footer-item sitemap">
                     <h5>Sitemap</h5>
                     <div class="footer-subitem">
-                        <a href="index.html">Home</a><br/>
-                        <a href="#">Merchants</a><br/>
-                        <a href="promotions.html">Promotions</a><br/>
+                        <a href="./login.php">Home</a><br/>
+                        <a href="./login.php">Merchants</a><br/>
+                        <a href="./login.php">Promotions</a><br/>
                         <a href="#">FAQs</a><br/>
                     </div>
                 </div>
                 <div class="footer-item my-account">
                     <h5>My Account</h5>
                     <div class="footer-subitem">
-                        <a href="edit-profile.html">Edit Your Details</a><br/>
-                        <a href="#">Forget Password</a><br/>
+                        <a href="./login.php">Edit Your Details</a><br/>
+                        <a href="./login.php">Forget Password</a><br/>
                     </div>
                 </div>
                 <div class="footer-item lucxury">
