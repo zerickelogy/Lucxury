@@ -10,12 +10,13 @@ $last_name = $_POST["last_name"];
 //$nric = $_POST["nric"];
 //$dob = $_POST["dob"];
 $gender = $_POST["gender"];
+$age_range = $_POST['age_range'];
 //$postal_code = $_POST["postal_code"];
 //$home_address = $_POST["home_address"];
 $country = $_POST["country"];
 
-$query = "INSERT INTO `user`(`email`, `username`, `password`,`user_type`, `first_name`, `last_name`, `nric`, `country`, `dob`, `gender`, `address`, `postal_code`) " .
-        "VALUES ('$email', '$username',SHA1('$password'),'user', '$first_name','$last_name',null , '$country', null,'$gender', null, null)";
+$query = "INSERT INTO `user`(`email`, `username`, `password`,`user_type`, `first_name`, `last_name`, `nric`, `country`, `dob`, `age_range`, `gender`, `address`, `postal_code`) " .
+        "VALUES ('$email', '$username',SHA1('$password'),'user', '$first_name','$last_name',null , '$country', null,'$age_range', '$gender', null, null)";
 
 $result = mysqli_query($link, $query);
 if ($result) {
@@ -41,11 +42,11 @@ mysqli_close($link);
         <script>
             $(document).ready(function () {
                 var result = "<?php echo $response['result'] ?>";
-                if (confirm("Account creation: " + result+". A Confirmation Email will be sent within 24hrs")) {
-                    window.location.replace("../login.php");
-                } else {
-                    window.history.back();
-                }
+//                if (confirm("Account creation: " + result+". A Confirmation Email will be sent within 24hrs")) {
+//                    window.location.replace("../login.php");
+//                } else {
+//                    window.history.back();
+//                }
             });
         </script>
     </head>
