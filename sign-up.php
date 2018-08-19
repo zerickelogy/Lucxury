@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-                    
+
                     <h3>Personal Particulars</h3>
 
                     <div class="edit-profile" id="bottom-form">
@@ -152,7 +152,7 @@
                     }
                 });
 
-                $('#email').blur(function () {
+                $('#enter-email').blur(function () {
                     if ($(this).val()) {
                         var emailToBeTested = $(this).val();
                         $.ajax({
@@ -166,7 +166,7 @@
                                     console.log(emailToBeTested + " is available.");
                                 } else {
                                     var x = response[0];
-                                    console.log("Sorry, " + emailToBeTested +" is taken.")
+                                    console.log("Sorry, " + emailToBeTested + " is taken.")
                                 }
 
 
@@ -204,64 +204,86 @@
         </script>
 
         <script>
-            $(document).ready(function() {
-            
-                $('#enter-email').on('input', function() {
-                    var input=$(this);
-                    var is_name=input.val();
-                    if(is_name){input.removeClass("invalid").addClass("valid");}
-                    else{input.removeClass("valid").addClass("invalid");}
+            $(document).ready(function () {
+
+                $('#enter-email').on('input', function () {
+                    var input = $(this);
+                    var is_name = input.val();
+                    if (is_name) {
+                        input.removeClass("invalid").addClass("valid");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                    }
                 });
-                
-      
-                $('#enter-email').on('input', function() {
-                    var input=$(this);
+
+
+                $('#enter-email').on('input', function () {
+                    var input = $(this);
                     var span = $('.error-email')
                     var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-                    var is_email=re.test(input.val());
-                    if(is_email){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
-                    else{input.removeClass("valid").addClass("invalid"); span.css("display", "block")}
+                    var is_email = re.test(input.val());
+                    if (is_email) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none")
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block")
+                    }
                 });
 
-                $('#enter-password').on('input', function() {
-                    var input=$(this);
+                $('#enter-password').on('input', function () {
+                    var input = $(this);
                     var span = $('.error-password')
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-                    var is_password=pw.test(input.val());
-                    if(is_password){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
-                    else{input.removeClass("valid").addClass("invalid");span.css("display", "block")
+                    var is_password = pw.test(input.val());
+                    if (is_password) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none")
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block")
                     }
                 });
 
-                $('#reenter-password').on('input', function() {
-                    var input=$(this);
+                $('#reenter-password').on('input', function () {
+                    var input = $(this);
                     var span = $('.error-repassword')
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-                    var is_password=pw.test(input.val());
-                    if(is_password){input.removeClass("invalid").addClass("valid"); span.css("display", "none")}
-                    else{input.removeClass("valid").addClass("invalid");span.css("display", "block")
+                    var is_password = pw.test(input.val());
+                    if (is_password) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none")
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block")
                     }
                 });
 
-                $('#enter-firstname').on('input', function() {
-                    var input=$(this);
-                    var is_name=input.val();
-                    if(is_name){input.removeClass("invalid").addClass("valid");}
-                    else{input.removeClass("valid").addClass("invalid");}
+                $('#enter-firstname').on('input', function () {
+                    var input = $(this);
+                    var is_name = input.val();
+                    if (is_name) {
+                        input.removeClass("invalid").addClass("valid");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                    }
                 });
 
-                $('#enter-lastname').on('input', function() {
-                    var input=$(this);
-                    var is_name=input.val();
-                    if(is_name){input.removeClass("invalid").addClass("valid");}
-                    else{input.removeClass("valid").addClass("invalid");}
+                $('#enter-lastname').on('input', function () {
+                    var input = $(this);
+                    var is_name = input.val();
+                    if (is_name) {
+                        input.removeClass("invalid").addClass("valid");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                    }
                 });
-                
 
-            
-            
-            
-        });
+
+
+
+
+            });
 
         </script>
         <script>

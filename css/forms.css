@@ -58,12 +58,12 @@
     background: #F5F5F5;
 }
 
-.signup-container input[type=text]:valid, .signup-container input[type=password]:valid, .signup-container input[type=email]:valid,{
+.signup-container input[type=text]:valid, .signup-container input[type=password]:valid, .signup-container input[type=email]:valid{
     border-bottom: 1px solid green;
     color: green;
 } 
 
-.signup-container input[type=text]:invalid, .signup-container input[type=password]:invalid, .signup-container input[type=email]:invalid,{
+.signup-container input[type=text]:invalid, .signup-container input[type=password]:invalid, .signup-container input[type=email]:invalid{
     border-bottom: 1px solid red;
     color: red;
 } 
