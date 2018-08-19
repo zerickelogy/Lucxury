@@ -25,7 +25,7 @@
         <div class="footer-subitem">
             <a href="./terms-condition.php">Terms Of Use</a><br/>
             <a href="./privacy-policy.php">Privacy Policy</a><br/>
-            <a href="#">Contact Us</a><br/>
+            <a href="https://lucxury.com/lucxury_wp/contact-us/">Contact Us</a><br/>
         </div>
     </div>
     <div class="footer-item find-us">
