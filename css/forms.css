@@ -98,6 +98,24 @@
     margin-left: 10px;
 }
 
+#error-username {
+    position: absolute;
+    top: 206px;
+
+    
+}
+
+input.password-padding {
+    margin-bottom: 60px;
+}
+
+
+input#enter-firstname, input#enter-lastname {
+    border-bottom: 1px solid #333;
+    background: none;
+    color: #333;
+}
+
 .signup-container input.invalid {
     border-bottom: 1px solid red;
 }
@@ -161,6 +179,17 @@ input.form-padding-small-btm {
 
 input.login-form-padding-top {
   margin-top: 20px;
+}
+
+.before-submitting p {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.before-submitting a {
+    color: #333;
+    text-decoration: underline;
 }
 
 .radio-box {
