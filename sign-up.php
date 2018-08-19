@@ -115,7 +115,7 @@
                     </div>
 
                     <div class="before-submitting">
-                    <p>*By clicking on the Submit button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                    <p>*By clicking on the Register button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
                     </div>
 
                     <div class="submit-line-btn">
