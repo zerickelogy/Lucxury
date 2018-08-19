@@ -36,21 +36,22 @@
         <!-- only put content into main tag -->
 
         <main>
-            <?php // include ''; ?>
+            <?php // include './Webservices/do_customer_profile_signup.php'; ?>
             <div class="container signup-container container-header">
                 <h2>Sign Up</h2>
-                <form action="#" class="profile-form">
+                <form method="post" action="./Webservices/do_customer_profile_signup.php" class="profile-form">
                     <div class="edit-profile" id="top-form">
                         <div class="profile-fills">
                             <label>Email</label>
                             <input type="email" name="email" placeholder="Enter Email" id="enter-email" required>
-                            <div class="error error-email">Please enter a valid email address.</div>
+                            <div id="error-email" class="error error-email">Please enter a valid email address.</div>
                         </div>
 
                         <div class="profile-fills">
                             <label>Username</label>
-                            <input type="text" name="userid" placeholder="Enter Username" id="enter-username" required>
+                            <input type="text" name="username" placeholder="Enter Username" id="enter-username" required>
                             <div class="error"><span class="error">This field is required</span></div>
+                            <small id="error-username"></small>
                         </div>
 
 
@@ -160,13 +161,60 @@
                             url: "./Webservices/checkExistingEmail.php",
                             data: {email: emailToBeTested},
                             cache: false,
-                            dataType: "JSON",
+//                            dataType: "JSON",
                             success: function (response) {
-                                if (response == "no email found") {
+                                if (response == '"no email found"') {
                                     console.log(emailToBeTested + " is available.");
+
+                                    var input = $(this);
+                                    var span = $('.error-email')
+                                    input.removeClass("invalid").addClass("valid");
+                                    span.css("display", "block")
+                                    $("#error-email").text(emailToBeTested + " is available");
                                 } else {
-                                    var x = response[0];
                                     console.log("Sorry, " + emailToBeTested + " is taken.")
+
+                                    var input = $(this);
+                                    var span = $('.error-email')
+                                    input.removeClass("valid").addClass("invalid");
+                                    span.css("display", "block")
+                                    $("#error-email").text("Sorry, " + emailToBeTested + " is taken.");
+                                }
+                            },
+                            error: function (obj, textStatus, errorThrown) {
+                                console.log("Error " + textStatus + ": " + errorThrown);
+                                alert("fail to generate clicks");
+                            }
+                        });
+                    }
+                });
+
+                $('#enter-username').blur(function () {
+                    if ($(this).val()) {
+                        var usernameToBeTested = $(this).val();
+                        $.ajax({
+                            type: "GET",
+                            url: "./Webservices/checkExistingUsername.php",
+                            data: {username: usernameToBeTested},
+                            cache: false,
+//                            dataType: "JSON",
+                            success: function (response) {
+                                if (response == '"no username found"') {
+                                    console.log(usernameToBeTested + " is available.");
+
+                                    var input = $(this);
+                                    var span = $('.error-username')
+                                    input.removeClass("invalid").addClass("valid");
+                                    span.css("display", "block")
+                                    $("#error-username").text(usernameToBeTested + " is available");
+                                } else {
+                                    console.log("Sorry, " + usernameToBeTested + " is taken.")
+
+                                    var input = $(this);
+                                    var span = $('.error-username')
+                                    input.removeClass("valid").addClass("invalid");
+                                    span.css("display", "block")
+                                    $("#error-username").text("Sorry, " + usernameToBeTested + " is taken.");
                                 }
 
 
@@ -213,6 +261,7 @@
                         input.removeClass("invalid").addClass("valid");
                     } else {
                         input.removeClass("valid").addClass("invalid");
+                        $("#error-email").text("Please enter an email address");
                     }
                 });
 
@@ -228,6 +277,7 @@
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block")
+                        $("#error-email").text("Please enter an email address");
                     }
                 });
 

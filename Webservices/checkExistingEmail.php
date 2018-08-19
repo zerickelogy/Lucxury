@@ -18,6 +18,6 @@ if (isset($_GET["email"])) {
     if (isset($students)) {
         echo json_encode($students);
     } else {
-        echo json_encode("no email found");
+        echo json_encode('no email found');
     }
 };
