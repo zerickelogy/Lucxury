@@ -116,7 +116,7 @@
                     </div>
 
                     <div class="submit-line-btn">
-                        <button type="submit">submit <i class="fas fa-chevron-right"></i></button>
+                        <button type="submit">register <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </form>
             </div>
