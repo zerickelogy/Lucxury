@@ -59,13 +59,13 @@
 }
 
 .signup-container input[type=text]:valid, .signup-container input[type=password]:valid, .signup-container input[type=email]:valid{
-    border-bottom: 1px solid green;
-    color: green;
+    border-bottom: 1px solid #333;
+    color: #333;
 } 
 
 .signup-container input[type=text]:invalid, .signup-container input[type=password]:invalid, .signup-container input[type=email]:invalid{
-    border-bottom: 1px solid red;
-    color: red;
+    border-bottom: 1px solid #333;
+    color: #333;
 } 
 
 .error{

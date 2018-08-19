@@ -133,6 +133,8 @@
             $(document).ready(function () {
                 getAllCountries();
                 $("button[type=submit]").attr("disabled", "disabled");
+                $(".before-submitting").css("display", "none");
+                $(".submit-line-btn").css("display", "none");
 
                 function toggleSidebar() {
                     $(".button").toggleClass("active");
@@ -157,6 +159,7 @@
                     }
                 });
 
+
                 $('#enter-email').blur(function () {
                     if ($(this).val()) {
                         var emailToBeTested = $(this).val();
@@ -172,6 +175,7 @@
 
                                     var input = $(this);
                                     var span = $('.error-email')
+                                    
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-email").text(emailToBeTested + " is available");
@@ -275,7 +279,7 @@
 
                 $('#enter-email').on('input', function () {
                     var input = $(this);
-                    var span = $('.error-email')
+                    var span = $('.error-email');
                     var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
                     var is_email = re.test(input.val());
                     if (is_email) {
@@ -288,9 +292,47 @@
                     }
                 });
 
+                // $('#enter-password').on('input', function () {
+                //     var input = $(this);
+                //     var span = $('.error-password')
+                //     var pw = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W_]).*$/
+                //     // var test = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W_]).*$/
+                //     var is_password = pw.test(input.val());
+                //     if (is_password) {
+                //         // is_password.test(pw)
+                //         input.removeClass("invalid").addClass("valid");
+                //         span.css("display", "none");
+                //         $("#enter-password").css("border-bottom", "1px solid green").css("color","green");
+
+                //     } else {
+                //         input.removeClass("valid").addClass("invalid");
+                //         span.css("display", "block");
+                //         $("#enter-password").css("border-bottom", "1px solid red").css("color","red");
+                //         $(":input.password-padding").css("margin-bottom", "80px;");
+
+                //     }
+                // });
+
+                $('#reenter-password').on('input', function () {
+                   var input = $(this);
+                   var span = $('.error-repassword')
+                   var validate = $("#enter-password").val()
+                   var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+                   var is_repassword = pw.test(input.val());
+                   if (is_repassword) {
+                       input.removeClass("invalid").addClass("valid");
+                       span.css("display", "none");
+                       $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+                   } else {
+                       input.removeClass("valid").addClass("invalid");
+                       span.css("display", "block");
+                       $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+                   }
+               });
+
                 $('#enter-password').on('input', function () {
                     var input = $(this);
-                    var span = $('.error-password')
+                    var span = $('.error-password');
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
                     var is_password = pw.test(input.val());
                     console.log(input);
@@ -309,6 +351,15 @@
                     }
                 });
 
+                $("profile-fills").on(function() {
+                    if (":input").is(".valid") {
+                        $(".before-submitting").css("display", "block");
+                        $(".submit-line-btn").css("display", "block");
+                    } else {
+                        $(".before-submitting").css("display", "none");
+                        $(".submit-line-btn").css("display", "none");
+                    }
+                });
 //                $('#reenter-password').on('input', function () {
 //                    var input = $(this);
 //                    var span = $('.error-repassword')
