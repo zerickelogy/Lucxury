@@ -46,10 +46,10 @@
                     <input class="login-form-padding-top" type="password" id="lname" name="psw" placeholder="Enter Password">
                 </div>
 
-                <div class="login-options">
+                <!--><div class="login-options">
                     <div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>
                     <a href="sign-up.php" class="options-light">signup</a>
-                </div>
+                </div>-->
 
                 <div class="login-btn-container">
                     <button class="login-btn"><a href="#">Login <i class="fas fa-chevron-right"></i></a></button>
