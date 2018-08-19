@@ -39,7 +39,7 @@
         <!-- only put content into main tag -->
 
         <main>
-            <nav id="navigation-bar">
+            <!--<nav id="navigation-bar">
                 <div class="hamburger-menu nav-left hidden-xs">
                     <div class="button" id="btn">
                         <div class="top bar"></div>
@@ -60,7 +60,7 @@
             </div>
             
 
-            <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>
+            <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>-->
 
             <div id="myOverlay" class="overlay">
 
