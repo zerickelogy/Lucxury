@@ -183,8 +183,8 @@
                     <h5>Lucxury</h5>
                     <div class="footer-subitem">
                         <a href="#">Terms of Use</a><br/>
-                        <a href="#">Privacy Policy</a><br/>
-                        <a href="#">Contact Us</a><br/>
+                        <a href="privacy-policy.php">Privacy Policy</a><br/>
+                        <a href="https://lucxury.com/lucxury_wp/contact-us/">Contact Us</a><br/>
                     </div>
                 </div>
                 <div class="footer-item find-us">
