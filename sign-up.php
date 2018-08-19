@@ -63,7 +63,7 @@
                         <div class="profile-fills">
                             <label>Confirm Password</label>
                             <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password" id="reenter-password" required>
-                            <div class="error error-repassword">This field is required</div>
+                            <div class="error error-repassword">Please ensure the passwords match.</div>
                         </div>
                     </div>
 
@@ -132,9 +132,9 @@
         <script>
             $(document).ready(function () {
                 getAllCountries();
+                
+                var score = 0;
                 $("button[type=submit]").attr("disabled", "disabled");
-                $(".before-submitting").css("display", "none");
-                $(".submit-line-btn").css("display", "none");
 
                 function toggleSidebar() {
                     $(".button").toggleClass("active");
@@ -175,7 +175,7 @@
 
                                     var input = $(this);
                                     var span = $('.error-email')
-                                    
+
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-email").text(emailToBeTested + " is available");
@@ -266,16 +266,16 @@
         <script>
             $(document).ready(function () {
 
-                $('#enter-email').on('input', function () {
-                    var input = $(this);
-                    var is_name = input.val();
-                    if (is_name) {
-                        input.removeClass("invalid").addClass("valid");
-                    } else {
-                        input.removeClass("valid").addClass("invalid");
-                        $("#error-email").text("Please enter an email address");
-                    }
-                });
+//                $('#enter-email').on('input', function () {
+//                    var input = $(this);
+//                    var is_name = input.val();
+//                    if (is_name) {
+//                        input.removeClass("invalid").addClass("valid");
+//                    } else {
+//                        input.removeClass("valid").addClass("invalid");
+//                        $("#error-email").text("Please enter an email address");
+//                    }
+//                });
 
                 $('#enter-email').on('input', function () {
                     var input = $(this);
@@ -288,9 +288,62 @@
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block")
-                        $("#error-email").text("Please enter an email address");
+                        $("#error-email").text("Please enter a valid email address");
                     }
                 });
+
+
+
+                $('#reenter-password').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-repassword');
+                    if ($(this).val() == $('#enter-password').val()) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none");
+                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block");
+                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+                    }
+
+                });
+
+                $('#enter-password').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-password');
+                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+                    var is_password = pw.test(input.val());
+                    if (is_password && input.val().length > 8) {
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none");
+                        $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
+
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block");
+                        $("#enter-password").css("border-bottom", "1px solid red").css("color", "red");
+                        $(":input.password-padding").css("margin-bottom", "80px;");
+                        $("input[type=submit]").attr("disabled", "disabled");
+
+                    }
+                });
+
+
+//                    var input = $(this);
+//                    var span = $('.error-repassword')
+//                    var validate = $("#enter-password").val()
+//                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+//                    var is_repassword = pw.test(input.val());
+//                    if (is_repassword) {
+//                        input.removeClass("invalid").addClass("valid");
+//                        span.css("display", "none");
+//                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+//                    } else {
+//                        input.removeClass("valid").addClass("invalid");
+//                        span.css("display", "block");
+//                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+//                    }
 
                 // $('#enter-password').on('input', function () {
                 //     var input = $(this);
@@ -313,53 +366,15 @@
                 //     }
                 // });
 
-                $('#reenter-password').on('input', function () {
-                   var input = $(this);
-                   var span = $('.error-repassword')
-                   var validate = $("#enter-password").val()
-                   var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-                   var is_repassword = pw.test(input.val());
-                   if (is_repassword) {
-                       input.removeClass("invalid").addClass("valid");
-                       span.css("display", "none");
-                       $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
-                   } else {
-                       input.removeClass("valid").addClass("invalid");
-                       span.css("display", "block");
-                       $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
-                   }
-               });
-
-                $('#enter-password').on('input', function () {
-                    var input = $(this);
-                    var span = $('.error-password');
-                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-                    var is_password = pw.test(input.val());
-                    console.log(input);
-                    if (is_password && input.val().length > 8) {
-                        input.removeClass("invalid").addClass("valid");
-                        span.css("display", "none");
-                        $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
-
-                    } else {
-                        input.removeClass("valid").addClass("invalid");
-                        span.css("display", "block");
-                        $("#enter-password").css("border-bottom", "1px solid red").css("color", "red");
-                        $(":input.password-padding").css("margin-bottom", "80px;");
-                        $("input[type=submit]").attr("disabled", "disabled");
-
-                    }
-                });
-
-                $("profile-fills").on(function() {
-                    if (":input").is(".valid") {
-                        $(".before-submitting").css("display", "block");
-                        $(".submit-line-btn").css("display", "block");
-                    } else {
-                        $(".before-submitting").css("display", "none");
-                        $(".submit-line-btn").css("display", "none");
-                    }
-                });
+//                $("profile-fills").on(function() {
+//                    if (":input").is(".valid") {
+//                        $(".before-submitting").css("display", "block");
+//                        $(".submit-line-btn").css("display", "block");
+//                    } else {
+//                        $(".before-submitting").css("display", "none");
+//                        $(".submit-line-btn").css("display", "none");
+//                    }
+//                });
 //                $('#reenter-password').on('input', function () {
 //                    var input = $(this);
 //                    var span = $('.error-repassword')
