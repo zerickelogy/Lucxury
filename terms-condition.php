@@ -81,7 +81,7 @@
             </nav>
 
             <div class="container container-header terms-and-conditions">
-                <h2>Terms & Condition</h2>
+                <h2>Terms of Use</h2>
                 <div class="terms-container">
                     <ol>
                         <li><b>Terms of Use</b><br>
