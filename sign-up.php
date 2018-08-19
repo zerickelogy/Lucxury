@@ -293,8 +293,8 @@
                     var span = $('.error-password')
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
                     var is_password = pw.test(input.val());
-                    console.log(is_password);
-                    if (is_password) {
+                    console.log(input);
+                    if (is_password && input.val().length > 8) {
                         input.removeClass("invalid").addClass("valid");
                         span.css("display", "none");
                         $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
