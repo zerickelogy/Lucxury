@@ -41,9 +41,9 @@
             <form action="#" class="login-form">
                 <div class="login">
                     <!-- <label for="fname">Username</label> -->
-                    <input type="text" id="fname" name="userid" placeholder="Enter Username">
+                    <input type="text" name="userid" placeholder="Enter Username">
                     <!-- <label for="lname">Password</label> -->
-                    <input class="login-form-padding-top" type="password" id="lname" name="psw" placeholder="Enter Password">
+                    <input class="login-form-padding-top" type="password" name="psw" placeholder="Enter Password">
                 </div>
 
                 <div class="login-options">
@@ -75,11 +75,11 @@
                 <div class="modal-body">
                     <form action="#" class="forget-form">
                         <div class="forget">
-                            <label for="fname">Email</label>
-                            <input type="email" id="fname" name="email" placeholder="Enter Email">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter Email">
 
-                            <label for="fname">Username</label>
-                            <input type="text" id="fname" name="userid" placeholder="Enter Username">
+                            <label>Username</label>
+                            <input type="text" name="userid" placeholder="Enter Username">
                         </div>
 
                         <div class="forget-modal-btn-container">
