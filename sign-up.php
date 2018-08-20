@@ -222,7 +222,7 @@
                                     $("#enter-username").css("border-bottom", "1px solid green").css("color", "green");
                                     $('#submit').prop('disabled', false);
                                 } else {
-                                    console.log("Sorry, " + usernameToBeTested + " is taken.")
+                                    console.log("Sorry, " + usernameToBeTested + " is unavailable.")
 
                                     var input = $(this);
                                     var span = $('#error-username')
