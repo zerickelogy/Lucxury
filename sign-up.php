@@ -319,10 +319,12 @@
                         input.removeClass("invalid").addClass("valid");
                         span.css("display", "none");
                         $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+                        $('#submit').prop('disabled', false);
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block");
                         $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+                        $('#submit').prop('disabled', true);
                     }
 
                 });
