@@ -1707,6 +1707,7 @@ span#product-colour, span#product-condition {
 	    color: #333;
 	    margin-left: 0px;   
 	    float: left;
+	    width: 100%;
 	    /*float: left; */
 	}
 
