@@ -175,22 +175,25 @@
 
                                     var input = $(this);
                                     var span = $('.error-email')
-
+                                    var errorText = $('.error')
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-email").text(emailToBeTested + " is available");
                                     $("#enter-email").css("border-bottom", "1px solid green").css("color", "green");
                                     $('#submit').prop('disabled', false);
+                                    errorText.css("color", "green");
                                 } else {
                                     console.log("Sorry, " + emailToBeTested + " is taken.")
 
                                     var input = $(this);
                                     var span = $('.error-email')
+                                    var errorText = $('.error')
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
                                     $("#error-email").text("Sorry, " + emailToBeTested + " is taken.");
                                     $("#enter-email").css("border-bottom", "1px solid red").css("color", "red");
                                     $('#submit').prop('disabled', true);
+                                    errorText.css("color", "red");
                                 }
                             },
                             error: function (obj, textStatus, errorThrown) {
@@ -216,21 +219,25 @@
 
                                     var input = $(this);
                                     var span = $('#error-username')
+                                    var errorText = $('.error')
                                     input.removeClass("invalid").addClass("valid");
                                     span.css("display", "block")
                                     $("#error-username").text(usernameToBeTested + " is available");
                                     $("#enter-username").css("border-bottom", "1px solid green").css("color", "green");
+                                    errorText.css("color", "green");
                                     $('#submit').prop('disabled', false);
                                 } else {
                                     console.log("Sorry, " + usernameToBeTested + " is unavailable.")
 
                                     var input = $(this);
                                     var span = $('#error-username')
+                                    var errorText = $('.error')
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
                                     $("#error-username").text("Sorry, " + usernameToBeTested + " is taken.");
                                     $("#enter-username").css("border-bottom", "1px solid red").css("color", "red");
                                     $('#submit').prop('disabled', true);
+                                    errorText.css("color", "red");
                                 }
                             },
                             error: function (obj, textStatus, errorThrown) {

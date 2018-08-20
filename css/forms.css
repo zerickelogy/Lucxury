@@ -71,9 +71,8 @@
 .error{
     display: none;
     position: absolute;
-    
     font-size: 12px;
-    color: red;
+    /*color: red;*/
     /*margin-left: 10px;*/
 }  
 
@@ -94,7 +93,7 @@
 }
 
 .error_show{
-    color: red;
+    /*color: red;*/
     margin-left: 10px;
 }
 
