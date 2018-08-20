@@ -234,7 +234,7 @@
                                     var errorText = $('.error')
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
-                                    $("#error-username").text("Sorry, " + usernameToBeTested + " is taken.");
+                                    $("#error-username").text("Sorry, " + usernameToBeTested + " is unavailable.");
                                     $("#enter-username").css("border-bottom", "1px solid red").css("color", "red");
                                     $('#submit').prop('disabled', true);
                                     errorText.css("color", "red");
