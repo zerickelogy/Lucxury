@@ -37,13 +37,13 @@
         <div class="container login-container">
             <p>Welcome to</p>
             <img src="img/logo-colour.png">
-
-            <form action="#" class="login-form">
+            <?php // include ''; ?>
+            <form action="../Lucxury/Webservices/do_customer_profile_login.php" method="post" class="login-form">
                 <div class="login">
-                    <!-- <label for="fname">Username</label> -->
-                    <input type="text" id="fname" name="userid" placeholder="Enter Username">
-                    <!-- <label for="lname">Password</label> -->
-                    <input class="login-form-padding-top" type="password" id="lname" name="psw" placeholder="Enter Password">
+                     <!--<label for="username">Username</label>--> 
+                    <input type="text" id="username" name="username" placeholder="Enter Username">
+                     <!--<label for="password">Password</label>--> 
+                    <input id="password" class="login-form-padding-top" type="password" name="password" placeholder="Enter Password">
                 </div>
 
                 <div class="login-options">
@@ -51,8 +51,13 @@
                     <a href="sign-up.php" class="options-light">signup</a>
                 </div>
 
+                <div class="login-options">
+                    <!--<div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>-->
+                    <a id="forget-btn" href="#" class="options">Forget Password</a>
+                </div>
+
                 <div class="login-btn-container">
-                    <button class="login-btn"><a href="#">Login <i class="fas fa-chevron-right"></i></a></button>
+                    <button type="submit" class="login-btn"><a href="#">Login <i class="fas fa-chevron-right"></i></a></button>
                     <a href="#" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
                 </div>
             </form>
@@ -75,11 +80,11 @@
                 <div class="modal-body">
                     <form action="#" class="forget-form">
                         <div class="forget">
-                            <label for="fname">Email</label>
-                            <input type="email" id="fname" name="email" placeholder="Enter Email">
+                            <label for="email_forgetpass">Email</label>
+                            <input type="email" id="email_forgetpass" name="email" placeholder="Enter Email">
 
-                            <label for="fname">Username</label>
-                            <input type="text" id="fname" name="userid" placeholder="Enter Username">
+                            <label for="username_forgetpass">Username</label>
+                            <input type="text" id="username_forgetpass" name="userid" placeholder="Enter Username">
                         </div>
 
                         <div class="forget-modal-btn-container">
