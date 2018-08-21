@@ -51,11 +51,6 @@
                     <a href="sign-up.php" class="options-light">signup</a>
                 </div>
 
-                <div class="login-options">
-                    <div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>
-                    <a href="sign-up.php" class="options-light">signup</a>
-                </div>
-
                 <div class="login-btn-container">
                     <button type="submit" class="login-btn"><a href="#">Login <i class="fas fa-chevron-right"></i></a></button>
                     <a href="#" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
