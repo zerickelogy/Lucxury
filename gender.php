@@ -46,9 +46,16 @@ session_start();
     <script>
         $(document).ready(function () {
             $('#female').click(function () {
-                '<?php $_SESSION['username'] = "female"; ?>'
+                '<?php $_SESSION['gender'] = "female"; ?>'
+                console.log('<?php echo $_SESSION['gender']; ?>');
                 window.location.replace("./index.php");
             });
+        });
+
+        $('#female').click(function () {
+            '<?php $_SESSION['gender'] = "female"; ?>'
+            console.log('<?php echo $_SESSION['gender']; ?>');
+            window.location.replace("./index.php");
         });
 
 //        // Get the modal

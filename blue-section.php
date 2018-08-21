@@ -5,6 +5,12 @@ if (!isset($_SESSION['username'])) {
     
 }
 ?>
+<script>
+    $(document).ready(function(){
+        console.log('<?php echo $_SESSION['username']; ?>');
+    });
+
+</script>
 <div class="sidebar">
     <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, <?php echo $_SESSION["username"]; ?></a></div>
 
