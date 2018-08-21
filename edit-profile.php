@@ -46,11 +46,18 @@
             <h2>Edit Your Profile</h2>
             <form action="#" class="profile-form">
                 <div class="edit-profile" id="top-form">
-                    <label>User ID</label>
-                    <input type="text" name="userid" placeholder="Enter Username">
+                    <div class="profile-fills">
+                        <label>User ID</label>
+                        <input type="text" name="userid" placeholder="Enter Username" id="enter-username" required>
+                        <div class="error error-userid" id="error-profile-username">This field is required</div>
+                    </div>
 
-                    <label>Password</label>
-                    <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password">
+                    <div class="profile-fills">
+                        <label >Password</label>
+                        <input class="form-padding-btm" type="password" name="psw" placeholder="Enter Password" id="enter-password" required>
+                        <div class="error error-profile-password">Passwords are case sensitive and must contain: at least 8 characters, one number, one lowercase and one uppercase letter.</div>
+                    </div>
+
                 </div>
 
                 <h3>Personal Particulars</h3>
@@ -381,6 +388,184 @@
                     toggleSidebar();
                 }
             });
+
+            $('#enter-email').blur(function () {
+                    if ($(this).val()) {
+                        var emailToBeTested = $(this).val();
+                        $.ajax({
+                            type: "GET",
+                            url: "./Webservices/checkExistingEmail.php",
+                            data: {email: emailToBeTested},
+                            cache: false,
+//                            dataType: "JSON",
+                            success: function (response) {
+                                if (response == '"no email found"') {
+                                    console.log(emailToBeTested + " is available.");
+
+                                    var input = $(this);
+                                    var span = $('.error-email')
+                                    var errorText = $('.error')
+                                    input.removeClass("invalid").addClass("valid");
+                                    span.css("display", "block")
+                                    $("#error-email").text(emailToBeTested + " is available");
+                                    $("#enter-email").css("border-bottom", "1px solid green").css("color", "green");
+                                    $('#submit').prop('disabled', false);
+                                    errorText.css("color", "green");
+                                } else {
+                                    console.log("Sorry, " + emailToBeTested + " is unavailable.")
+
+                                    var input = $(this);
+                                    var span = $('.error-email')
+                                    var errorText = $('.error')
+                                    input.removeClass("valid").addClass("invalid");
+                                    span.css("display", "block")
+                                    $("#error-email").text("Sorry, " + emailToBeTested + " is unavailable.");
+                                    $("#enter-email").css("border-bottom", "1px solid red").css("color", "red");
+                                    $('#submit').prop('disabled', true);
+                                    errorText.css("color", "red");
+                                }
+                            },
+                            error: function (obj, textStatus, errorThrown) {
+                                console.log("Error " + textStatus + ": " + errorThrown);
+                                alert("fail to generate clicks");
+                            }
+                        });
+                    }
+                });
+
+                $('#enter-username').blur(function () {
+                    if ($(this).val()) {
+                        var usernameToBeTested = $(this).val();
+                        var span = $('.error-userid');
+                        $.ajax({
+                            type: "GET",
+                            url: "./Webservices/checkExistingUsername.php",
+                            data: {username: usernameToBeTested},
+                            cache: false,
+//                            dataType: "JSON",
+                            success: function (response) {
+                                if (response == '"no username found"') { //satisfies
+                                    console.log(usernameToBeTested + " is available.");
+
+                                    var input = $(this);
+                                    var span = $('#error-profile-username')
+                                    var errorText = $('.error')
+                                    input.removeClass("invalid").addClass("valid");
+                                    span.css("display", "block")
+                                    $("#error-profile-username").text(usernameToBeTested + " is available");
+                                    $("#enter-username").css("border-bottom", "1px solid green").css("color", "green");
+                                    errorText.css("color", "green");
+                                    span.css("top","85px");
+                                    $('#submit').prop('disabled', false);
+                                } else {
+                                    console.log("Sorry, " + usernameToBeTested + " is unavailable.")
+
+                                    var input = $(this);
+                                    var span = $('#error-profile-username')
+                                    var errorText = $('.error')
+                                    input.removeClass("valid").addClass("invalid");
+                                    span.css("display", "block")
+                                    $("#error-profile-username").text("Sorry, " + usernameToBeTested + " is unavailable.");
+                                    $("#enter-username").css("border-bottom", "1px solid red").css("color", "red");
+                                    $('#submit').prop('disabled', true);
+                                    errorText.css("color", "red");
+                                    span.css("top","85px");
+                                }
+                            },
+                            error: function (obj, textStatus, errorThrown) {
+                                console.log("Error " + textStatus + ": " + errorThrown);
+                                alert("fail to generate clicks");
+                            }
+                        });
+                    }
+                });
+
+                function getAllCountries() {
+                    $.ajax({
+                        type: "GET",
+                        url: "Webservices/getAllCountries.php",
+                        cache: false,
+                        dataType: "JSON",
+                        success: function (response) {
+
+                            for (var i = 0; i < response.length; i++) {
+                                var x = response[i]['country'];
+                                $("#countries_container").append('<option value="' + x + '">' + x + '</option>');
+                            }
+                        },
+                        error: function (obj, textStatus, errorThrown) {
+                            console.log("Error " + textStatus + ": " + errorThrown);
+                            alert("fail to generate clicks");
+                        }
+                    });
+                }
+
+
+                $('#enter-email').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-email');
+                    var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    var errorText = $('.error');
+                    var is_email = re.test(input.val());
+                    if (is_email) {
+                        input.removeClass("invalid").addClass("valid"); //satisfies
+                        span.css("display", "none");
+
+
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block")
+                        $("#error-email").text("Please enter a valid email address");
+
+
+                    }
+                });
+
+                $('#enter-password').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-profile-password');
+                    var errorText = $('.error');
+                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+                    var is_password = pw.test(input.val());
+                    if (is_password && input.val().length > 8) { //satisfies
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none");
+                        $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
+                        $('#submit').prop('disabled', false);
+                        errorText.css("color", "green");
+                        span.css("top","206px");
+
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block");
+                        $("#enter-password").css("border-bottom", "1px solid red").css("color", "red");
+                        $(":input.password-padding").css("margin-bottom", "80px;");
+                        $("input[type=submit]").attr("disabled", "disabled");
+                        $('#submit').prop('disabled', true);
+                        errorText.css("color", "red");
+                        span.css("top","206px");
+
+                    }
+                });
+
+                $('#reenter-password').on('input', function () {
+                    var input = $(this);
+                    var span = $('.error-repassword');
+                    if ($(this).val() == $('#enter-password').val()) { //satisfies
+                        input.removeClass("invalid").addClass("valid");
+                        span.css("display", "none");
+                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
+                        $('#submit').prop('disabled', false);
+                        errorText.css("color", "green");
+                    } else {
+                        input.removeClass("valid").addClass("invalid");
+                        span.css("display", "block");
+                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
+                        $('#submit').prop('disabled', true);
+                        errorText.css("color", "red");
+                    }
+
+                });
 
         });
 

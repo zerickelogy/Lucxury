@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="login-options">
-                    <!--<div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>-->
+                    <div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>
                     <a href="sign-up.php" class="options-light">signup</a>
                 </div>
 
@@ -80,11 +80,17 @@
                 <div class="modal-body">
                     <form action="#" class="forget-form">
                         <div class="forget">
-                            <label for="email_forgetpass">Email</label>
-                            <input type="email" id="email_forgetpass" name="email" placeholder="Enter Email">
+                            <div class="profile-fills">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Enter Email" id="enter-email" required>
+                                <div id="error-forget-email" class="error error-email-forget">Please enter a valid email address.</div>
+                            </div>
 
-                            <label for="username_forgetpass">Username</label>
-                            <input type="text" id="username_forgetpass" name="userid" placeholder="Enter Username">
+                            <div class="profile-fills">
+                                <label>Username</label>
+                                <input type="text" name="userid" placeholder="Enter Username" id="enter-username" required>
+                                <div class="error error-userid" id="error-profile-username">This field is required</div>
+                            </div>
                         </div>
 
                         <div class="forget-modal-btn-container">
@@ -122,6 +128,122 @@
                 modal.style.display = "none";
             }
         }
+
+        $('#enter-email').blur(function () {
+            if ($(this).val()) {
+                var emailToBeTested = $(this).val();
+                $.ajax({
+                    type: "GET",
+                    url: "./Webservices/checkExistingEmail.php",
+                    data: {email: emailToBeTested},
+                    cache: false,
+//                            dataType: "JSON",
+                    success: function (response) {
+                        if (response == '"no email found"') {
+                            console.log(emailToBeTested + " is available.");
+
+                            var input = $(this);
+                            var span = $('.error-email-forget')
+                            var errorText = $('.error')
+                            input.removeClass("invalid").addClass("valid");
+                            span.css("display", "block")
+                            $("#error-forget-email").text(emailToBeTested + " is available");
+                            $("#enter-email").css("border-bottom", "1px solid green").css("color", "green");
+                            $('#submit').prop('disabled', false);
+                            errorText.css("color", "green");
+                        } else {
+                            console.log("Sorry, " + emailToBeTested + " is unavailable.")
+
+                            var input = $(this);
+                            var span = $('.error-email-forget')
+                            var errorText = $('.error')
+                            input.removeClass("valid").addClass("invalid");
+                            span.css("display", "block")
+                            $("#error-forget-email").text("Sorry, " + emailToBeTested + " is unavailable.");
+                            $("#enter-email").css("border-bottom", "1px solid red").css("color", "red");
+                            $('#submit').prop('disabled', true);
+                            errorText.css("color", "red");
+                        }
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                        alert("fail to generate clicks");
+                    }
+                });
+            }
+        });
+
+        $('#enter-username').blur(function () {
+            if ($(this).val()) {
+                var usernameToBeTested = $(this).val();
+                var span = $('.error-userid');
+                $.ajax({
+                    type: "GET",
+                    url: "./Webservices/checkExistingUsername.php",
+                    data: {username: usernameToBeTested},
+                    cache: false,
+//                            dataType: "JSON",
+                    success: function (response) {
+                        if (response == '"no username found"') { //satisfies
+                            console.log(usernameToBeTested + " is available.");
+
+                            var input = $(this);
+                            var span = $('#error-profile-username')
+                            var errorText = $('.error')
+                            input.removeClass("invalid").addClass("valid");
+                            span.css("display", "block")
+                            $("#error-profile-username").text(usernameToBeTested + " is available");
+                            $("#enter-username").css("border-bottom", "1px solid green").css("color", "green");
+                            errorText.css("color", "green");
+                            span.css("top","75px");
+                            $('#submit').prop('disabled', false);
+                        } else {
+                            console.log("Sorry, " + usernameToBeTested + " is unavailable.")
+
+                            var input = $(this);
+                            var span = $('#error-profile-username')
+                            var errorText = $('.error')
+                            input.removeClass("valid").addClass("invalid");
+                            span.css("display", "block")
+                            $("#error-profile-username").text("Sorry, " + usernameToBeTested + " is unavailable.");
+                            $("#enter-username").css("border-bottom", "1px solid red").css("color", "red");
+                            $('#submit').prop('disabled', true);
+                            errorText.css("color", "red");
+                            span.css("top","75px");
+                        }
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                        alert("fail to generate clicks");
+                    }
+                });
+            }
+        });
+
+
+
+        $('#enter-email').on('input', function () {
+            var input = $(this);
+            var span = $('.error-email-forget');
+            var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var errorText = $('.error');
+            var is_email = re.test(input.val());
+            if (is_email) {
+                input.removeClass("invalid").addClass("valid"); //satisfies
+                span.css("display", "none");
+                span.css("top", "75px");
+
+
+            } else {
+                input.removeClass("valid").addClass("invalid");
+                span.css("display", "block")
+                $("#error-forget-email").text("Please enter a valid email address");
+                span.css("top", "75px");
+
+
+            }
+        });
+
 
 
     </script>

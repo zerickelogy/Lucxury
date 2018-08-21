@@ -1003,7 +1003,7 @@ a.options-light {
 .forget-modal-btn-container {
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 0px;
 	padding-bottom: 50px;
 }
 
@@ -1140,6 +1140,23 @@ span#product-colour, span#product-condition {
 
 .gender-container a {
 	color: #333;
+}
+
+.before-submitting-newsletter {
+	color: #273E7C;
+	opacity: 0.8;
+}
+
+.before-submitting-newsletter p {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.before-submitting-newsletter a {
+   	color: #273E7C;
+	opacity: 0.8;
+    text-decoration: underline;
 }
 
 /* navigation bar mobile responsiveness */
@@ -1707,6 +1724,7 @@ span#product-colour, span#product-condition {
 	    color: #333;
 	    margin-left: 0px;   
 	    float: left;
+	    width: 100%;
 	    /*float: left; */
 	}
 
