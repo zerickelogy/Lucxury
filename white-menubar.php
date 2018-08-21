@@ -1,3 +1,11 @@
+<script>
+    $(document).ready(function(){
+       if () {
+                   
+               } else {
+               } 
+    });
+</script>
 <nav id="navigation-bar">
     <div class="hamburger-menu nav-left hidden-xs">
         <div class="button" id="btn">
@@ -13,10 +21,10 @@
         <a href="#" class="cat-active">men</a>
         <a href="#">women</a>
     </div>
-
+<!--
     <div class="user-id user-nav">
         <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
-    </div>
+    </div>-->
 
     <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>
 
