@@ -108,13 +108,26 @@
             <div class="container email-newsletter">
                 <h3>New to us?</h3>
                 <h4>Join our community.</h4>
-                <form>
-                    <input type="text" name="email" placeholder="Enter Email"><br>
+                <form action="https://lucxury.us12.list-manage.com/subscribe/post?u=5e744d54c978e566fa533d954&amp;id=ceb70c82f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+
+                    <input type="text" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email"><br>
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
+
+                    <div class="before-submitting-newsletter">
+                        <p>*By clicking on the Register button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                    </div>
+
+                    <div class="btn-container email-btn">
+                        <button class="line-btn card-btn" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe <i class="fas fa-chevron-right"></i></button>
+                    </div>
                 </form>
 
-                <div class="btn-container email-btn">
-                    <button class="line-btn card-btn">subscribe <i class="fas fa-chevron-right"></i></button>
-                </div>
+                
             </div>
 
             <div class="container footer">
