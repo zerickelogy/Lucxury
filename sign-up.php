@@ -183,14 +183,14 @@
                                     $('#submit').prop('disabled', false);
                                     errorText.css("color", "green");
                                 } else {
-                                    console.log("Sorry, " + emailToBeTested + " is taken.")
+                                    console.log("Sorry, " + emailToBeTested + " is unavailable.")
 
                                     var input = $(this);
                                     var span = $('.error-email')
                                     var errorText = $('.error')
                                     input.removeClass("valid").addClass("invalid");
                                     span.css("display", "block")
-                                    $("#error-email").text("Sorry, " + emailToBeTested + " is taken.");
+                                    $("#error-email").text("Sorry, " + emailToBeTested + " is unavailable.");
                                     $("#enter-email").css("border-bottom", "1px solid red").css("color", "red");
                                     $('#submit').prop('disabled', true);
                                     errorText.css("color", "red");
@@ -283,6 +283,7 @@
                     var input = $(this);
                     var span = $('.error-email');
                     var re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    var errorText = $('.error');
                     var is_email = re.test(input.val());
                     if (is_email) {
                         input.removeClass("invalid").addClass("valid"); //satisfies
@@ -301,6 +302,7 @@
                 $('#enter-password').on('input', function () {
                     var input = $(this);
                     var span = $('.error-password');
+                    var errorText = $('.error');
                     var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
                     var is_password = pw.test(input.val());
                     if (is_password && input.val().length > 8) { //satisfies
@@ -308,6 +310,7 @@
                         span.css("display", "none");
                         $("#enter-password").css("border-bottom", "1px solid green").css("color", "green");
                         $('#submit').prop('disabled', false);
+                        errorText.css("color", "green");
 
                     } else {
                         input.removeClass("valid").addClass("invalid");
@@ -316,6 +319,7 @@
                         $(":input.password-padding").css("margin-bottom", "80px;");
                         $("input[type=submit]").attr("disabled", "disabled");
                         $('#submit').prop('disabled', true);
+                        errorText.css("color", "red");
                     }
                 });
 
@@ -327,11 +331,13 @@
                         span.css("display", "none");
                         $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
                         $('#submit').prop('disabled', false);
+                        errorText.css("color", "green");
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block");
                         $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
                         $('#submit').prop('disabled', true);
+                        errorText.css("color", "red");
                     }
 
                 });
