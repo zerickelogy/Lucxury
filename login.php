@@ -52,8 +52,8 @@
                 </div>
 
                 <div class="login-options">
-                    <!--<div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>-->
-                    <a id="forget-btn" href="#" class="options">Forget Password</a>
+                    <div id="forget-btn"><a href="javascript:void(0);">forget password</a></div>
+                    <a href="sign-up.php" class="options-light">signup</a>
                 </div>
 
                 <div class="login-btn-container">
