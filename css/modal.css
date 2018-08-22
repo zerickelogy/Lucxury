@@ -15,7 +15,7 @@
 /* Modal Content/Box */
 .modal-content {
     position: absolute;
-    background-color: #eee;
+    background-color: #fff;
     margin: 10vh auto 0 auto;
     left: 0;
     right: 0;
@@ -52,7 +52,7 @@
 
 .modal h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 22px;
     margin-top: 40px;
     text-align: center;
 }
@@ -63,7 +63,7 @@
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .modal a {
@@ -97,14 +97,21 @@
 }
 
 .QR-container {
-    width: 50%;
-    margin: 40px auto 0px auto;
+    width: 60%;
+    margin: 00px auto 0px auto;
     padding-bottom: 80px;
 }
 
 .QR-container img {
     width: 100%;
 }
+
+.QR-container h4 {
+	font-size: 16px;
+	margin-top: -40px;
+}
+
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -131,10 +138,23 @@
     to {top: 0; opacity: 1}
 }
 
+@media (max-width: 1049px) {
+    .modal-content {
+        width: 70%;
+    }
+    .QR-container h4 {
+		margin-top: -30px;
+	}
+}
+
+
 @media (max-width: 1000px) {
     .modal-content {
         width: 60%;
     }
+    .QR-container h4 {
+		margin-top: -20px;
+	}
 }
 
 @media (max-width: 420px) {
@@ -144,4 +164,10 @@
         overflow-y: scroll;
         max-height: 85vh;
     }
+
+    .QR-container {
+	    width: 85%;
+	    margin: 0px auto 0px auto;
+	    padding-bottom: 10px;
+	}
 }

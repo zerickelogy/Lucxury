@@ -1159,6 +1159,18 @@ span#product-colour, span#product-condition {
     text-decoration: underline;
 }
 
+.promotion-terms p {
+    font-size: 10px;
+    text-align: center;
+    /*padding-top: 50px;*/
+}
+
+.promotion-terms a {
+   	color: #273E7C;
+	opacity: 0.8;
+    text-decoration: underline;
+}
+
 /* navigation bar mobile responsiveness */
 
 

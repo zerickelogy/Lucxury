@@ -50,7 +50,7 @@
                         <img src="img/merchant-card1.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off H2Hub watches</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <img src="img/merchant-card2.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off 51Label shoes</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <img src="img/merchant-card3.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off The Bespoke Club suits</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -116,14 +116,17 @@
                         <img src="img/h2-hub-logo.png">
                     </div>
 
-                    <h3>[Title]</h3>
+                    <h3>5% off H2Hub watches</h3>
                     <h4>Scan the QR Code below:</h4>
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/QR-code.png">
+                        <img src="img/qr/h2hub-qrcode.png">
+                        <h4>Promo Code: <u>h2hub-5</u></h4>
+                        <div class="promotion-terms">
+                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -136,14 +139,17 @@
                         <img src="img/pedro-logo.png">
                     </div>
 
-                    <h3>[Title]</h3>
+                    <h3>5% off 51Label</h3>
                     <h4>Scan the QR Code below:</h4>
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/QR-code.png">
+                        <img src="img/qr/51label-qrcode.png">
+                        <h4>Promo Code: <u>51label-5</u></h4>
+                        <div class="promotion-terms">
+                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -156,12 +162,16 @@
                         <img src="img/ralph-lauren-logo.png">
                     </div>
 
-                    <h3>[Title]</h3>
+                    <h3>5% off The Bespoke Club</h3>
                     <h4>Scan the QR Code below:</h4>
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/QR-code.png">
+                        <img src="img/qr/tbc-qrcode.png">
+                        <h4>Promo Code: <u>tbc-5</u></h4>
+                        <div class="promotion-terms">
+                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        </div>
                     </div>
 
                 </div>
