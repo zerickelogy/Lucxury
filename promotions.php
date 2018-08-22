@@ -124,7 +124,7 @@
                         <img src="img/qr/h2hub-qrcode.png">
                         <h4>Promo Code: <u>h2hub-5</u></h4>
                         <div class="promotion-terms">
-                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         <img src="img/qr/51label-qrcode.png">
                         <h4>Promo Code: <u>51label-5</u></h4>
                         <div class="promotion-terms">
-                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                         <img src="img/qr/tbc-qrcode.png">
                         <h4>Promo Code: <u>tbc-5</u></h4>
                         <div class="promotion-terms">
-                            <p>*By scanning you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
                     </div>
 
