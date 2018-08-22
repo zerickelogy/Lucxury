@@ -12,16 +12,16 @@ if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_array($result);
     $_SESSION["username"] = $row['username'];
     $msg = "<img src='../img/WebsiteStatusImages/loadingImage.jpg'>";
+    header("refresh:3;url=../gender.php");
 } else {
     $msg = "<img src='../img/WebsiteStatusImages/wrongUserOrPass.jpg'>";
+    header("refresh:3;url=../login.php");
 }
 //include '';
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="2; URL=../gender.php">
-        <meta name="keywords" content="automatic redirection">
         <title></title>
         <style>
             img {
