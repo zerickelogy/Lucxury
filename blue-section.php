@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 if (!isset($_SESSION['username'])) {
 //    header('Location: ./login.php');
     
@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 ?>
 <script>
     $(document).ready(function(){
-        console.log('<?php echo $_SESSION['username']; ?>');
+        //console.log('<?php //echo $_SESSION['username']; ?>');
     });
 
 </script>

@@ -1,8 +1,15 @@
+<?php // session_start(); ?>
 <script>
     $(document).ready(function () {
-        if (<?php $_SESSION['username'] ?> == "female") {
-            var x = $('#')
-        } else {
+        console.log('<?php echo $_SESSION["gender"] ?>')
+
+        if ('<?php echo $_SESSION["gender"] ?>' == "male") {
+            $('#men').attr('class', 'cat-active');
+            $('#women').removeClass('class');
+
+        } else if ('<?php echo $_SESSION["gender"] ?>' == "female") {
+            $('#women').attr('class', 'cat-active');
+            $('#men').removeClass('class');
         }
     });</script>
 <nav id="navigation-bar">
@@ -17,7 +24,7 @@
     <div id="logo"><a href="https://www.lucxury.com/"><img id="logo-img" src="img/logo-black.png"></a></div>
 
     <div id="men-women">
-        <a id="men" href="#" class="cat-active">men</a>
+        <a id="men" href="#">men</a>
         <a id="women" href="#">women</a>
     </div>
     <!--

@@ -37,7 +37,6 @@
         <div class="container login-container">
             <p>Welcome to</p>
             <img src="img/logo-colour.png">
-            <?php // include ''; ?>
             <form action="../Lucxury/Webservices/do_customer_profile_login.php" method="post" class="login-form">
                 <div class="login">
                      <!--<label for="username">Username</label>--> 

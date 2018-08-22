@@ -1,7 +1,7 @@
-<!doctype html>
 <?php
 session_start();
 ?>
+<!doctype html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,7 +9,7 @@ session_start();
     <title>Lucxury</title>
     <meta name="description" content="Welcome to Lucxury.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -45,18 +45,22 @@ session_start();
 
     <script>
         $(document).ready(function () {
+            console.log('<?php // echo $_SESSION["gender"]; ?>');
+
             $('#female').click(function () {
-                '<?php $_SESSION['gender'] = "female"; ?>'
-                console.log('<?php echo $_SESSION['gender']; ?>');
+                '<?php echo $_SESSION["gender"] = "female"; ?>'
+                console.log('<?php echo $_SESSION["gender"]; ?>');
                 window.location.replace("./index.php");
             });
+
+            $('#male').click(function () {
+                <?php $_SESSION["gender"] = "male"; ?>
+                console.log('<?php echo $_SESSION['gender']; ?>');
+//                window.location.replace("./index.php");
+            });
+
         });
 
-        $('#male').click(function () {
-            '<?php $_SESSION['gender'] = "male"; ?>'
-            console.log('<?php echo $_SESSION['gender']; ?>');
-            window.location.replace("./index.php");
-        });
 
 //        // Get the modal
 //        var modal = document.getElementById("modalForget");
