@@ -92,55 +92,57 @@
             </div>
         </div>
 
-            <div class="container email-newsletter">
-                <h3>New to us?</h3>
-                <h4>Join our community.</h4>
-                <form action="https://lucxury.us12.list-manage.com/subscribe/post?u=5e744d54c978e566fa533d954&amp;id=ceb70c82f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
+        <div class="container email-newsletter">
+            <h3>New to us?</h3>
+            <h4>Join our community.</h4>
+            <form action="https://lucxury.us12.list-manage.com/subscribe/post?u=5e744d54c978e566fa533d954&amp;id=ceb70c82f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
 
-                    <input type="text" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email"><br>
+                <input type="text" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email"><br>
 
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
 
-                    <div class="before-submitting-newsletter">
-                        <p>*By clicking on the subscribe button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
-                    </div>
-
-                    <div class="btn-container email-btn">
-                        <button class="line-btn card-btn" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe <i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </form>
-
-                
-            </div>
-            <div class="footer-item my-account">
-                <h5>My Account</h5>
-                <div class="footer-subitem">
-                    <a href="edit-profile.html">Edit Your Details</a><br/>
-                    <a href="#">Forget Password</a><br/>
+                <div class="before-submitting-newsletter">
+                    <p>*By clicking on the subscribe button you agree to our <a href="terms-condition.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
                 </div>
-            </div>
-            <div class="footer-item lucxury">
-                <h5>Lucxury</h5>
-                <div class="footer-subitem">
-                    <a href="#">Terms of Use</a><br/>
-                    <a href="#">Privacy Policy</a><br/>
-                    <a href="#">Contact Us</a><br/>
+
+                <div class="btn-container email-btn">
+                    <button class="line-btn card-btn" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">subscribe <i class="fas fa-chevron-right"></i></button>
                 </div>
-            </div>
-            <div class="footer-item find-us">
-                <h5>Find Us</h5>
-                <div class="footer-subitem">
-                    <a href="https://www.facebook.com/lucxuryglobal" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com/lucxuryglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/lucxuryglobal" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCeGiwGkYZ9p8kxj8YwN4fIw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
-                </div>
+            </form>
+
+
+        </div>
+        
+        
+        <div class="footer-item my-account">
+            <h5>My Account</h5>
+            <div class="footer-subitem">
+                <a href="edit-profile.html">Edit Your Details</a><br/>
+                <a href="#">Forget Password</a><br/>
             </div>
         </div>
+        <div class="footer-item lucxury">
+            <h5>Lucxury</h5>
+            <div class="footer-subitem">
+                <a href="#">Terms of Use</a><br/>
+                <a href="#">Privacy Policy</a><br/>
+                <a href="#">Contact Us</a><br/>
+            </div>
+        </div>
+        <div class="footer-item find-us">
+            <h5>Find Us</h5>
+            <div class="footer-subitem">
+                <a href="https://www.facebook.com/lucxuryglobal" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/lucxuryglobal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/lucxuryglobal" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCeGiwGkYZ9p8kxj8YwN4fIw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
 
         <div class="container footer-credits">
             <p id="credits-left">© 2018 Lucxury</p>

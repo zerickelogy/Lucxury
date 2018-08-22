@@ -1,17 +1,10 @@
-<?php // session_start(); ?>
+<?php // session_start();   ?>
 <script>
     $(document).ready(function () {
-        console.log('<?php echo $_SESSION["gender"] ?>')
+        console.log('<?php echo $_SESSION["gender"]; ?>')
 
-        if ('<?php echo $_SESSION["gender"] ?>' == "male") {
-            $('#men').attr('class', 'cat-active');
-            $('#women').removeClass('class');
-
-        } else if ('<?php echo $_SESSION["gender"] ?>' == "female") {
-            $('#women').attr('class', 'cat-active');
-            $('#men').removeClass('class');
-        }
-    });</script>
+    });
+</script>
 <nav id="navigation-bar">
     <div class="hamburger-menu nav-left hidden-xs">
         <div class="button" id="btn">

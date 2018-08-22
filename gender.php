@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION["gender"] = "female";
 ?>
 <!doctype html>
 <head>
@@ -19,6 +20,7 @@ session_start();
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-scrollto.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>-->
 
 </head>
 
@@ -39,18 +41,18 @@ session_start();
     <main>
         <div class="container gender-container">
             <a href="#"><div id="male" class="split male"><p>male</p></div></a>
-            <a href="#"><div id="female" class="split female"><p>female</p></div></a>
+            <div id="female" class="split female"><p>female</p></div>
         </div>
     </main>
 
     <script>
         $(document).ready(function () {
-            console.log('<?php // echo $_SESSION["gender"]; ?>');
+            console.log('<?php echo $_SESSION["gender"]; ?>');
 
             $('#female').click(function () {
-                '<?php echo $_SESSION["gender"] = "female"; ?>'
+                
                 console.log('<?php echo $_SESSION["gender"]; ?>');
-                window.location.replace("./index.php");
+//                window.location.href = "./index.php";
             });
 
             $('#male').click(function () {
