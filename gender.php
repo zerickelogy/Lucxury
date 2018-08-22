@@ -52,8 +52,8 @@ session_start();
             });
         });
 
-        $('#female').click(function () {
-            '<?php $_SESSION['gender'] = "female"; ?>'
+        $('#male').click(function () {
+            '<?php $_SESSION['gender'] = "male"; ?>'
             console.log('<?php echo $_SESSION['gender']; ?>');
             window.location.replace("./index.php");
         });

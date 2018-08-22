@@ -1,9 +1,9 @@
 <script>
-    $(document).ready(function(){
-    if (<?php $_SESSION['username'] ?> == "female") {
-var x = $('#')
-    } else {
-    }
+    $(document).ready(function () {
+        if (<?php $_SESSION['username'] ?> == "female") {
+            var x = $('#')
+        } else {
+        }
     });</script>
 <nav id="navigation-bar">
     <div class="hamburger-menu nav-left hidden-xs">
