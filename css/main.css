@@ -1435,6 +1435,8 @@ span#product-colour, span#product-condition {
 		width: 46%;
 		padding: 2%;
 		float: left;
+		max-height: 30vh;
+        height: 30vh;
 	}
 
 	.product-card-container {

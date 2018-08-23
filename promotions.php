@@ -80,24 +80,54 @@
                         <img src="img/merchant-card4.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
 
                 <div class="promo-card"  id="modal-5">
                     <div class="promo-img">
-                        <img src="img/merchant-card4.png">
+                        <img src="img/merchant-card5.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
 
                 <div class="promo-card"  id="modal-6">
                     <div class="promo-img">
-                        <img src="img/merchant-card4.png">
+                        <img src="img/merchant-card6.png">
+                    </div>
+                    <div class="promo-des">
+                        <h3>5% off</h3>
+                        <h4>Click for QR Code</h4>
+                    </div>
+                </div>
+
+                <div class="promo-card"  id="modal-7">
+                    <div class="promo-img">
+                        <img src="img/merchant-card7.png">
+                    </div>
+                    <div class="promo-des">
+                        <h3>5% off</h3>
+                        <h4>Click for QR Code</h4>
+                    </div>
+                </div>
+
+                <div class="promo-card"  id="modal-8">
+                    <div class="promo-img">
+                        <img src="img/merchant-card8.png">
+                    </div>
+                    <div class="promo-des">
+                        <h3>5% off</h3>
+                        <h4>Click for QR Code</h4>
+                    </div>
+                </div>
+
+                <div class="promo-card"  id="modal-9">
+                    <div class="promo-img">
+                        <img src="img/merchant-card9.png">
                     </div>
                     <div class="promo-des">
                         <h3>[Title]</h3>
@@ -112,9 +142,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close1">&times;</span>
-                    <div class="modal-logo-image">
-                        <img src="img/h2-hub-logo.png">
-                    </div>
 
                     <h3>5% off H2Hub watches</h3>
                     <h4>Scan the QR Code below:</h4>
@@ -122,7 +149,7 @@
                 <div class="modal-body">
                     <div class="QR-container">
                         <img src="img/qr/h2hub-qrcode.png">
-                        <h4>Promo Code: <u>h2hub-5</u></h4>
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -135,9 +162,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close2">&times;</span>
-                    <div class="modal-logo-image">
-                        <img src="img/pedro-logo.png">
-                    </div>
 
                     <h3>5% off 51Label</h3>
                     <h4>Scan the QR Code below:</h4>
@@ -145,7 +169,7 @@
                 <div class="modal-body">
                     <div class="QR-container">
                         <img src="img/qr/51label-qrcode.png">
-                        <h4>Promo Code: <u>51label-5</u></h4>
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -158,9 +182,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close3">&times;</span>
-                    <div class="modal-logo-image">
-                        <img src="img/ralph-lauren-logo.png">
-                    </div>
 
                     <h3>5% off The Bespoke Club</h3>
                     <h4>Scan the QR Code below:</h4>
@@ -168,7 +189,7 @@
                 <div class="modal-body">
                     <div class="QR-container">
                         <img src="img/qr/tbc-qrcode.png">
-                        <h4>Promo Code: <u>tbc-5</u></h4>
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -182,16 +203,127 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close4">&times;</span>
-                    <div class="modal-logo-image">
-                        <img src="img/h2-hub-logo.png">
-                    </div>
 
-                    <h3>[Title]</h3>
+                    <h3>Dorcas Stitch</h3>
                     <h4>Scan the QR Code below:</h4>
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/QR-code.png">
+                        <img src="img/qr/ds-qrcode.png">
+                        <!-- <h4>Promo Code: <u>ds-5</u></h4> -->
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close5">&times;</span>
+
+                    <h3>Foundation Jewellers</h3>
+                    <h4>Scan the QR Code below:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="QR-container">
+                        <img src="img/qr/foundation-qrcode.png">
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close6">&times;</span>
+
+                    <h3>Heritage Gems</h3>
+                    <h4>Scan the QR Code below:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="QR-container">
+                        <img src="img/qr/hg-qrcode.png">
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close7">&times;</span>
+
+                    <h3>Mr. G</h3>
+                    <h4>Scan the QR Code below:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="QR-container">
+                        <img src="img/qr/mrg-qrcode.png">
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close8">&times;</span>
+                    <div class="modal-logo-image">
+                        <img src="img/h2-hub-logo.png">
+                    </div>
+
+                    <h3>Faire Leather Co.</h3>
+                    <h4>Scan the QR Code below:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="QR-container">
+                        <img src="img/qr/faire-qrcode.png">
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" id="close9">&times;</span>
+                    <div class="modal-logo-image">
+                        <img src="img/h2-hub-logo.png">
+                    </div>
+
+                    <h3>Tocco Toscano</h3>
+                    <h4>Scan the QR Code below:</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="QR-container">
+                        <img src="img/qr/tt-qrcode.png">
+                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <div class="promotion-terms">
+                            <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
+                        </div>
                     </div>
 
                 </div>
@@ -246,6 +378,9 @@
         var modal4 = document.getElementById("modal4");
         var modal5 = document.getElementById("modal5");
         var modal6 = document.getElementById("modal6");
+        var modal7 = document.getElementById("modal7");
+        var modal8 = document.getElementById("modal8");
+        var modal9 = document.getElementById("modal9");
 
         // Get the button that opens the modal
         var btn1 = document.getElementById("modal-1");
@@ -254,6 +389,9 @@
         var btn4 = document.getElementById("modal-4");
         var btn5 = document.getElementById("modal-5");
         var btn6 = document.getElementById("modal-6");
+        var btn7 = document.getElementById("modal-7");
+        var btn8 = document.getElementById("modal-8");
+        var btn9 = document.getElementById("modal-9");
 
         // Get the <span> element that closes the modal
         var span1 = document.getElementById("close1");
@@ -262,6 +400,9 @@
         var span4 = document.getElementById("close4");
         var span5 = document.getElementById("close5");
         var span6 = document.getElementById("close6");
+        var span7 = document.getElementById("close7");
+        var span8 = document.getElementById("close8");
+        var span9 = document.getElementById("close9");
 
         // When the user clicks on the button, open the modal 
         btn1.onclick = function () {
@@ -281,6 +422,15 @@
         }
         btn6.onclick = function () {
             modal6.style.display = "block";
+        }
+        btn7.onclick = function () {
+            modal7.style.display = "block";
+        }
+        btn8.onclick = function () {
+            modal8.style.display = "block";
+        }
+        btn9.onclick = function () {
+            modal9.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
@@ -303,6 +453,15 @@
         span6.onclick = function () {
             modal6.style.display = "none";
         }
+        span7.onclick = function () {
+            modal7.style.display = "none";
+        }
+        span8.onclick = function () {
+            modal8.style.display = "none";
+        }
+        span9.onclick = function () {
+            modal9.style.display = "none";
+        }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
@@ -323,6 +482,15 @@
             }
             if (event.target == modal6) {
                 modal6.style.display = "none";
+            }
+            if (event.target == modal7) {
+                modal7.style.display = "none";
+            }
+            if (event.target == modal8) {
+                modal8.style.display = "none";
+            }
+            if (event.target == modal9) {
+                modal9.style.display = "none";
             }
         }
 
