@@ -1,10 +1,3 @@
-<?php // session_start();   ?>
-<script>
-    $(document).ready(function () {
-        console.log('<?php echo $_SESSION["gender"]; ?>')
-
-    });
-</script>
 <nav id="navigation-bar">
     <div class="hamburger-menu nav-left hidden-xs">
         <div class="button" id="btn">
@@ -14,16 +7,16 @@
         </div>
     </div>
 
-    <div id="logo"><a href="https://www.lucxury.com/"><img id="logo-img" src="img/logo-black.png"></a></div>
+    <div id="logo"><a href="index.php"><img id="logo-img" src="img/logo-black.png"></a></div>
 
     <div id="men-women">
-        <a id="men" href="#">men</a>
-        <a id="women" href="#">women</a>
+        <a href="#" class="cat-active">men</a>
+        <a href="#">women</a>
     </div>
-    <!--
-        <div class="user-id user-nav">
-            <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
-        </div>-->
+
+<!--    <div class="user-id user-nav">
+        <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
+    </div>-->
 
     <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>
 

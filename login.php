@@ -72,7 +72,8 @@
                     <p>Don’t worry. We’re here to help.</p>
                 </div>
                 <div class="modal-body">
-                    <form action="#" class="forget-form">
+                    <?php include ''; ?>
+                    <form action="./Webservices/do_forget_password.php" method="post" class="forget-form">
                         <div class="forget">
                             <div class="profile-fills">
                                 <label>Email</label>

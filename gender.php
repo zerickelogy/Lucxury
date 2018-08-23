@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION["gender"] = "female";
 ?>
 <!doctype html>
 <head>
@@ -10,7 +9,7 @@ $_SESSION["gender"] = "female";
     <title>Lucxury</title>
     <meta name="description" content="Welcome to Lucxury.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -41,24 +40,48 @@ $_SESSION["gender"] = "female";
     <main>
         <div class="container gender-container">
             <a href="#"><div id="male" class="split male"><p>male</p></div></a>
-            <div id="female" class="split female"><p>female</p></div>
+            <a href="#"><div id="female" class="split female"><p>female</p></div></a>
         </div>
     </main>
 
     <script>
         $(document).ready(function () {
-            console.log('<?php echo $_SESSION["gender"]; ?>');
+//            console.log('<?php // echo $_SESSION["gender"]; ?>');
 
             $('#female').click(function () {
-                
-                console.log('<?php echo $_SESSION["gender"]; ?>');
-//                window.location.href = "./index.php";
+                $.ajax({
+                    type: "GET",
+                    url: "./Webservices/sessionController.php",
+                    data: {gender: "female"},
+                    cache: false,
+//                    dataType: "JSON",
+                    success: function (response) {
+                        console.log(response);
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                    }
+                });
+                console.log('<?php // echo $_SESSION["gender"]; ?>');
+                window.location.href = "./index.php";
             });
 
             $('#male').click(function () {
-                <?php $_SESSION["gender"] = "male"; ?>
-                console.log('<?php echo $_SESSION['gender']; ?>');
-//                window.location.replace("./index.php");
+                $.ajax({
+                    type: "GET",
+                    url: "./Webservices/sessionController.php",
+                    data: {gender: "male"},
+                    cache: false,
+//                    dataType: "JSON",
+                    success: function (response) {
+                        console.log(response);
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                    }
+                });
+                console.log('<?php // echo $_SESSION["gender"]; ?>');
+                window.location.href = "./index.php";
             });
 
         });

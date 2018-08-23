@@ -7,7 +7,7 @@
     <title>Lucxury</title>
     <meta name="description" content="Welcome to Lucxury.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -23,7 +23,7 @@
 
     <!-- start of navigation bar  -->
 
-    <!-- <div class="hamburger-menu nav-left visible-xs">
+<!--     <div class="hamburger-menu nav-left visible-xs">
         <div class="button" id="btn">
             <div class="top bar"></div>
             <div class="middle bar"></div>
