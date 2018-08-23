@@ -1151,6 +1151,8 @@ span#product-colour, span#product-condition {
     font-size: 10px;
     text-align: center;
     padding-top: 50px;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .before-submitting-newsletter a {
