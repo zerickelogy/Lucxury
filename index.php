@@ -158,7 +158,7 @@
 
     <script>
         $(document).ready(function () {
-
+console.log('<?php echo $_SESSION['user_id']; ?>')
             function toggleSidebar() {
                 $(".button").toggleClass("active");
                 $("main").toggleClass("move-to-right");
