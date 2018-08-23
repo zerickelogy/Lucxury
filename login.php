@@ -52,7 +52,7 @@
 
                 <div class="login-btn-container">
                     <button type="submit" class="login-btn"><a href="#">Login <i class="fas fa-chevron-right"></i></a></button>
-                    <a href="#" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
+                    <a href="https://www.lucxury.com/merchant_dashboard_login.php" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
                 </div>
             </form>
 
@@ -72,24 +72,23 @@
                     <p>Don’t worry. We’re here to help.</p>
                 </div>
                 <div class="modal-body">
-                    <?php include ''; ?>
                     <form action="./Webservices/do_forget_password.php" method="post" class="forget-form">
                         <div class="forget">
                             <div class="profile-fills">
                                 <label>Email</label>
-                                <input type="email" name="email" placeholder="Enter Email" id="enter-email" required>
+                                <input type="email" name="email" placeholder="Enter Email" id="enter-email2" required>
                                 <div id="error-forget-email" class="error error-email-forget">Please enter a valid email address.</div>
                             </div>
 
                             <div class="profile-fills">
                                 <label>Username</label>
-                                <input type="text" name="userid" placeholder="Enter Username" id="enter-username" required>
+                                <input type="text" name="username" placeholder="Enter Username" id="enter-username2" required>
                                 <div class="error error-userid" id="error-profile-username">This field is required</div>
                             </div>
                         </div>
 
                         <div class="forget-modal-btn-container">
-                            <button class="line-btn forget-modal-btn"><a href="categories.html">Submit <i class="fas fa-chevron-right"></i></a></button>
+                            <button type="submit" class="line-btn forget-modal-btn"><a href="#">Submit <i class="fas fa-chevron-right"></i></a></button>
                         </div>
                     </form>
                 </div>

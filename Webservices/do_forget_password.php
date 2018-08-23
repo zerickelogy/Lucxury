@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include './Webservices/dbconn.php';
+include './dbconn.php';
 $email = $_POST["email"];
 $username = $_POST["username"];
 $query = "select * from `user` where `email` = '$email' and `username` = '$username'";
@@ -32,12 +32,12 @@ if (mysqli_num_rows($result) > 0) {
 } else {
     $msgForWebsite = "sorry, invalid credentials";
     $msgForWebsite = "<img src='https://cdn-images-1.medium.com/max/1600/1*CRjVBCcjUf2ZHhix9tWEIA.jpeg'>";
-}
+} 
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="2;url=http://www.lucxury.com/login_page.php" />
+        <meta http-equiv="refresh" content="2;url=../login.php" />
         <title></title>
     </head>
     <body>
