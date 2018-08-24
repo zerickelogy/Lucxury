@@ -38,7 +38,13 @@ if (mysqli_num_rows($result) > 0) {
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="refresh" content="2;url=../login.php" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title></title>
+        <script>
+        $(document).ready(function(){
+           alert('<?php echo $msgForWebsite; ?>'); 
+        });
+        </script>
     </head>
     <body>
         <?php

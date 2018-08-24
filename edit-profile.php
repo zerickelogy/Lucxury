@@ -162,7 +162,7 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
 
                     <div class="submit-line-btn">
-                        <button id="submit" type="submit">register <i class="fas fa-chevron-right"></i></button>
+                        <button id="submit" type="submit">update <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </form>
             </div>
