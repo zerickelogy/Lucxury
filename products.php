@@ -1,6 +1,7 @@
 <!doctype html>
 <?php
 session_start();
+$search_item = $_POST['search_item'];
 ?>
 <head>
     <meta charset="utf-8">
@@ -25,7 +26,7 @@ session_start();
 
     <!--start of glenns script-->
     <script>
-        var search_global = "";
+        var search_global = "<?php echo $search_item; ?>";
         var priceSort_global = "";
         var brand_global = "";
         var color_global = "";

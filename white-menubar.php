@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
         </span>
 
         <div class="overlay-content" method="post">
-            <form action="products.php">
+            <form method="post" action="products.php">
                 <input name="search_item" type="text" placeholder="Search for products...">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
