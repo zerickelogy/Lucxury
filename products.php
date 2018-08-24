@@ -219,6 +219,13 @@ session_start();
                         <option value="0">All Merchants</option>
                     </select>
                 </div>
+                <div class="custom-select2 db-merchant">
+                    <select id="gender_container">
+                        <option value="0">All Gender</option>
+                        <option value="0">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
             </div>
 
             <div id="some_container" class="product-card-container">
