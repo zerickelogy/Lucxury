@@ -39,7 +39,7 @@ session_start();
                 async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
-                data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
+//                data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
                 dataType: "JSON",
                 success: function (response) {
                     var output = "";
