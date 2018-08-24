@@ -83,8 +83,8 @@ var search_global = "<?php echo $search_item; ?>";
 
                     for (var i = 0; i < response.length; i++) {
                         // to filter if a merchant does not have any items yet; avoids the NULL NULL object appearing                
-                        if (response[i]['itemstorage_id'] != null) {
-                            item_id = response[i]['itemstorage_id'];
+                        if (response[i]['item_storage_id'] != null) {
+                            item_id = response[i]['item_storage_id'];
                             image_url = response[i]['itemstorage_image_url'];
                             product_name = response[i]['itemstorage_name'];
                             product_price_amount = response[i]['itemstorage_price_amount'];
