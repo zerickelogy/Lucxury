@@ -15,7 +15,7 @@ session_start();
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropdown.css">
-     <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
+    <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
 
 
     <link rel="stylesheet" href="css/aos.css">
@@ -98,14 +98,8 @@ session_start();
                                     '</div>' +
                                     '</div>';
                         }
-
-
-
                     }
-
-
-                    $("#some_container22").html(output);
-
+                    $("#some_container").html(output);
                 },
                 error: function (obj, textStatus, errorThrown) {
                     console.log("Error " + textStatus + ": " + errorThrown);
@@ -123,7 +117,7 @@ session_start();
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['brand'];
-                        $("#brands_container2").append('<option value="'+x+'">'+x+'</option');
+                        $("#brands_container").append('<option value="' + x + '">' + x + '</option');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -142,7 +136,7 @@ session_start();
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['color'];
-                        $("#color_container2").append('<li>' + x + '</li>');
+                        $("#colors_container").append('<option value="' + x + '">' + x + '</option');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -161,7 +155,7 @@ session_start();
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
                         var x = response[i]['merchant_name'];
-                        $("#merchant_container2").append('<li>' + x + '</li>');
+                        $("#merchants_container").append('<option value="' + x + '">' + x + '</option');
                     }
                 },
                 error: function (obj, textStatus, errorThrown) {
@@ -197,48 +191,32 @@ session_start();
             <h2>Clothings</h2>
 
             <div class="dropdown-container">
-                <div class="custom-select db-price">
-                    <select>
-                        <option value="0">All Prices</option>
+                <div class="custom-select2 db-price">
+                    <select id="order_container">
                         <option value="1">High - Low</option>
                         <option value="2">Low - High</option>
                     </select>
                 </div>
-                <div class="custom-select db-brands">
-                    <select id="brands_container2">
+                <div class="custom-select2 db-brands">
+                    <select id="brands_container">
                         <option value="0">All Brands</option>
-                        <option value="1">Hollister</option>
-                        <option value="2">A&F</option>
-                        <option value="3">Tommy Hilfiger</option>
-                        <option value="4">Tom Ford</option>
-                        <option value="5">Gucci</option>
                     </select>
                 </div>
-                <div class="custom-select db-colours">
-                    <select>
+                <div class="custom-select2 db-colours">
+                    <select id="colors_container">
                         <option value="0">All Colours</option>
-                        <option value="1">Black</option>
-                        <option value="2">Blue</option>
-                        <option value="3">Green</option>
-                        <option value="4">Red</option>
-                        <option value="5">White</option>
-                        <option value="6">Yellow</option>
                     </select>
                 </div>
-                <div class="custom-select db-condition">
-                    <select>
+                <div class="custom-select2 db-condition">
+                    <select id="conditions_container">
                         <option value="0">All Condition</option>
-                        <option value="1">Brand New</option>
-                        <option value="2">Used</option>
+                        <option value="0">New</option>
+                        <option value="0">Used</option>
                     </select>
                 </div>
-                <div class="custom-select db-merchant">
-                    <select>
+                <div class="custom-select2 db-merchant">
+                    <select id="merchants_container">
                         <option value="0">All Merchants</option>
-                        <option value="1">eBay</option>
-                        <option value="2">Amazon</option>
-                        <option value="3">Tao Bao</option>
-                        <option value="4">ezBuy</option>
                     </select>
                 </div>
             </div>
