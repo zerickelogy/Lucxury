@@ -36,7 +36,7 @@ session_start();
         function filter() {
             $.ajax({
                 type: "GET",
-//                async: false,
+                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
@@ -75,7 +75,7 @@ session_start();
                                 url: "Webservices/getImageUrlFromItemFilterId.php",
                                 data: {itemfilter_id: item_id},
                                 cache: false,
-//                                async: false,
+                                async: false,
                                 dataType: "JSON",
                                 success: function (response) {
                                     for (var i = 0; i < response.length; i++) {
