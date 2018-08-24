@@ -229,38 +229,7 @@ session_start();
             </div>
 
             <div id="some_container" class="product-card-container">
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">ebay</div>
-                        <img src="img/product1.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>HASTE MEN DOUBLE MONK STRAP - BRUGUNDY</h3>
-                        <span id="product-price">$29.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
-                    </div>
-                </div>
 
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">amazon</div>
-                        <img src="img/product2.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">$49.95</span>|<span id="product-colour">Khaki</span>,<span id=product-condition>Used</span>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img">
-                        <div class="product-merchant">taobao</div>
-                        <img src="img/product3.png">
-                    </div>
-                    <div class="product-des">
-                        <h3>[Title]</h3>
-                        <span id="product-price">$69.95</span>|<span id="product-colour">White</span>,<span id=product-condition>Brand New</span>
-                    </div>
-                </div>
 
             </div>
         </div>
