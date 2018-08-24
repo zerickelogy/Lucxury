@@ -26,7 +26,7 @@ $search_item = $_POST['search_item'];
 
     <!--start of glenns script-->
     <script>
-        var search_global = "<?php echo $search_item; ?>";
+var search_global = "<?php echo $search_item; ?>";
         var priceSort_global = "";
         var brand_global = "";
         var color_global = "";
@@ -53,6 +53,7 @@ $search_item = $_POST['search_item'];
 
 
         function filter() {
+            console.log(search_global);
             console.log(priceSort_global);
             console.log(brand_global);
             console.log(color_global);
@@ -132,7 +133,6 @@ $search_item = $_POST['search_item'];
                     $("#some_container").html("");
                 }
             });
-            search_global = "";
             priceSort_global = "";
             brand_global = "";
             color_global = "";
