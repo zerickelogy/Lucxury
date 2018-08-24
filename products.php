@@ -219,7 +219,7 @@ session_start();
                         <option value="0">All Merchants</option>
                     </select>
                 </div>
-                <div class="custom-select2 db-merchant">
+                <div class="custom-select2 db-gender">
                     <select id="gender_container">
                         <option value="0">All Gender</option>
                         <option value="0">Male</option>
