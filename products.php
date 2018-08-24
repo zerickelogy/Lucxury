@@ -25,21 +25,45 @@ session_start();
 
     <!--start of glenns script-->
     <script>
-
+        var search_global = "";
+        var priceSort_global = "";
+        var brand_global = "";
+        var color_global = "";
+        var condition_global = "";
+        var merchant_global = "";
+        var gender_global = "";
         $(document).ready(function () {
             getAllBrands();
             getAllColors();
             getAllMerchants();
             filter();
+
+            $('.trigger_filter').change(function () {
+                priceSort_global = $('#order_container').val();
+                brand_global = $('#brands_container').val();
+                color_global = $('#colors_container').val();
+                condition_global = $('#conditions_container').val();
+                merchant_global = $('#merchants_container').val();
+                gender_global = $('#gender_container').val();
+                filter();
+            });
         });
 
+
+
         function filter() {
+            console.log(priceSort_global);
+            console.log(brand_global);
+            console.log(color_global);
+            console.log(condition_global);
+            console.log(merchant_global);
+            console.log(gender_global);
             $.ajax({
                 type: "GET",
                 async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
-//                data: {merchant: "51 label", search: "OXFORD - CHOCOLATE"},
+                data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global, merchant: merchant_global, priceSort: priceSort_global},
                 dataType: "JSON",
                 success: function (response) {
                     var output = "";
@@ -102,10 +126,18 @@ session_start();
                     $("#some_container").html(output);
                 },
                 error: function (obj, textStatus, errorThrown) {
-                    console.log("Error " + textStatus + ": " + errorThrown);
+                    console.log("Error " + textStatus + ": " + errorThrown + obj);
                     // alert("fail to filter items");
+                    $("#some_container").html("");
                 }
             });
+            search_global = "";
+            priceSort_global = "";
+            brand_global = "";
+            color_global = "";
+            condition_global = "";
+            merchant_global = "";
+            gender_global = "";
         }
 
         function getAllBrands() {
@@ -192,45 +224,43 @@ session_start();
 
             <div class="dropdown-container">
                 <div class="custom-select2 db-price">
-                    <select id="order_container">
-                        <option value="1">High - Low</option>
-                        <option value="2">Low - High</option>
+                    <select class="trigger_filter" id="order_container">
+                        <option value="DESC">High - Low</option>
+                        <option value="ASC">Low - High</option>
                     </select>
                 </div>
                 <div class="custom-select2 db-brands">
-                    <select id="brands_container">
-                        <option value="0">All Brands</option>
+                    <select class="trigger_filter" id="brands_container">
+                        <option value="">All Brands</option>
                     </select>
                 </div>
                 <div class="custom-select2 db-colours">
-                    <select id="colors_container">
-                        <option value="0">All Colours</option>
+                    <select class="trigger_filter" id="colors_container">
+                        <option value="">All Colours</option>
                     </select>
                 </div>
                 <div class="custom-select2 db-condition">
-                    <select id="conditions_container">
-                        <option value="0">All Condition</option>
-                        <option value="0">New</option>
-                        <option value="0">Used</option>
+                    <select class="trigger_filter" id="conditions_container">
+                        <option value="">All Condition</option>
+                        <option value="NEW">New</option>
+                        <option value="USED">Used</option>
                     </select>
                 </div>
                 <div class="custom-select2 db-merchant">
-                    <select id="merchants_container">
-                        <option value="0">All Merchants</option>
+                    <select class="trigger_filter" id="merchants_container">
+                        <option value="">All Merchants</option>
                     </select>
                 </div>
-                <div class="custom-select2 db-gender">
-                    <select id="gender_container">
-                        <option value="0">All Gender</option>
-                        <option value="0">Male</option>
-                        <option value="0">Female</option>
+                <div class="custom-select2">
+                    <select class="trigger_filter" id="gender_container">
+                        <option value="">All Gender</option>
+                        <option value="Men">Male</option>
+                        <option value="Women">Female</option>
                     </select>
                 </div>
             </div>
 
             <div id="some_container" class="product-card-container">
-
-
             </div>
         </div>
 

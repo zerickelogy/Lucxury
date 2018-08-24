@@ -16,6 +16,16 @@ if (isset($_GET['color'])) {
     $query .= "AND `item_filter`.`itemfilter_color` LIKE '%$color%' ";
 }
 
+if (isset($_GET['brand'])) {
+    $brand = $_GET['brand'];
+    $query .= "AND `item_filter`.`itemfilter_brand` LIKE '%$brand%' ";
+}
+
+if (isset($_GET['gender'])) {
+    $gender = $_GET['gender'];
+    $query .= "AND `item_filter`.`itemfilter_name` LIKE '%$gender%' ";
+}
+
 if (isset($_GET['condition'])) {
     $condition = $_GET['condition'];
     $query .= "AND `item_filter`.`itemfilter_condition` LIKE '%$condition%' ";
