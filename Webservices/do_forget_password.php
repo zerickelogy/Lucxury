@@ -31,7 +31,7 @@ if (mysqli_num_rows($result) > 0) {
     mail("$email", "Subject 1", $msgForEmail, $headers);
 } else {
     $msgForWebsite = "sorry, invalid credentials";
-    $msgForWebsite = "<img src='https://cdn-images-1.medium.com/max/1600/1*CRjVBCcjUf2ZHhix9tWEIA.jpeg'>";
+    $msgForWebsite = "Sucess. New password has been sent to your email. Please check the junk folder.";
 } 
 ?>
 <html>
