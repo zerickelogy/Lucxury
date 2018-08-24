@@ -1,11 +1,9 @@
 <?php
-if (!isset($_SESSION['username'])) {
-    header('Location: ./login.php');
-}
+
 ?>
 <script>
     $(document).ready(function () {
-        //console.log('<?php //echo $_SESSION['username'];   ?>');
+        console.log('<?php // echo $_SESSION['username'];   ?>');
     });
 
     function logout() {

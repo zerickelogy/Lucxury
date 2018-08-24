@@ -1,5 +1,7 @@
-<?php session_start(); ?>
 <!doctype html>
+<?php
+session_start();
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,13 +25,13 @@
 
     <!-- start of navigation bar  -->
 
-<!--     <div class="hamburger-menu nav-left visible-xs">
-        <div class="button" id="btn">
-            <div class="top bar"></div>
-            <div class="middle bar"></div>
-            <div class="bottom bar"></div>
-        </div>
-    </div> -->
+    <!--     <div class="hamburger-menu nav-left visible-xs">
+            <div class="button" id="btn">
+                <div class="top bar"></div>
+                <div class="middle bar"></div>
+                <div class="bottom bar"></div>
+            </div>
+        </div> -->
 
     <!-- only put content into main tag -->
 
@@ -116,8 +118,8 @@
 
 
         </div>
-        
-        
+
+
         <div class="footer-item my-account">
             <h5>My Account</h5>
             <div class="footer-subitem">
@@ -149,16 +151,14 @@
             <p id="credits-right">All Rights Reserved.</p>
         </div>
 
-
     </main>
 
     <!-- end of main tag = end of content  -->
-
     <?php include 'blue-section.php'; ?>
 
     <script>
         $(document).ready(function () {
-console.log('<?php echo $_SESSION['user_id']; ?>')
+            console.log('<?php // echo $_SESSION['username'];    ?>')
             function toggleSidebar() {
                 $(".button").toggleClass("active");
                 $("main").toggleClass("move-to-right");

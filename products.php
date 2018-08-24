@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropdown.css">
-    <!-- <link rel="stylesheet" href="css/selector-mobile.css"> -->
+     <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
 
 
     <link rel="stylesheet" href="css/aos.css">

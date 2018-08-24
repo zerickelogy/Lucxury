@@ -27,7 +27,7 @@ if (mysqli_num_rows($result) > 0) {
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lucxury - Signup</title>
+        <title>Lucxury - Edit</title>
         <meta name="description" content="Welcome to Lucxury.">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -82,7 +82,7 @@ if (mysqli_num_rows($result) > 0) {
         <main>
             <?php // include './Webservices/do_customer_profile_signup.php'; ?>
             <div class="container signup-container container-header">
-                <h2>Sign Up</h2>
+                <h2>Edit Profile</h2>
                 <form method="post" action="./Webservices/do_customer_profile_update.php" class="profile-form">
                     <div class="edit-profile" id="top-form">
                         <div class="profile-fills">

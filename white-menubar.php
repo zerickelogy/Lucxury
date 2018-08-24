@@ -1,3 +1,8 @@
+<?php
+if (!isset($_SESSION['username'])) {
+    header('Location: ./login.php');
+}
+?>
 <nav id="navigation-bar">
     <div class="hamburger-menu nav-left hidden-xs">
         <div class="button" id="btn">
