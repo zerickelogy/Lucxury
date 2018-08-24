@@ -83,29 +83,29 @@ var search_global = "<?php echo $search_item; ?>";
 
                     for (var i = 0; i < response.length; i++) {
                         // to filter if a merchant does not have any items yet; avoids the NULL NULL object appearing                
-                        if (response[i]['itemfilter_id'] != null) {
-                            item_id = response[i]['itemfilter_id'];
-                            image_url = response[i]['itemfilter_image_url'];
-                            product_name = response[i]['itemfilter_name'];
-                            product_price_amount = response[i]['itemfilter_price_amount'];
-                            product_price_currency = response[i]['itemfilter_price_currency'];
-                            product_brand = response[i]['itemfilter_brand'];
-                            product_color = response[i]['itemfilter_color'];
-                            product_condition = response[i]['itemfilter_condition'];
+                        if (response[i]['itemstorage_id'] != null) {
+                            item_id = response[i]['itemstorage_id'];
+                            image_url = response[i]['itemstorage_image_url'];
+                            product_name = response[i]['itemstorage_name'];
+                            product_price_amount = response[i]['itemstorage_price_amount'];
+                            product_price_currency = response[i]['itemstorage_price_currency'];
+                            product_brand = response[i]['itemstorage_brand'];
+                            product_color = response[i]['itemstorage_color'];
+                            product_condition = response[i]['itemstorage_condition'];
                             merchant_name = response[i]['merchant_name'];
                             merchant_type = response[i]['merchant_type'];
-                            merchant_url = response[i]['itemfilter_more_info_url']
+                            merchant_url = response[i]['itemstorage_more_info_url']
 
                             $.ajax({
                                 type: "GET",
                                 url: "Webservices/getImageUrlFromItemFilterId.php",
-                                data: {itemfilter_id: item_id},
+                                data: {itemstorage_id: item_id},
                                 cache: false,
                                 async: false,
                                 dataType: "JSON",
                                 success: function (response) {
                                     for (var i = 0; i < response.length; i++) {
-                                        image_url = response[i]["itemfilter_image_url"];
+                                        image_url = response[i]["itemstorage_image_url"];
                                     }
                                 },
                                 error: function (obj, textStatus, errorThrown) {
