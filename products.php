@@ -80,7 +80,7 @@ if (isset($_POST['categories'])) {
         });
 
         function grabValuesAndFilter() {
-            $('.trigger_filter').change(function () {
+            $('.trigger_filter').click(function () {
                 priceSort_global = $('#order_container').val();
                 brand_global = $('#brands_container').val();
                 color_global = $('#colors_container').val();
