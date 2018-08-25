@@ -1,15 +1,11 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
 
-
-</script>
 <div class="container footer">
     <div class="footer-item sitemap">
         <h5>Sitemap</h5>
         <div class="footer-subitem">
-            <a href="./index.php">Home</a><br/>
+            <a href="./login.php">Home</a><br/>
             <a href="./login.php">Merchants</a><br/>
-            <a href="./promotions.php">Promotions</a><br/>
+            <a href="./login.php">Promotions</a><br/>
             <a href="./faq.php">FAQs</a><br/>
         </div>
     </div>

@@ -749,7 +749,7 @@ main {
 	font-size: 22px;
 }
 
-.email-newsletter input[type=text] {
+.email-newsletter input[type=email] {
 	width: 60%;
 	height: 50px;
 	outline: none;

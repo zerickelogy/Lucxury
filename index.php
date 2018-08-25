@@ -1,7 +1,5 @@
+<?php session_start(); ?>
 <!doctype html>
-<?php
-session_start();
-?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -25,13 +23,13 @@ session_start();
 
     <!-- start of navigation bar  -->
 
-    <!--     <div class="hamburger-menu nav-left visible-xs">
-            <div class="button" id="btn">
-                <div class="top bar"></div>
-                <div class="middle bar"></div>
-                <div class="bottom bar"></div>
-            </div>
-        </div> -->
+<!--     <div class="hamburger-menu nav-left visible-xs">
+        <div class="button" id="btn">
+            <div class="top bar"></div>
+            <div class="middle bar"></div>
+            <div class="bottom bar"></div>
+        </div>
+    </div> -->
 
     <!-- only put content into main tag -->
 
@@ -99,7 +97,7 @@ session_start();
             <div class="merchant-box calvin-klein"></div>
             <div class="merchant-box ralph-lauren"></div>
             <div class="merchant-box tommy-hilfiger"></div>
-            <div class="merchant-box more-merchant-btn"><a href="promotions.html">more merchants <i class="fas fa-chevron-right"></i></a></div>
+            <div class="merchant-box more-merchant-btn"><a href="promotions.php">more merchants <i class="fas fa-chevron-right"></i></a></div>
         </div>
 
         <div class="container email-newsletter">
@@ -107,7 +105,7 @@ session_start();
             <h4>Join our community.</h4>
             <form action="https://lucxury.us12.list-manage.com/subscribe/post?u=5e744d54c978e566fa533d954&amp;id=ceb70c82f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
 
-                <input type="text" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email"><br>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter Email"><br>
 
                 <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
@@ -126,17 +124,21 @@ session_start();
 
 
         </div>
-
+        
         <?php include 'footer.php'; ?>
+        
 
 
     </main>
 
+    
     <!-- end of main tag = end of content  -->
+
     <?php include 'blue-section.php'; ?>
 
     <script>
         $(document).ready(function () {
+
             function toggleSidebar() {
                 $(".button").toggleClass("active");
                 $("main").toggleClass("move-to-right");
