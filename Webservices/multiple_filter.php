@@ -6,7 +6,7 @@ $query = "";
 // if $_GET search is present, else, show everything
 if (isset($_GET['search'])) {
     $search = $_GET['search'];
-    $query .= "SELECT * FROM `item_storage` INNER JOIN merchant ON merchant.merchant_id=item_storage.merchant_id WHERE `itemstorage_name` LIKE '%$search%' OR `itemstorage_category` LIKE '%$search%' ";
+    $query .= "SELECT * FROM `item_storage` INNER JOIN merchant ON merchant.merchant_id=item_storage.merchant_id WHERE `itemstorage_name` LIKE '%$search%' ";
 } else {
     $query .= "SELECT * FROM `item_storage` INNER JOIN merchant ON merchant.merchant_id=item_storage.merchant_id WHERE `itemstorage_name` LIKE '%%' ";
 }
