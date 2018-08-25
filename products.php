@@ -244,7 +244,7 @@ $search_item = $_POST['search_item'];
             <h2 id="title_container"></h2>
 
             <div class="dropdown-container">
-                <div class="custom-select2 db-price2">
+                <div class="custom-select2 db-price">
                     <select class="trigger_filter" id="order_container">
                         <option value="DESC">High - Low</option>
                         <option value="ASC">Low - High</option>
