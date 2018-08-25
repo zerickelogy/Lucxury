@@ -25,7 +25,9 @@ if (mysqli_num_rows($result) > 0) {
     $subject = "Lucxury - Password reset";
     $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
 
-    $msgForEmail = "<div>Hi $username,</div><br/><div>Your password is: $string</div><br/><a href='https://www.lucxury.com/login_page.php'>Login to Lucxury</a>";
+    $msgForEmail = "<div>Dear $username,</div><br/>"
+            . "<div>Your password has been reset. Please login at <a href='https://www.lucxury.com/login_page.php'>Login to Lucxury</a> with your login name & the new password:</div><br/>"
+            . "<div>$string</div><br/><div>You can change the password on the 'Edit Profile' page afterwards.<br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
     mail("$email", "Subject 1", $msgForEmail, $headers);
 } else {
@@ -39,14 +41,9 @@ if (mysqli_num_rows($result) > 0) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title></title>
         <script>
+            alert("Password has been reset. Please check your email & spam/junk folder.");
         </script>
     </head>
     <body>
-<?php echo 'Dear' . $_SESSION['username'] . ", <br/><br/>" ; ?>
-        <?php echo "Your password has been reset. Please login at <a href='https://www.lucxury.com/login_page.php'>Login to Lucxury</a> with your login name & the new password:<br/><br/>"; ?>
-        <?php echo $string. "<br/><br/>"; ?>
-        <?php echo 'You can change the password on the "Edit Profile" page afterwards.<br/><br/>'; ?>
-        <?php echo 'Best Regards,<br/><br/>'; ?>
-        <?php echo 'LUCXURY'; ?>
     </body>
 </html>
