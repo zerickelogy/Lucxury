@@ -137,7 +137,6 @@ session_start();
 
     <script>
         $(document).ready(function () {
-            console.log('<?php // echo $_SESSION['username'];    ?>')
             function toggleSidebar() {
                 $(".button").toggleClass("active");
                 $("main").toggleClass("move-to-right");
