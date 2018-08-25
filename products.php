@@ -68,18 +68,26 @@ if (isset($_POST['categories'])) {
 
             if ('<?php echo $merchant; ?>') {
                 $("#merchants_container").val('<?php echo $merchant; ?>');
-                grabValuesAndFilter();
+                priceSort_global = $('#order_container').val();
+                brand_global = $('#brands_container').val();
+                color_global = $('#colors_container').val();
+                condition_global = $('#conditions_container').val();
+                merchant_global = $('#merchants_container').val();
+                gender_global = $('#gender_container').val();
+                filter();
             }
 
             if ('<?php echo $categories; ?>') {
                 $("#categories_container").val('<?php echo $merchant; ?>');
-                grabValuesAndFilter();
+                priceSort_global = $('#order_container').val();
+                brand_global = $('#brands_container').val();
+                color_global = $('#colors_container').val();
+                condition_global = $('#conditions_container').val();
+                merchant_global = $('#merchants_container').val();
+                gender_global = $('#gender_container').val();
+                filter();
             }
 
-            grabValuesAndFilter();
-        });
-
-        function grabValuesAndFilter() {
             $('.trigger_filter').click(function () {
                 priceSort_global = $('#order_container').val();
                 brand_global = $('#brands_container').val();
@@ -89,7 +97,7 @@ if (isset($_POST['categories'])) {
                 gender_global = $('#gender_container').val();
                 filter();
             });
-        }
+        });
 
         function filter() {
             $("#some_container").html("");
