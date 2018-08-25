@@ -331,12 +331,12 @@
                         <img src="img/h2-hub-logo.png">
                     </div>
 
-                    <h3>Tocco Toscano</h3>
-                    <h4>Scan the QR Code below:</h4>
+                    <h3>Tocco Toscano</h3><br><br>
+                    <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/tt-qrcode.png">
+                        <!--<img src="img/qr/tt-qrcode.png">-->
                         <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
