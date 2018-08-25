@@ -123,7 +123,7 @@
                 </form>
             </div>
 
-            <!--<?php include 'footer.php'; ?>-->
+           
         </main>
 
         <!-- end of main tag = end of content  -->
