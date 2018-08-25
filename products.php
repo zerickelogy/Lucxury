@@ -17,8 +17,7 @@ $search_item = $_POST['search_item'];
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
 
@@ -85,7 +84,7 @@ $search_item = $_POST['search_item'];
             $('#title_container').text(search_global);
             $.ajax({
                 type: "GET",
-                async: false,
+//                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global, merchant: merchant_global, priceSort: priceSort_global},
@@ -124,7 +123,7 @@ $search_item = $_POST['search_item'];
                                 url: "Webservices/getImageUrlFromItemFilterId.php",
                                 data: {itemstorage_id: item_id},
                                 cache: false,
-                                async: false,
+//                                async: false,
                                 dataType: "JSON",
                                 success: function (response) {
                                     for (var i = 0; i < response.length; i++) {
