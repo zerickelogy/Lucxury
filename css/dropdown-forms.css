@@ -37,6 +37,33 @@
   display: none; /*hide original SELECT element:*/
 
 }
+
+
+.custom-select2 {
+  position: relative;
+  /*min-width: 250px;*/
+  width: 100%;
+  display: inline-block;
+  outline: none;
+}
+
+.custom-select2 select {
+  -moz-appearance: window;
+  -webkit-appearance: none;
+  border: none;
+  padding: 25px 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  text-align-last: center;
+  outline: none;
+}
+
+
 .select-selected {
   background-color: #efefef;
 }
