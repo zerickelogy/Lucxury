@@ -87,7 +87,7 @@
                     <input id="tab-six" type="checkbox" name="tabs">
                     <label for="tab-six">Is my personal information secure with LUCXURY?</label>
                     <div class="tab-content">
-                        <p>We protect your personal information by implementing access control to restrict access to your personal information. For more information refer to our Privacy Policy.</p>
+                        <p>We protect your personal information by implementing access control to restrict access to your personal information. For more information refer to our <a href="privacy-policy.php">Privacy Policy</a>.</p>
                     </div>
                 </div>
 
