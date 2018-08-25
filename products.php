@@ -252,7 +252,7 @@ var search_global = "<?php echo $search_item; ?>";
                         <option value="">All Merchants</option>
                     </select>
                 </div>
-                <div class="custom-select2">
+                <div class="custom-select2 db-gender">
                     <select class="trigger_filter" id="gender_container">
                         <option value="">All Gender</option>
                         <option value="Men">Male</option>

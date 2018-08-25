@@ -20,7 +20,31 @@
   display: inline-block;
 }
 
-.db-brands {
+.custom-select2 {
+  position: relative;
+  /*min-width: 250px;*/
+  /*width: 250px;*/
+  display: inline-block;
+  outline: none;
+}
+
+.custom-select2 select {
+  -moz-appearance: window;
+  -webkit-appearance: none;
+  border: none;
+  padding: 25px 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-align: center;
+  text-align-last: center;
+  outline: none;
+}
+
+
+/*.db-brands {
   width: 260px
 }
 
@@ -39,7 +63,7 @@
 
 .db-merchant {
   width: 180px;
-}
+}*/
 
 /*.custom-select select {*/
 /*  display: none; hide original SELECT element:*/
@@ -97,15 +121,34 @@
 
 
 @media (max-width: 1278px) {
-  .db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
+  /*.db-brands, .db-colours, .db-price, .db-condition, .db-merchant {
     width: 100%;
     margin-bottom: 20px;
-  }
+  }*/
   .dropdown .dropdown-menu {
     position: relative;
   }
   .select-items {
     position: relative;
+  }
+
+  .custom-select2 {
+    position: relative;
+    /*min-width: 250px;*/
+    /*width: 250px;*/
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .custom-select2 select {
+    -moz-appearance: window;
+    -webkit-appearance: none;
+    border: none;
+    padding: 25px 40px;
+    width: 100%;
+    text-align: center;
+    text-align-last: center;
   }
 
   /*.dropdown {
