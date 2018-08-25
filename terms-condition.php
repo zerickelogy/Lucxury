@@ -180,7 +180,7 @@
                 
             </div>
 
-            <div class="container footer">
+            <!--<div class="container footer">
                 <div class="footer-item sitemap">
                     <h5>Sitemap</h5>
                     <div class="footer-subitem">
@@ -219,7 +219,8 @@
             <div class="container footer-credits">
                 <p id="credits-left">© 2018 Lucxury</p>
                 <p id="credits-right">All Rights Reserved.</p>
-            </div>
+            </div>-->
+         <?php include 'footer.php'; ?>
 
 
         </main>
