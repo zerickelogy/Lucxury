@@ -68,12 +68,12 @@ if (isset($_POST['categories'])) {
 
             if ('<?php echo $merchant; ?>') {
                 $("#merchants_container").val('<?php echo $merchant; ?>');
-
+                grabValuesAndFilter();
             }
 
             if ('<?php echo $categories; ?>') {
                 $("#categories_container").val('<?php echo $merchant; ?>');
-
+                grabValuesAndFilter();
             }
 
             grabValuesAndFilter();
