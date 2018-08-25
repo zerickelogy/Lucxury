@@ -62,7 +62,7 @@
                         <h4>Bespoke Menswear</h4>
                         <form method="post" action="products.php">
                             <input name="dorcas stitch">
-                            <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                            <button type="submit" class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
                         </form>
                     </div>
                     <img src="img/image1.png">
