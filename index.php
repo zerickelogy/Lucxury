@@ -150,7 +150,7 @@ session_start();
                 <p id="credits-left">© 2018 Lucxury</p>
                 <p id="credits-right">All Rights Reserved.</p>
             </div>
-        <div class="container footer">
+        </div>
 
     </main>
 
