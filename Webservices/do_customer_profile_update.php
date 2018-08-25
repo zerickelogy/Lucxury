@@ -16,32 +16,43 @@ $age_range = $_POST['age_range'];
 //$home_address = $_POST["home_address"];
 $country = $_POST["country"];
 
-$query = "UPDATE `user` SET `email`='$email',`username`='$username' ,`password`=SHA1('$password'), `first_name`='$first_name',".
-        " `last_name`='$last_name', `country`='$country', `age_range`='$age_range',  `gender`='$gender' ".
+$query = "UPDATE `user` SET `email`='$email',`username`='$username' ,`password`=SHA1('$password'), `first_name`='$first_name'," .
+        " `last_name`='$last_name', `country`='$country', `age_range`='$age_range',  `gender`='$gender' " .
         " WHERE `user_id`='$user_id'";
 
 $result = mysqli_query($link, $query);
 
 if ($result) {
     $response["result"] = "success";
+    $output = "success";
 } else {
     $response["result"] = "fail";
+    $output = "fail";
 }
-echo json_encode($response);
 mysqli_close($link);
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="refresh" content="3; URL=../index.php">
-<meta name="keywords" content="automatic redirection">
+        <meta http-equiv="refresh" content="1; URL=../index.php">
+        <meta name="keywords" content="automatic redirection">
         <title></title>
-        <?php // include 'scripts/bootstrap_scripts/bootstrap_scripts.php'; ?>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
         <script>
+            $(document).ready(function () {
+                if ('<?php echo $output == "success" ?>') {
+                    alert("Please wait while the page is loading..");
+                } else if ('<?php echo $output == "fail" ?>') {
+                    alert("Sorry, wrong username/password");
+                }
+
+            });
         </script>
     </head>
     <body>
-        <p>Please wait while the page redirects...</p>
     </body>
 </html>
