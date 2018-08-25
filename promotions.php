@@ -67,7 +67,7 @@
                         <img src="img/merchant-card1.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off H2Hub watches</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <img src="img/merchant-card2.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off 51Label shoes</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         <img src="img/merchant-card3.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off The Bespoke Club suits</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -107,8 +107,8 @@
                         <img src="img/merchant-card5.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off</h3>
-                        <h4>Click for QR Code</h4>
+                        <h3>$100 OFF MIN $5,000 SPENT</h3>
+                        <!--<h4>Click for QR Code</h4>-->
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                         <img src="img/merchant-card9.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -247,8 +247,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/foundation-qrcode.png">
-                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <!--<img src="img/qr/foundation-qrcode.png">-->
+                        <h4>$100 OFF MIN $5,000 SPENT</h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -269,7 +269,7 @@
                 <div class="modal-body">
                     <div class="QR-container">
                         <img src="img/qr/hg-qrcode.png">
-                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <!--<h4>Promo Code: <u>#</u></h4>-->
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -307,12 +307,12 @@
                         <img src="img/h2-hub-logo.png">
                     </div>
 
-                    <h3>Faire Leather Co.</h3>
-                    <h4>Scan the QR Code below:</h4>
+                    <h3>Faire Leather Co.</h3><br><br>
+                    <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/faire-qrcode.png">
+                        <!--<img src="img/qr/faire-qrcode.png">-->
                         <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
@@ -331,12 +331,12 @@
                         <img src="img/h2-hub-logo.png">
                     </div>
 
-                    <h3>Tocco Toscano</h3>
-                    <h4>Scan the QR Code below:</h4>
+                    <h3>Tocco Toscano</h3><br><br>
+                    <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/tt-qrcode.png">
+                        <!--<img src="img/qr/tt-qrcode.png">-->
                         <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
