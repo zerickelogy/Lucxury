@@ -343,6 +343,7 @@
 
                 $('#reenter-password').on('input', function () {
                     var input = $(this);
+                    var errorText = $('.error');
                     var span = $('.error-repassword');
                     if ($(this).val() == $('#enter-password').val()) { //satisfies
                         input.removeClass("invalid").addClass("valid");

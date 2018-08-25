@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="2;url=../login.php" />
+        <meta http-equiv="refresh" content="1;url=../login.php" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title></title>
         <script>
