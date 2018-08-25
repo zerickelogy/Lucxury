@@ -94,6 +94,14 @@ session_start();
             </div>
         </div>
 
+        <div class="container merchants-container">
+            <div class="merchant-box pedro"></div>
+            <div class="merchant-box calvin-klein"></div>
+            <div class="merchant-box ralph-lauren"></div>
+            <div class="merchant-box tommy-hilfiger"></div>
+            <div class="merchant-box more-merchant-btn"><a href="promotions.html">more merchants <i class="fas fa-chevron-right"></i></a></div>
+        </div>
+
         <div class="container email-newsletter">
             <h3>New to us?</h3>
             <h4>Join our community.</h4>
@@ -144,13 +152,13 @@ session_start();
                     <a href="https://www.youtube.com/channel/UCeGiwGkYZ9p8kxj8YwN4fIw?view_as=subscriber" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-
-
-            <div class="container footer-credits">
-                <p id="credits-left">© 2018 Lucxury</p>
-                <p id="credits-right">All Rights Reserved.</p>
-            </div>
         </div>
+
+        <div class="container footer-credits">
+            <p id="credits-left">© 2018 Lucxury</p>
+            <p id="credits-right">All Rights Reserved.</p>
+        </div>
+
 
     </main>
 
