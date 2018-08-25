@@ -167,7 +167,7 @@ if (mysqli_num_rows($result) > 0) {
                 </form>
             </div>
 
-            <!--<?php include 'footer.php'; ?>-->
+            <?php include 'footer.php'; ?>
         </main>
 
         <!-- end of main tag = end of content  -->
