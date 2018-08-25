@@ -1,5 +1,5 @@
 <!doctype html>
-
+<?php session_start(); ?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/animate.css">
-
 
     <link rel="stylesheet" href="css/aos.css">
 
