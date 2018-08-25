@@ -135,7 +135,7 @@ $search_item = $_POST['search_item'];
                                             '<img src="../' + image_url + '">' +
                                             '</div>' +
                                             '<div class="product-des">' +
-                                            '<a target="_blank" href=' + merchant_url + '><h3>' + product_name + '</h3></a>' +
+                                            '<a target="_blank" href=' + "merchant_url" + '><h3>' + product_name + '</h3></a>' +
                                             '<span id="product-price">' + product_price_amount + '</span>|<span id="product-colour">' + product_color + '</span>,<span id=product-condition>' + product_condition + '</span>' +
                                             '</div>' +
                                             '</div>';
