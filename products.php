@@ -267,11 +267,11 @@ $search_item = $_POST['search_item'];
                         <option value="USED">Used</option>
                     </select>
                 </div>
-                <div class="custom-select2 db-merchant">
+                <!--<div class="custom-select2 db-merchant">-->
                     <select class="trigger_filter" id="merchants_container">
                         <option value="">All Merchants</option>
                     </select>
-                </div>
+                <!--</div>-->
                 <div class="custom-select2 db-gender">
                     <select class="trigger_filter" id="gender_container">
                         <option value="">All Gender</option>
