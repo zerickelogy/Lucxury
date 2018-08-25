@@ -13,10 +13,12 @@ if (mysqli_num_rows($result) > 0) {
     $_SESSION["username"] = $row['username'];
     $_SESSION["user_id"] = $row['user_id'];
     $msg = "<img src='../img/WebsiteStatusImages/loadingImage.jpg'>";
-    header("refresh:3;url=../index.php");
+    $output = "success";
+    header("refresh:1;url=../index.php");
 } else {
     $msg = "<img src='../img/WebsiteStatusImages/wrongUserOrPass.jpg'>";
-    header("refresh:3;url=../login.php");
+    $output = "fail";
+    header("refresh:1;url=../login.php");
 }
 //include '';
 ?>
@@ -37,7 +39,12 @@ if (mysqli_num_rows($result) > 0) {
         crossorigin="anonymous"></script>
         <script>
             $(document).ready(function () {
-                alert("Please wait while the page is loading..");
+                if ('<?php echo $output == "success" ?>') {
+                    alert("Please wait while the page is loading..");
+                } else if ('<?php echo $output == "success" ?>') {
+                    alert("Sorry, wrong username/password");
+                }
+
             });
         </script>
 
