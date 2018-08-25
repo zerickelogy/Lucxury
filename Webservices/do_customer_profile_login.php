@@ -42,7 +42,7 @@ if (mysqli_num_rows($result) > 0) {
                 if ('<?php echo $output == "success" ?>') {
                     alert("Please wait while the page is loading..");
                 } else if ('<?php echo $output == "fail" ?>') {
-                    alert("Sorry, wrong username/password");
+                    alert("Sorry, invalid username or password please try again.");
                 }
 
             });
