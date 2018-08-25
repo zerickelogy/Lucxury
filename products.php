@@ -84,7 +84,7 @@ $search_item = $_POST['search_item'];
             $('#title_container').text(search_global);
             $.ajax({
                 type: "GET",
-//                async: false,
+                async: false,
                 url: "Webservices/multiple_filter.php",
                 cache: false,
                 data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global, merchant: merchant_global, priceSort: priceSort_global},
