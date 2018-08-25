@@ -64,16 +64,22 @@ if (isset($_POST['categories'])) {
             getAllBrands();
             getAllColors();
             getAllMerchants();
-            filter();
+
 
             if ('<?php echo $merchant; ?>') {
                 $("#merchants_container").val('<?php echo $merchant; ?>');
+
             }
 
             if ('<?php echo $categories; ?>') {
                 $("#categories_container").val('<?php echo $merchant; ?>');
+
             }
 
+            grabValuesAndFilter();
+        });
+
+        function grabValuesAndFilter() {
             $('.trigger_filter').change(function () {
                 priceSort_global = $('#order_container').val();
                 brand_global = $('#brands_container').val();
@@ -83,9 +89,7 @@ if (isset($_POST['categories'])) {
                 gender_global = $('#gender_container').val();
                 filter();
             });
-        });
-
-
+        }
 
         function filter() {
             $("#some_container").html("");
