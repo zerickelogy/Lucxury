@@ -59,7 +59,7 @@ $search_item = $_POST['search_item'];
             getAllMerchants();
             filter();
             
-            $('#merchants_container').val('DORCAS STITCH');
+            $('#brands_container').val('DORCAS STITCH');
 
             $('.trigger_filter').change(function () {
                 priceSort_global = $('#order_container').val();
