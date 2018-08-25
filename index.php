@@ -61,7 +61,7 @@
                         <h2>Dorcas Stitch</h2>
                         <h4>Bespoke Menswear</h4>
                         <form method="post" action="products.php">
-                            <input type="hidden" name="dorcas stitch">
+                            <input type="hidden" name="merchant" value="DORCAS STITCH">
                             <button type="submit" class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
                         </form>
                     </div>
@@ -71,7 +71,10 @@
                     <div class="carousel-des">  <!-- carousel-des-black -->
                         <h2>H2 Hub</h2>
                         <h4>Classic Timepieces</h4>
-                        <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button> <!-- carousel-btn-black -->
+                        <form method="post" action="products.php">
+                            <input type="hidden" name="merchant" value="H2 HUB">
+                            <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button> <!-- carousel-btn-black -->
+                        </form>
                     </div>
 
                     <img src="img/image2.png">
@@ -80,7 +83,10 @@
                     <div class="carousel-des">
                         <h2>51Label</h2>
                         <h4>Effortless Luxury</h4>
-                        <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                        <form method="post" action="products.php">
+                            <input type="hidden" name="merchant" value="51 LABEL">
+                            <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                        </form>
                     </div>
                     <img src="img/image3.png">
                 </div>

@@ -2,6 +2,13 @@
 <?php
 session_start();
 $search_item = $_POST['search_item'];
+
+if (isset($_POST['merchant'])) {
+    $merchant = $_POST['merchant'];
+}
+if (isset($_POST['categories'])) {
+    $categories = $_POST['categories'];
+}
 ?>
 <head>
     <meta charset="utf-8">
@@ -18,7 +25,7 @@ $search_item = $_POST['search_item'];
     <link rel="stylesheet" href="css/dropdown.css">
     <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
     <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/aos.css">
@@ -58,8 +65,14 @@ $search_item = $_POST['search_item'];
             getAllColors();
             getAllMerchants();
             filter();
-            
-            console.log($("#brands_container").val("LUMINOX"));
+
+            if ('<?php echo $merchant; ?>') {
+                $("#merchants_container").val('<?php echo $merchant; ?>');
+            }
+
+            if ('<?php echo $categories; ?>') {
+                $("#categories_container").val('<?php echo $merchant; ?>');
+            }
 
             $('.trigger_filter').change(function () {
                 priceSort_global = $('#order_container').val();
@@ -171,6 +184,7 @@ $search_item = $_POST['search_item'];
                 type: "GET",
                 url: "Webservices/getAllBrands.php",
                 cache: false,
+                async: false,
                 dataType: "JSON",
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
@@ -190,6 +204,7 @@ $search_item = $_POST['search_item'];
                 type: "GET",
                 url: "Webservices/getAllColors.php",
                 cache: false,
+                async: false,
                 dataType: "JSON",
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
@@ -209,6 +224,7 @@ $search_item = $_POST['search_item'];
                 type: "GET",
                 url: "Webservices/getAllMerchants.php",
                 cache: false,
+                async: false,
                 dataType: "JSON",
                 success: function (response) {
                     for (var i = 0; i < response.length; i++) {
