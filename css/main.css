@@ -310,7 +310,7 @@ main {
 
 .logout-btn {
 	position: absolute;
-	bottom: 10px;
+	top: 85vh;
 }
 
 .logout-btn a {

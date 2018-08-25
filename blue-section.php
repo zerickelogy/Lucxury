@@ -12,7 +12,7 @@
     </ul>
 
 
-    <div onclick="logout()" class="sidebar-item logout-btn"><a onclick="logout()" href="#">Logout</a></div>
+    <div class="sidebar-item logout-btn"><a onclick="logout()" href="#">Logout</a></div>
 
 </div>
 
@@ -30,11 +30,13 @@
             cache: false,
 //                    dataType: "JSON",
             success: function (response) {
-                console.log(response);
+                event.preventDefault();
+                // console.log(response);
                 window.location.href = "./login.php";
             },
             error: function (obj, textStatus, errorThrown) {
-                console.log("Error " + textStatus + ": " + errorThrown);
+                event.preventDefault();
+                // console.log("Error " + textStatus + ": " + errorThrown);
             }
         });
     }
