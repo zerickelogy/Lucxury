@@ -107,8 +107,8 @@
                         <img src="img/merchant-card5.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off</h3>
-                        <h4>Click for QR Code</h4>
+                        <h3>$100 OFF MIN $5,000 SPENT</h3>
+                        <!--<h4>Click for QR Code</h4>-->
                     </div>
                 </div>
 
@@ -247,8 +247,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/foundation-qrcode.png">
-                        <h4>Promo Code: <u>LUCXURY</u></h4>
+                        <!--<img src="img/qr/foundation-qrcode.png">-->
+                        <h4>$100 OFF MIN $5,000 SPENT</h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
@@ -269,7 +269,7 @@
                 <div class="modal-body">
                     <div class="QR-container">
                         <img src="img/qr/hg-qrcode.png">
-                        <!--<h4>Promo Code: <u>LUCXURY</u></h4>-->
+                        <!--<h4>Promo Code: <u>#</u></h4>-->
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
                         </div>
