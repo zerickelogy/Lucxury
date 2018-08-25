@@ -26,10 +26,10 @@ if (mysqli_num_rows($result) > 0) {
     $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
 
     $msgForEmail = "<div>Dear $username,</div><br/>"
-            . "<div>Your password has been reset. Please login at <a href='https://www.lucxury.com/Website2/login.php'>here</a> with your login name & the new password:</div><br/>"
+            . "<div>Your password has been reset. Please login <a href='https://www.lucxury.com/Website2/login.php'>here</a> with your login name & the new password:</div><br/>"
             . "<div>$string</div><br/><div>You can change the password on the 'Edit Profile' page afterwards.<br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
-    mail("$email", "Subject 1", $msgForEmail, $headers);
+    mail("$email", "LUCXURY - Forget password", $msgForEmail, $headers);
 } else {
     $msgForWebsite = "Sorry, invalid credentials";
 } 
