@@ -67,7 +67,7 @@
                         <img src="img/merchant-card1.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off H2Hub watches</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                         <img src="img/merchant-card2.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off 51Label shoes</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
                         <img src="img/merchant-card3.png">
                     </div>
                     <div class="promo-des">
-                        <h3>5% off The Bespoke Club suits</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
 
                 <div class="promo-card"  id="modal-8">
                     <div class="promo-img">
-                        <img src="img/merchant-card8.png">
+                        <!--<img src="img/merchant-card8.png">-->
                     </div>
                     <div class="promo-des">
                         <h3>5% off</h3>
@@ -147,7 +147,7 @@
                         <img src="img/merchant-card9.png">
                     </div>
                     <div class="promo-des">
-                        <h3>[Title]</h3>
+                        <h3>5% off</h3>
                         <h4>Click for QR Code</h4>
                     </div>
                 </div>
