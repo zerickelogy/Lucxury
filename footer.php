@@ -7,9 +7,9 @@
     <div class="footer-item sitemap">
         <h5>Sitemap</h5>
         <div class="footer-subitem">
-            <a href="./login.php">Home</a><br/>
+            <a href="./index.php">Home</a><br/>
             <a href="./login.php">Merchants</a><br/>
-            <a href="./login.php">Promotions</a><br/>
+            <a href="./promotions.php">Promotions</a><br/>
             <a href="./faq.php">FAQs</a><br/>
         </div>
     </div>
