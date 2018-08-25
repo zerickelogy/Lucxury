@@ -58,6 +58,8 @@ $search_item = $_POST['search_item'];
             getAllColors();
             getAllMerchants();
             filter();
+            
+            $('#merchants_container').val('Dorcas Stitch');
 
             $('.trigger_filter').change(function () {
                 priceSort_global = $('#order_container').val();
