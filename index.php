@@ -41,13 +41,13 @@
 
     <!-- start of navigation bar  -->
 
-<!--     <div class="hamburger-menu nav-left visible-xs">
-        <div class="button" id="btn">
-            <div class="top bar"></div>
-            <div class="middle bar"></div>
-            <div class="bottom bar"></div>
-        </div>
-    </div> -->
+    <!--     <div class="hamburger-menu nav-left visible-xs">
+            <div class="button" id="btn">
+                <div class="top bar"></div>
+                <div class="middle bar"></div>
+                <div class="bottom bar"></div>
+            </div>
+        </div> -->
 
     <!-- only put content into main tag -->
 
@@ -60,7 +60,10 @@
                     <div class="carousel-des">
                         <h2>Dorcas Stitch</h2>
                         <h4>Bespoke Menswear</h4>
-                        <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                        <form method="post" action="products.php">
+                            <input name="dorcas stitch">
+                            <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                        </form>
                     </div>
                     <img src="img/image1.png">
                 </div>
@@ -106,7 +109,7 @@
                 </div>
             </div>
             <div class="btn-container">
-                <button class="line-btn card-btn"><a href="./categories.php">browse <i class="fas fa-chevron-right"></i></a></button>
+                <button class="line-btn card-btn"><a target="_blank" href="./categories.php">browse <i class="fas fa-chevron-right"></i></a></button>
             </div>
         </div>
 
@@ -115,7 +118,7 @@
             <div class="merchant-box calvin-klein"></div>
             <div class="merchant-box ralph-lauren"></div>
             <div class="merchant-box tommy-hilfiger"></div>
-            <div class="merchant-box more-merchant-btn"><a href="promotions.php">more merchants <i class="fas fa-chevron-right"></i></a></div>
+            <div class="merchant-box more-merchant-btn"><a target="_blank" href="promotions.php">more merchants<i class="fas fa-chevron-right"></i></a></div>
         </div>
 
         <div class="container email-newsletter">
@@ -142,14 +145,14 @@
 
 
         </div>
-        
+
         <?php include 'footer.php'; ?>
-        
+
 
 
     </main>
 
-    
+
     <!-- end of main tag = end of content  -->
 
     <?php include 'blue-section.php'; ?>
