@@ -17,7 +17,10 @@ $search_item = $_POST['search_item'];
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/dropdown.css">
     <!--<link rel="stylesheet" href="css/selector-mobile.css">--> 
-
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/aos.css">
 
