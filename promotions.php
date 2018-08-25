@@ -307,7 +307,7 @@
                         <img src="img/h2-hub-logo.png">
                     </div>
 
-                    <h3>Faire Leather Co.</h3>
+                    <h3>Faire Leather Co.</h3><br><br>
                     <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
