@@ -78,6 +78,7 @@ var search_global = "<?php echo $search_item; ?>";
             console.log(condition_global);
             console.log(merchant_global);
             console.log(gender_global);
+            $('#title_container').text(search_global);
             $.ajax({
                 type: "GET",
                 async: false,
@@ -239,7 +240,7 @@ var search_global = "<?php echo $search_item; ?>";
         <!-- start of content  -->
 
         <div class="container product-container container-header">
-            <h2>Clothings</h2>
+            <h2 id="title_container"></h2>
 
             <div class="dropdown-container">
                 <div class="custom-select2 db-price">
