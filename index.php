@@ -61,7 +61,7 @@
                         <h2>Dorcas Stitch</h2>
                         <h4>Bespoke Menswear</h4>
                         <form method="post" action="products.php">
-                            <input name="dorcas stitch">
+                            <input type="hidden" name="dorcas stitch">
                             <button type="submit" class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
                         </form>
                     </div>
