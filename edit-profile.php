@@ -136,7 +136,7 @@ if (mysqli_num_rows($result) > 0) {
 
                     <div class="dropdown-container">
                         <h4>Age</h4>
-                        <div class="custom-select2 db-price">
+                        <div class="custom-select2">
                             <select id="agerange_container" name="age_range">
                                 <option>Select</option>
                                 <option>18 - 25</option>
@@ -150,7 +150,7 @@ if (mysqli_num_rows($result) > 0) {
 
                     <div class="dropdown-container">
                         <h4 id="country_id">Country</h4>
-                        <div class="custom-select2 db-price">
+                        <div class="custom-select2">
                             <select id="countries_container" name="country">
                                 <option>Select</option>
                             </select>
