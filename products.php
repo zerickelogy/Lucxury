@@ -44,7 +44,7 @@ $search_item = $_POST['search_item'];
 
     <!--start of glenns script-->
     <script>
-var search_global = "<?php echo $search_item; ?>";
+        var search_global = "<?php echo $search_item; ?>";
         var priceSort_global = "";
         var brand_global = "";
         var color_global = "";
