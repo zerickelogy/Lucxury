@@ -71,6 +71,7 @@ var search_global = "<?php echo $search_item; ?>";
 
 
         function filter() {
+            $("#some_container").html("");
             console.log(search_global);
             console.log(priceSort_global);
             console.log(brand_global);
