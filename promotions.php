@@ -134,7 +134,7 @@
 
                 <div class="promo-card"  id="modal-8">
                     <div class="promo-img">
-                        <!--<img src="img/merchant-card8.png">-->
+                        <img src="img/merchant-card8.png">
                     </div>
                     <div class="promo-des">
                         <h3>5% off</h3>
@@ -312,7 +312,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
-                        <img src="img/qr/faire-qrcode.png">
+                        <--<img src="img/qr/faire-qrcode.png">-->
                         <h4>Promo Code: <u>LUCXURY</u></h4>
                         <div class="promotion-terms">
                             <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
