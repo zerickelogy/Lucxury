@@ -127,22 +127,23 @@ $search_item = $_POST['search_item'];
                                     for (var i = 0; i < response.length; i++) {
                                         image_url = response[i]["itemstorage_image_url"];
                                     }
+                                    output += '<div class="product-card">' +
+                                            '<div class="product-img">' +
+                                            '<div class="product-merchant">' + merchant_name + '</div>' +
+                                            '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
+                                            '</div>' +
+                                            '<div class="product-des">' +
+                                            '<h3>' + product_name + '</h3>' +
+                                            '<span id="product-price">' + product_price_amount + '</span>|<span id="product-colour">' + product_color + '</span>,<span id=product-condition>' + product_condition + '</span>' +
+                                            '</div>' +
+                                            '</div>';
                                 },
                                 error: function (obj, textStatus, errorThrown) {
                                     console.log("Error " + textStatus + ": " + errorThrown);
                                 }
                             });
 
-                            output += '<div class="product-card">' +
-                                    '<div class="product-img">' +
-                                    '<div class="product-merchant">' + merchant_name + '</div>' +
-                                    '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
-                                    '</div>' +
-                                    '<div class="product-des">' +
-                                    '<h3>' + product_name + '</h3>' +
-                                    '<span id="product-price">' + product_price_amount + '</span>|<span id="product-colour">' + product_color + '</span>,<span id=product-condition>' + product_condition + '</span>' +
-                                    '</div>' +
-                                    '</div>';
+
                         }
                     }
                     $("#some_container").html(output);
