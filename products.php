@@ -132,7 +132,7 @@ $search_item = $_POST['search_item'];
                                     output += '<div class="product-card">' +
                                             '<div class="product-img">' +
                                             '<div class="product-merchant">' + merchant_name + '</div>' +
-                                            '<a target="_blank" href=' + merchant_url + '><img src="../' + image_url + '"></a>' +
+                                            '<a target="_blank" href="' + merchant_url + '"><img src="../' + image_url + '"></a>' +
                                             '</div>' +
                                             '<div class="product-des">' +
                                             '<h3>' + product_name + '</h3>' +
