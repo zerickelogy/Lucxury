@@ -90,7 +90,7 @@ session_start();
                 </div>
             </div>
             <div class="btn-container">
-                <button class="line-btn card-btn"><a href="categories.html">browse <i class="fas fa-chevron-right"></i></a></button>
+                <button class="line-btn card-btn"><a href="categories.php">browse <i class="fas fa-chevron-right"></i></a></button>
             </div>
         </div>
 
