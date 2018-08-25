@@ -308,7 +308,7 @@
                     </div>
 
                     <h3>Faire Leather Co.</h3>
-                    <h4>Scan the QR Code below:</h4>
+                    <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
