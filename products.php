@@ -123,7 +123,7 @@ $search_item = $_POST['search_item'];
                                 url: "Webservices/getImageUrlFromItemFilterId.php",
                                 data: {itemstorage_id: item_id},
                                 cache: false,
-//                                async: false,
+                                async: false,
                                 dataType: "JSON",
                                 success: function (response) {
                                     for (var i = 0; i < response.length; i++) {
