@@ -19,7 +19,7 @@ if (mysqli_num_rows($result) > 0) {
     $result = mysqli_query($link, $query2) or die(mysqli_error($link));
 //    Email init
     $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'From: Your name <lucxury@lucxury.com>' . "\r\n";
+    $headers .= 'From: Your name <noreply@lucxury.com>' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     $subject = "Lucxury - Password reset";
@@ -39,12 +39,14 @@ if (mysqli_num_rows($result) > 0) {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title></title>
         <script>
-        $(document).ready(function(){
-           alert('<?php echo $msgForWebsite; ?>'); 
-        });
         </script>
     </head>
     <body>
-
+<?php echo 'Dear' . $_SESSION['username'] . ", <br/><br/>" ; ?>
+        <?php echo "Your password has been reset. Please login at <a href='https://www.lucxury.com/login_page.php'>Login to Lucxury</a> with your login name & the new password:<br/><br/>"; ?>
+        <?php echo $string. "<br/><br/>"; ?>
+        <?php echo 'You can change the password on the "Edit Profile" page afterwards.<br/><br/>'; ?>
+        <?php echo 'Best Regards,<br/><br/>'; ?>
+        <?php echo 'LUCXURY'; ?>
     </body>
 </html>

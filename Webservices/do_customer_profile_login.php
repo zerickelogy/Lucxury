@@ -31,10 +31,16 @@ if (mysqli_num_rows($result) > 0) {
                 margin-right: auto
             }
         </style>
+        <script>
+            $(document).ready(function () {
+                alert("Please wait while the page is loading..");
+            });
+        </script>
+
     </head>
     <body>
         <?php
-        echo $msg;
+//        echo $msg;
         ?>
     </body>
 </html>
