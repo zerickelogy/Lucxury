@@ -22,8 +22,7 @@
 
 .custom-select2 {
   position: relative;
-  /*min-width: 250px;*/
-  /*width: 250px;*/
+  max-width: 220px;
   display: inline-block;
   outline: none;
 }
@@ -43,6 +42,7 @@
   outline: none;
   background-color: #efefef;
   border-radius: 0px;
+  width: 220px;
 }
 
 
