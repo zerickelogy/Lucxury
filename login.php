@@ -106,7 +106,7 @@
                         </div>
 
                         <div class="forget-modal-btn-container">
-                            <button type="submit" class="line-btn forget-modal-btn"><a href="#">Submit <i class="fas fa-chevron-right"></i></a></button>
+                            <button type="submit" class="line-btn forget-modal-btn">Submit <i class="fas fa-chevron-right"></i></button>
                         </div>
                     </form>
                 </div>
