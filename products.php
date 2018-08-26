@@ -61,7 +61,7 @@ if (isset($_POST['categories'])) {
                 getAllBrands();
                 getAllColors();
                 getAllMerchants();
-
+                filter();
 
                 if ('<?php echo $merchant; ?>') {
                     $("#merchants_container").val('<?php echo $merchant; ?>');
