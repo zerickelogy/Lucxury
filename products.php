@@ -85,7 +85,7 @@ if (isset($_POST['categories'])) {
                     filter();
                 }
 
-                $('.trigger_filter').click(function () {
+                $('.trigger_filter').change(function () {
                     priceSort_global = $('#order_container').val();
                     brand_global = $('#brands_container').val();
                     color_global = $('#colors_container').val();
