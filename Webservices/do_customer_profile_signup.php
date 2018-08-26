@@ -23,12 +23,25 @@ if ($result) {
     $response["result"] = "success";
     $_SESSION['username'] = $username;
     $_SESSION['gender'] = $gender;
+
+    //    Email init
+    $headers = 'MIME-Version: 1.0' . "\r\n";
+    $headers .= 'From: Your name <noreply@lucxury.com>' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+    $subject = "Lucxury - Password reset";
+//    $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
+
+    $msgForEmail = "<div>Dear $username,</div><br/>"
+            . "<div>You received this email because you have recently signed up for a membership in LUCXURY.</div><br/>"
+            . "<div></div><br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
+
+    mail("$email", "LUCXURY - New user signup", $msgForEmail, $headers);
 } else {
     $response["result"] = "fail";
 }
 //echo json_encode($response);
 mysqli_close($link);
-
 ?>
 <html>
     <head>
@@ -37,12 +50,12 @@ mysqli_close($link);
         <!--<meta http-equiv="refresh" content="0.1; URL=../index.php">-->
         <meta name="keywords" content="automatic redirection">
         <title></title>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script>
             $(document).ready(function () {
                 var result = "<?php echo $response['result'] ?>";
-                if (confirm("Account creation: " + result+". A Confirmation Email will be sent within 24hrs")) {
+                if (confirm("Account creation: " + result + ". A Confirmation Email will be sent within 24hrs")) {
                     window.location.replace("../login.php");
                 } else {
                     window.history.back();
