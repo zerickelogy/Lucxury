@@ -138,7 +138,7 @@
                     </div>
                     <div class="promo-des">
                         <h3>5% off</h3>
-                        <h4>Click for QR Code</h4>
+                        <h4>Click for Promo Code</h4>
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                     </div>
                     <div class="promo-des">
                         <h3>5% off</h3>
-                        <h4>Click for QR Code</h4>
+                        <h4>Click for Promo Code</h4>
                     </div>
                 </div>
             </div>
