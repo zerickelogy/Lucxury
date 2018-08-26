@@ -36,9 +36,11 @@ if (isset($_GET['merchant'])) {
     $query .= "AND `merchant`.`merchant_name` LIKE '%$merchant%' ";
 }
 
+$query .= "ORDER BY `merchant`.`featured_merchant` DESC ";
+
 if (isset($_GET['priceSort'])) {
     $priceSort = $_GET['priceSort'];
-    $query .= "ORDER BY `item_storage`.`itemstorage_price_amount` $priceSort";
+    $query .= ", `item_storage`.`itemstorage_price_amount` $priceSort";
 }
 
 //echo $query;
