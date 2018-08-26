@@ -26,7 +26,7 @@ if ($result) {
 
     //    Email init
     $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'From: Your name <noreply@lucxury.com>' . "\r\n";
+    $headers .= 'From: LUCXURY <noreply@lucxury.com>' . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     $subject = "Lucxury - Password reset";
