@@ -14,15 +14,6 @@ if (!isset($_SESSION['username'])) {
 
     <div id="logo"><a href="index.php"><img id="logo-img" src="img/logo-black.png"></a></div>
 
-    <!-- <div id="men-women">
-        <a href="#" class="cat-active">men</a>
-        <a href="#">women</a>
-    </div> -->
-
-<!--    <div class="user-id user-nav">
-        <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
-    </div>-->
-
     <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>
 
     <div id="myOverlay" class="overlay">
@@ -38,7 +29,5 @@ if (!isset($_SESSION['username'])) {
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
-
     </div>
-
 </nav>

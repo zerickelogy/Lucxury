@@ -1,10 +1,10 @@
 <!doctype html>
-
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lucxury</title>
+        <title>Lucxury – Privacy & Policy</title>
         <meta name="description" content="Welcome to Lucxury.">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Playfair+Display:400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -14,14 +14,16 @@
         <link rel="stylesheet" href="css/accordion.css">
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/animate.css">
-
-        
         <link rel="stylesheet" href="css/aos.css">
-        
+        <!-- javascript -->
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery-scrollto.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -31,73 +33,14 @@
         <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="manifest" href="favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-
     </head>
 
     <body>
-
-        <!-- start of navigation bar  -->
-
-        <!-- <div class="hamburger-menu nav-left visible-xs">
-            <div class="button" id="btn">
-                <div class="top bar"></div>
-                <div class="middle bar"></div>
-                <div class="bottom bar"></div>
-            </div>
-        </div> -->
-
-        <!-- only put content into main tag -->
-
         <main>
-            <!--<nav id="navigation-bar">
-                <div class="hamburger-menu nav-left hidden-xs">
-                    <div class="button" id="btn">
-                        <div class="top bar"></div>
-                        <div class="middle bar"></div>
-                        <div class="bottom bar"></div>
-                    </div>
-                </div>
-
-            <div id="logo"><a href="index.html"><img id="logo-img" src="img/logo-black.png"></a></div>
-
-            <div id="men-women">
-                <a href="#" class="cat-active">men</a>
-                <a href="#">women</a>
-            </div>
-
-            <div class="user-id user-nav">
-                <i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a>
-            </div>
-            
-
-            <button id="search-bar" onclick="openSearch()"><i class="fas fa-search"></i></button>-->
-
-            <div id="myOverlay" class="overlay">
-
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">
-                    <span class="stroke left"></span>
-                    <span class="stroke right"></span>
-                </span>
-
-                <div class="overlay-content" method="post">
-                    <form action="product_page.php">
-                        <input name="search_item" type="text" placeholder="Search for products..." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-
-            </div>
-                
-            </nav>
-
             <div class="container container-header terms-and-conditions">
                 <h2>Privacy Policy</h2>
                 <div class="terms-container">
@@ -232,33 +175,13 @@
                         </li>
                     </ol>
                 </div>
-
-                
             </div>
 
-                  <?php include 'footer.php'; ?>
+            <?php include 'footer.php'; ?>
 
         </main>
 
         <!-- end of main tag = end of content  -->
-
-        <div class="sidebar">
-
-            <div class="sidebar-item user-id"><i class="fas fa-user"></i><a href="#">Hello, Adeline Lui</a></div>
-
-            <div class="sidebar-item category cat-selector"><a href="#">Men</a><a href="#">Women</a></div>
-
-            <ul class="sidebar-list">
-                <li class="sidebar-item"><a href="https://lucxury.com/lucxury_wp/" class="sidebar-anchor">News / Media</a></li>
-                <li class="sidebar-item"><a href="promotions.html" class="sidebar-anchor">Promotions</a></li>
-                <li class="sidebar-item"><a href="#" class="sidebar-anchor">FAQs</a></li>
-                <li class="sidebar-item"><a href="edit-profile.html" class="sidebar-anchor">Edit profile</a></li>
-            </ul>
-
-
-            <div class="sidebar-item logout-btn"><a href="#">Logout</a></div>
-
-        </div>
 
         <script>
             $(document).ready(function() {
@@ -278,11 +201,9 @@
                              toggleSidebar();
                     }
                   });
-
             });
-
-
         </script>
+
         <script>
             function openSearch() {
               $("#myOverlay").fadeIn(500).css("display","block");
@@ -295,10 +216,9 @@
         </script>
 
         <script src="js/aos.js"></script>
+
         <script>
          AOS.init();
        </script>
-        
-        
     </body>
 </html>

@@ -16,11 +16,16 @@
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/dropdown-forms.css">
         <link rel="stylesheet" href="css/aos.css">
+        <!-- javascript -->
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/jquery-scrollto.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+        <!-- favicon -->
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -30,10 +35,6 @@
         <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="manifest" href="favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
@@ -41,18 +42,6 @@
     </head>
 
     <body>
-        <!-- start of navigation bar  -->
-
-        <!-- <div class="hamburger-menu nav-left visible-xs">
-            <div class="button" id="btn">
-                <div class="top bar"></div>
-                <div class="middle bar"></div>
-                <div class="bottom bar"></div>
-            </div>
-        </div> -->
-
-        <!-- only put content into main tag -->
-
         <main>
             <?php // include './Webservices/do_customer_profile_signup.php'; ?>
             <div class="container signup-container container-header">
@@ -94,7 +83,6 @@
                         <label>Last Name</label>
                         <input class="form-padding-small-btm" type="text" name="last_name" placeholder="Your last name.." id="enter-lastname">
                     </div>
-
 
                     <div class="radio-box">
                         <h4>I am...</h4>
@@ -140,13 +128,12 @@
                     </div>
                 </form>
             </div>
-
-           
         </main>
 
         <!-- end of main tag = end of content  -->
 
         <?php // include 'blue-section.php'; ?>
+
         <script>
             $(document).ready(function () {
                 getAllCountries();
@@ -186,7 +173,6 @@
                             url: "./Webservices/checkExistingEmail.php",
                             data: {email: emailToBeTested},
                             cache: false,
-//                            dataType: "JSON",
                             success: function (response) {
                                 if (response == '"no email found"') {
                                     console.log(emailToBeTested + " is available.");
@@ -232,7 +218,7 @@
                             cache: false,
 //                            dataType: "JSON",
                             success: function (response) {
-                                if (response == '"no username found"') { //satisfies
+                                if (response == '"no username found"') { 
                                     console.log(usernameToBeTested + " is available.");
 
                                     var input = $(this);
@@ -286,17 +272,6 @@
                     });
                 }
 
-//                $('#enter-email').on('input', function () {
-//                    var input = $(this);
-//                    var is_name = input.val();
-//                    if (is_name) {
-//                        input.removeClass("invalid").addClass("valid");
-//                    } else {
-//                        input.removeClass("valid").addClass("invalid");
-//                        $("#error-email").text("Please enter an email address");
-//                    }
-//                });
-
                 $('#enter-email').on('input', function () {
                     var input = $(this);
                     var span = $('.error-email');
@@ -306,14 +281,10 @@
                     if (is_email) {
                         input.removeClass("invalid").addClass("valid"); //satisfies
                         span.css("display", "none")
-
-
                     } else {
                         input.removeClass("valid").addClass("invalid");
                         span.css("display", "block")
                         $("#error-email").text("Please enter a valid email address");
-
-
                     }
                 });
 
@@ -345,7 +316,7 @@
                     var input = $(this);
                     var errorText = $('.error');
                     var span = $('.error-repassword');
-                    if ($(this).val() == $('#enter-password').val()) { //satisfies
+                    if ($(this).val() == $('#enter-password').val()) { 
                         input.removeClass("invalid").addClass("valid");
                         span.css("display", "none");
                         $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
@@ -360,90 +331,9 @@
                     }
 
                 });
-
-//                    var input = $(this);
-//                    var span = $('.error-repassword')
-//                    var validate = $("#enter-password").val()
-//                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-//                    var is_repassword = pw.test(input.val());
-//                    if (is_repassword) {
-//                        input.removeClass("invalid").addClass("valid");
-//                        span.css("display", "none");
-//                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
-//                    } else {
-//                        input.removeClass("valid").addClass("invalid");
-//                        span.css("display", "block");
-//                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
-//                    }
-
-                // $('#enter-password').on('input', function () {
-                //     var input = $(this);
-                //     var span = $('.error-password')
-                //     var pw = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W_]).*$/
-                //     // var test = /^.*(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W_]).*$/
-                //     var is_password = pw.test(input.val());
-                //     if (is_password) {
-                //         // is_password.test(pw)
-                //         input.removeClass("invalid").addClass("valid");
-                //         span.css("display", "none");
-                //         $("#enter-password").css("border-bottom", "1px solid green").css("color","green");
-
-                //     } else {
-                //         input.removeClass("valid").addClass("invalid");
-                //         span.css("display", "block");
-                //         $("#enter-password").css("border-bottom", "1px solid red").css("color","red");
-                //         $(":input.password-padding").css("margin-bottom", "80px;");
-
-                //     }
-                // });
-
-//                $("profile-fills").on(function() {
-//                    if (":input").is(".valid") {
-//                        $(".before-submitting").css("display", "block");
-//                        $(".submit-line-btn").css("display", "block");
-//                    } else {
-//                        $(".before-submitting").css("display", "none");
-//                        $(".submit-line-btn").css("display", "none");
-//                    }
-//                });
-//                $('#reenter-password').on('input', function () {
-//                    var input = $(this);
-//                    var span = $('.error-repassword')
-//                    var pw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-//                    var is_repassword = pw.test(input.val());
-//                    if (is_repassword == "#enter-password") {
-//                        input.removeClass("invalid").addClass("valid");
-//                        span.css("display", "none");
-//                        $("#reenter-password").css("border-bottom", "1px solid green").css("color", "green");
-//                    } else {
-//                        input.removeClass("valid").addClass("invalid");
-//                        span.css("display", "block");
-//                        $("#reenter-password").css("border-bottom", "1px solid red").css("color", "red");
-//                    }
-//                });
-
-                // $('#enter-firstname').on('input', function () {
-                //     var input = $(this);
-                //     var is_name = input.val();
-                //     if (is_name) {
-                //         input.removeClass("invalid").addClass("valid");
-                //     } else {
-                //         input.removeClass("valid").addClass("invalid");
-                //     }
-                // });
-
-                // $('#enter-lastname').on('input', function () {
-                //     var input = $(this);
-                //     var is_name = input.val();
-                //     if (is_name) {
-                //         input.removeClass("invalid").addClass("valid");
-                //     } else {
-                //         input.removeClass("valid").addClass("invalid");
-                //     }
-                // });
-
             });
         </script>
+
         <script>
             function openSearch() {
                 $("#myOverlay").fadeIn(500).css("display", "block");
@@ -456,10 +346,11 @@
         </script>
 
         <script src="js/aos.js"></script>
+
         <script>
             AOS.init();
         </script>
-        <script src="js/dropdown.js"></script>
 
+        <script src="js/dropdown.js"></script>
     </body>
 </html>
