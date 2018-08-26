@@ -33,7 +33,7 @@ if ($result) {
 //    $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
 
     $msgForEmail = "<div>Dear $username,</div><br/>"
-            . "<img src='../img/signUpSuccessfulEmail_cust/signup_image.jpeg'></div><br/>"
+            . '<img src="../img/signUpSuccessfulEmail_cust/signup_image.jpeg" alt=""/>'
             . "<br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
     mail("$email", "LUCXURY - New user signup", $msgForEmail, $headers);
@@ -44,6 +44,7 @@ if ($result) {
 mysqli_close($link);
 ?>
 <html>
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
