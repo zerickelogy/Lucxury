@@ -33,8 +33,8 @@ if ($result) {
 //    $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
 
     $msgForEmail = "<div>Dear $username,</div><br/>"
-            . "<div>You received this email because you have recently signed up for a membership in LUCXURY.</div><br/>"
-            . "<div></div><br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
+            . "<img src='../img/signUpSuccessfulEmail_cust/signup_image.jpeg'></div><br/>"
+            . "<br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
     mail("$email", "LUCXURY - New user signup", $msgForEmail, $headers);
 } else {
