@@ -243,7 +243,7 @@
                     <span class="close" id="close5">&times;</span>
 
                     <h3>Foundation Jewellers</h3><br><br>
-                    <h4>Scan the QR Code below:</h4>
+                    <!--<h4>Scan the QR Code below:</h4>-->
                 </div>
                 <div class="modal-body">
                     <div class="QR-container">
