@@ -91,20 +91,26 @@
                             <form name="watch1" method="post" action="products.php">
                                 <input type="hidden" name="categories" value="WATCHES">
                                 <div class="card-img"><img src="img/card-watch.png"></div>
-                            <div class="card-des">Watches</div>
+                                <div class="card-des">Watches</div>
                             </form>
                         </a>
                     </div>
                     <div class="card c2" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="#">
-                            <div class="card-img"><img src="img/card-shoes.png"></div>
-                            <div class="card-des">Shoes</div>
+                        <a href="#" onclick="shoes1.submit();">
+                            <form name="shoes1" method="post" action="products.php">
+                                <input type="hidden" name="categories" value="SHOES">
+                                <div class="card-img"><img src="img/card-shoes.png"></div>
+                                <div class="card-des">Shoes</div>
+                            </form>
                         </a>
                     </div>
                     <div class="card c3" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="#">
-                            <div class="card-img"><img src="img/card-bags.png"></div>
-                            <div class="card-des">Bags</div>
+                        <a href="#" onclick="bags1.submit();">
+                            <form name="bags1" method="post" action="products.php">
+                                <input type="hidden" name="categories" value="BAGS">
+                                <div class="card-img"><img src="img/card-bags.png"></div>
+                                <div class="card-des">Bags</div>
+                            </form>
                         </a>
                     </div>
                 </div>
