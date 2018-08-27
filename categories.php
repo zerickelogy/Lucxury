@@ -48,39 +48,53 @@
                 <div class="cat-cards">
                     <div class="card-holder">
                         <div class="card c1" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-clothings.png"></div>
-                                <div class="card-des">Clothings</div>
+                            <a href="#" onclick="clothings2.submit();">
+                                <form name="clothings2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="CLOTHINGS">
+                                    <div class="card-img"><img src="img/card-clothings.png"></div>
+                                    <div class="card-des">Clothings</div>
+                                </form>
                             </a>
                         </div>
                         <div class="card c2" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-shoes.png"></div>
-                                <div class="card-des">Shoes</div>
+                            <a href="#" onclick="shoes2.submit();">
+                                <form name="shoes2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="SHOES">
+                                    <div class="card-img"><img src="img/card-shoes.png"></div>
+                                    <div class="card-des">Shoes</div></form>
                             </a>
                         </div>
                         <div class="card c3" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-bags.png"></div>
-                                <div class="card-des">Bags</div>
+                            <a href="#" onclick="bags2.submit();">
+                                <form name="bags2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="BAGS">
+                                    <div class="card-img"><img src="img/card-bags.png"></div>
+                                    <div class="card-des">Bags</div></form>
                             </a>
                         </div>
                         <div class="card c4" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-watch.png"></div>
-                                <div class="card-des">Watches</div>
+                            <a href="#" onclick="watches2.submit();">
+                                <form name="watches2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="WATCHES">
+                                    <div class="card-img"><img src="img/card-watch.png"></div>
+                                    <div class="card-des">Watches</div></form>
                             </a>
                         </div>
                         <div class="card c5" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-accessories.png"></div>
-                                <div class="card-des">Accessories</div>
+                            <a href="#" onclick="accessories2.submit();">
+                                <form name="accessories2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="ACCESSORIES">
+                                    <div class="card-img"><img src="img/card-accessories.png"></div>
+                                    <div class="card-des">Accessories</div></form>
                             </a>
                         </div>
                         <div class="card c6" data-aos="fade-up" data-aos-duration="1000">
-                            <a href="#">
-                                <div class="card-img"><img src="img/card-leather.png"></div>
-                                <div class="card-des">Small Leather Goods</div>
+                            <a href="#" onclick="small_l_goods2.submit();">
+                                <form name="small_l_goods2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="SMALL LEATHER GOODS">
+                                    <div class="card-img"><img src="img/card-leather.png"></div>
+                                    <div class="card-des">Small Leather Goods</div>
+                                </form>
                             </a>
                         </div>
                     </div>
