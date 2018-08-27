@@ -61,6 +61,7 @@ if (isset($_POST['categories'])) {
                 getAllBrands();
                 getAllColors();
                 getAllMerchants();
+                getAllCategories();
                 filter();
 
                 if ('<?php echo $merchant; ?>') {
