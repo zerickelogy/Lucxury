@@ -34,7 +34,7 @@ if ($result) {
 
     $msgForEmail = "<div>Dear $username,</div><br/>"
             . '<div>Welcome to Lucxury</div><br/>'
-            . '<div>Step into the world of Singapore’s luxury labels that will ignite your passion for exquisite products to satisfy your true reason and purpose of every purchase.</div><br/>'
+            . '<div>Step into the world of Singapore\'s luxury labels that will ignite your passion for exquisite products to satisfy your true reason and purpose of every purchase.</div><br/>'
             . "<br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
     mail("$email", "LUCXURY - New user signup", $msgForEmail, $headers);
