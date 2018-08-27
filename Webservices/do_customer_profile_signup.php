@@ -33,7 +33,8 @@ if ($result) {
 //    $msgForWebsite = "Password has been reset. Please check your email and spam/junk folder.";
 
     $msgForEmail = "<div>Dear $username,</div><br/>"
-            . '<img src="../img/signUpSuccessfulEmail_cust/signup_image.jpeg" alt=""/>'
+            . '<div>Welcome to Lucxury</div><br/>'
+            . '<div>Step into the world of Singapore’s luxury labels that will ignite your passion for exquisite products to satisfy your true reason and purpose of every purchase.</div><br/>'
             . "<br/><br/><div>Best Regards,</div><br/><div>LUCXURY</div><br/>";
 
     mail("$email", "LUCXURY - New user signup", $msgForEmail, $headers);
