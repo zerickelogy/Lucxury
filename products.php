@@ -76,7 +76,7 @@ if (isset($_POST['categories'])) {
                 }
 
                 if ('<?php echo $categories; ?>') {
-                    $("#categories_container").val('<?php echo $merchant; ?>');
+                    $("#categories_container").val('<?php echo $categories; ?>');
                     priceSort_global = $('#order_container').val();
                     brand_global = $('#brands_container').val();
                     color_global = $('#colors_container').val();

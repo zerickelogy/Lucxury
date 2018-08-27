@@ -31,10 +31,17 @@ if (isset($_GET['condition'])) {
     $query .= "AND `item_storage`.`itemstorage_condition` LIKE '%$condition%' ";
 }
 
+if (isset($_GET['category'])) {
+    $category = $_GET['category'];
+    $query .= "AND `item_storage`.`itemstorage_category` LIKE '%$category%' ";
+}
+
 if (isset($_GET['merchant'])) {
     $merchant = $_GET['merchant'];
     $query .= "AND `merchant`.`merchant_name` LIKE '%$merchant%' ";
 }
+
+
 
 $query .= "ORDER BY `merchant`.`featured_merchant` DESC ";
 
