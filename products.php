@@ -296,8 +296,8 @@ if (isset($_POST['categories'])) {
                             <option value="Women">Female</option>
                         </select>
                     </div>
-                    <div class="custom-select2 db-gender">
-                        <select class="trigger_filter" id="gender_container">
+                    <div class="custom-select2 db-categories">
+                        <select class="trigger_filter" id="categories_container">
                             <option value="">All Categories</option>
                         </select>
                     </div>
