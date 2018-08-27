@@ -51,7 +51,7 @@
                             <h4>Bespoke Menswear</h4>
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="DORCAS STITCH">
-                                <button type="submit" class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/image1.png">
@@ -63,7 +63,7 @@
                             <h4>Classic Timepieces</h4>
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="H2 HUB">
-                                <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button> <!-- "carousel-btn-black" for black btn -->
+                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button> <!-- "carousel-btn-black" for black btn -->
                             </form>
                         </div>
 
@@ -76,7 +76,7 @@
                             <h4>Effortless Luxury</h4>
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="51 LABEL">
-                                <button class="block-btn carousel-btn"><a href="#">shop now <i class="fas fa-chevron-right"></i></a></button>
+                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/image3.png">
