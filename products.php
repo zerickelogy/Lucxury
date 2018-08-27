@@ -247,6 +247,26 @@ if (isset($_POST['categories'])) {
                     }
                 });
             }
+
+            function getAllCategories() {
+                $.ajax({
+                    type: "GET",
+                    url: "Webservices/getAllCategories.php",
+                    cache: false,
+                    async: false,
+                    dataType: "JSON",
+                    success: function (response) {
+                        for (var i = 0; i < response.length; i++) {
+                            var x = response[i]['category'];
+                            $("#categories_container").append('<option value="' + x + '">' + x + '</option');
+                        }
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                        alert("fail to generate clicks");
+                    }
+                });
+            }
         </script>
 
         <!--end of glenns script-->
