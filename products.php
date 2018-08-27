@@ -303,13 +303,6 @@ if (isset($_POST['categories'])) {
                             <option value="">All Colours</option>
                         </select>
                     </div>
-                    <div class="custom-select2 db-condition">
-                        <select class="trigger_filter" id="conditions_container">
-                            <option value="">All Condition</option>
-                            <option value="NEW">New</option>
-                            <option value="USED">Used</option>
-                        </select>
-                    </div>
                     <div class="custom-select2 db-merchant">
                         <select class="trigger_filter" id="merchants_container">
                             <option value="">All Merchants</option>
