@@ -57,6 +57,7 @@ if (isset($_POST['categories'])) {
             var condition_global = "";
             var merchant_global = "";
             var gender_global = "";
+            var categories_global = "";
             $(document).ready(function () {
                 getAllBrands();
                 getAllColors();
@@ -72,6 +73,7 @@ if (isset($_POST['categories'])) {
                     condition_global = $('#conditions_container').val();
                     merchant_global = $('#merchants_container').val();
                     gender_global = $('#gender_container').val();
+                    categories_global = $('#categories_container').val();
                     filter();
                 }
 
@@ -83,6 +85,7 @@ if (isset($_POST['categories'])) {
                     condition_global = $('#conditions_container').val();
                     merchant_global = $('#merchants_container').val();
                     gender_global = $('#gender_container').val();
+                    categories_global = $('#categories_container').val();
                     filter();
                 }
 
@@ -93,6 +96,7 @@ if (isset($_POST['categories'])) {
                     condition_global = $('#conditions_container').val();
                     merchant_global = $('#merchants_container').val();
                     gender_global = $('#gender_container').val();
+                    categories_global = $('#categories_container').val();
                     filter();
                 });
             });
@@ -106,13 +110,14 @@ if (isset($_POST['categories'])) {
                 console.log(condition_global);
                 console.log(merchant_global);
                 console.log(gender_global);
+                console.log(categories_global);
                 $('#title_container').text(search_global);
                 $.ajax({
                     type: "GET",
                     async: false,
                     url: "Webservices/multiple_filter.php",
                     cache: false,
-                    data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global, merchant: merchant_global, priceSort: priceSort_global},
+                    data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global,category: categories_global, merchant: merchant_global, priceSort: priceSort_global},
                     dataType: "JSON",
                     success: function (response) {
                         var output = "";
