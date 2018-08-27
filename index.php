@@ -87,9 +87,11 @@
             <div class="container three-cards-container">
                 <div class="card-holder">
                     <div class="card c1" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="#">
+                        <a href="#" onclick="watch1.submit();">
+                            <form name="watch1" method="post" action="products.php">
                             <div class="card-img"><img src="img/card-watch.png"></div>
                             <div class="card-des">Watches</div>
+                            </form>
                         </a>
                     </div>
                     <div class="card c2" data-aos="fade-up" data-aos-duration="1000">
