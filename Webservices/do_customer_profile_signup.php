@@ -15,8 +15,13 @@ $age_range = $_POST['age_range'];
 //$home_address = $_POST["home_address"];
 $country = $_POST["country"];
 
-$query = "INSERT INTO `user`(`email`, `username`, `password`,`user_type`, `first_name`, `last_name`, `nric`, `country`, `dob`, `age_range`, `gender`, `address`, `postal_code`) " .
-        "VALUES ('$email', '$username',SHA1('$password'),'user', '$first_name','$last_name',null , '$country', null,'$age_range', '$gender', null, null)";
+$queryTimeAndDate = "SELECT NOW() as `now`";
+$result6 = mysqli_query($link, $queryTimeAndDate);
+$row = $result6->fetch_array();
+$now = $row['now'];
+
+$query = "INSERT INTO `user`(`email`, `username`, `password`,`user_type`, `first_name`, `last_name`,`datetime_created`, `nric`, `country`, `dob`, `age_range`, `gender`, `address`, `postal_code`) " .
+        "VALUES ('$email', '$username',SHA1('$password'),'user', '$first_name','$last_name', '$now', null , '$country', null,'$age_range', '$gender', null, null)";
 
 $result = mysqli_query($link, $query);
 if ($result) {
