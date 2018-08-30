@@ -1,7 +1,6 @@
-<?php 
+<?php
 session_start();
 if ($_SESSION['user_type'] == "admin") {
-    
 }
 ?>
 <div class="sidebar">
@@ -24,7 +23,10 @@ if ($_SESSION['user_type'] == "admin") {
 
 <script>
     $(document).ready(function () {
-        console.log('<?php echo $_SESSION['user_type'];   ?>');
+        console.log('<?php echo $_SESSION['user_type']; ?>');
+        if ('<?php echo $_SESSION['user_type']; ?>' == "admin") {
+            $('#sidebar-list').append('<li class="sidebar-item"><a href="./admin_dashboard.php" class="sidebar-anchor">Admin dashboard</a></li>');
+        }
     });
 
     function logout() {
