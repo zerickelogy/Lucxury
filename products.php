@@ -117,7 +117,7 @@ if (isset($_POST['categories'])) {
                     async: false,
                     url: "Webservices/multiple_filter.php",
                     cache: false,
-                    data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global,category: categories_global, merchant: merchant_global, priceSort: priceSort_global},
+                    data: {search: search_global, brand: brand_global, color: color_global, gender: gender_global, condition: condition_global, category: categories_global, merchant: merchant_global, priceSort: priceSort_global},
                     dataType: "JSON",
                     success: function (response) {
                         var output = "";
@@ -162,7 +162,7 @@ if (isset($_POST['categories'])) {
                                         output += '<div class="product-card">' +
                                                 '<div class="product-img">' +
                                                 '<div class="product-merchant">' + merchant_name + '</div>' +
-                                                '<a target="_blank" href="' + merchant_url + '"><img src="../' + image_url + '"></a>' +
+                                                '<a onclick="generateClicks('+ item_id +')" target="_blank" href="' + merchant_url + '"><img src="../' + image_url + '"></a>' +
                                                 '</div>' +
                                                 '<div class="product-des">' +
                                                 '<h3>' + product_name + '</h3>' +
@@ -273,8 +273,26 @@ if (isset($_POST['categories'])) {
                     }
                 });
             }
-        </script>
 
+            function generateClicks(item_id) {
+                $.ajax({
+                    type: "GET",
+                    url: "./Webservices/doGenerateClicks.php",
+                    data: {item_id: item_id},
+                    cache: false,
+//                    dataType: "JSON",
+                    success: function (response) {
+                        console.log("click tagged");
+                        console.log(response);
+                    },
+                    error: function (obj, textStatus, errorThrown) {
+                        console.log("Error " + textStatus + ": " + errorThrown);
+                        alert("fail to generate clicks");
+                    }
+                });
+            }
+        </script>
+        <?php ?>
         <!--end of glenns script-->
 
     </head>
