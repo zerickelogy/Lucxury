@@ -12,6 +12,7 @@ if (mysqli_num_rows($result) > 0) {
     $row = mysqli_fetch_array($result);
     $_SESSION["username"] = $row['username'];
     $_SESSION["user_id"] = $row['user_id'];
+    $_SESSION["user_type"] = $row['user_type'];
     $msg = "<img src='../img/WebsiteStatusImages/loadingImage.jpg'>";
     $output = "success";
     header("refresh:1;url=../index.php");
