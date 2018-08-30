@@ -277,7 +277,7 @@ if (isset($_POST['categories'])) {
             function generateClicks(item_id) {
                 $.ajax({
                     type: "GET",
-                    url: "./Webservices/doGenerateClicks.php",
+                    url: "./Webservices/doGenerateClicksv2.php",
                     data: {item_id: item_id},
                     cache: false,
 //                    dataType: "JSON",
