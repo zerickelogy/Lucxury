@@ -10,8 +10,7 @@ fputcsv($output, array("click id", "user id", "item storage id", "datetime click
 
 $query = "SELECT * FROM `click_storage`
 INNER JOIN `user` ON `click_storage`.`user_id`=`user`.`user_id`
-INNER JOIN `item_storage` ON `click_storage`.`item_storage_id`=`item_storage`.`item_storage_id`
-INNER JOIN `merchant` ON `item_storage`.`merchant_id`=`merchant`.`merchant_id`";
+INNER JOIN `item_storage` ON `click_storage`.`item_storage_id`=`item_storage`.`item_storage_id`";
 $result = mysqli_query($link, $query);
 while ($row = mysqli_fetch_assoc($result)) {
     fputcsv($output, $row);
