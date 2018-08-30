@@ -11,4 +11,6 @@ $row = $result6->fetch_array();
 $now = $row['now'];
 
 // insert into user table
-$query2 = "INSERT INTO `click_storage` (`click_id`, `user_id`, `item_storage_id`, `datetime_clicked`) VALUES (NULL, '$user_id', '$item_id', '$now');";
+$query = "INSERT INTO `click_storage` (`click_id`, `user_id`, `item_storage_id`, `datetime_clicked`) VALUES (NULL, '$user_id', '$item_id', '$now');";
+
+$result = mysqli_query($link, $query);
