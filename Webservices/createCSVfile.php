@@ -19,4 +19,4 @@ fclose($output);
 
 
 //if there is a duplicate column, such as 2 columns user id, just include in fputcsv, it will show column name only.
-//if there is a column with all NULL values, do not put any column names in it
+//if there is a column with all NULL values, just include in fputcsv, it will show column name as well.
