@@ -1005,6 +1005,26 @@ a.options-light {
 	color: #333;
 }
 
+.login-promotion {
+	position: absolute;
+	/*float: right;*/
+	right: 0px;
+	top: 38vh;
+}
+
+.login-promotion p {
+	font-family: 'Bodoni', 'Playfair Display', serif;
+	font-size: 14px;
+	letter-spacing: 0px;
+	text-transform: none;
+	width: 300px;
+	text-align: left;
+	padding: 20px 200px 20px 30px;
+	background: #fff;
+
+
+}
+
 .forget-modal-btn-container {
 	width: 100%;
 	text-align: center;
@@ -1203,6 +1223,33 @@ span#product-colour, span#product-condition {
 	.selector-container {
 		display: none;
 	}
+
+	.login-container {
+		overflow-y: scroll;
+	}
+
+	.login-links {
+		padding-bottom: 0px;
+	}
+
+	.login-promotion {
+		position: absolute;
+		right: 0px;
+		left: 0px;
+		top: 0vh;
+		/*bottom: 0px;*/
+	}
+
+	.login-promotion p {
+		font-family: 'Bodoni', 'Playfair Display', serif;
+		font-size: 14px;
+		letter-spacing: 0px;
+		text-transform: none;
+		width: 100%;
+		text-align: center;
+		padding: 20px 30px;
+		background: #fff;
+	}
 }
 
 @media (max-width: 1049px) {
@@ -1316,7 +1363,7 @@ span#product-colour, span#product-condition {
 	.login-container {
 		background-size: cover;
 		background-position: center;
-		overflow: hidden;
+		overflow-y: scroll;
 		padding-left: 10%;
 		padding-right: 10%;
 	}
@@ -1342,6 +1389,10 @@ span#product-colour, span#product-condition {
 
 	.product-card {
 		height: auto;
+	}
+
+	.login-container p {
+		margin-top: 10vh;
 	}
 
 
@@ -1730,7 +1781,7 @@ span#product-colour, span#product-condition {
 	.login-container p {
 	    font-size: 12px;
 	    letter-spacing: 8px;
-	    margin-top: 85px;
+	    margin-top: 120px;
 	}
 	.login-container img {
 		margin-top: 30px;
@@ -1740,7 +1791,7 @@ span#product-colour, span#product-condition {
 		width: 82%;
 	}
 	.login {
-		margin-top: 80px;
+		margin-top: 40px;
 	}
 
 	.login-btn {
@@ -1804,6 +1855,22 @@ span#product-colour, span#product-condition {
 		height: auto;
 	}
 
+	.login-promotion {
+		padding: 0px 40px;
+		background: #fff
+	}
+
+	.login-promotion p {
+		font-family: 'Bodoni', 'Playfair Display', serif;
+		font-size: 12px;
+		letter-spacing: 0px;
+		text-transform: none;
+		width: 100%;
+		text-align: center;
+		padding: 20px 0px;
+		background: #fff;
+	}
+
 }
 
 /*iphone 8 */
@@ -1829,7 +1896,7 @@ span#product-colour, span#product-condition {
 	.login-container p {
 	    font-size: 12px;
 	    letter-spacing: 8px;
-	    margin-top: 60px;
+	    /*margin-top: 1200px;*/
 	}
 	.login-container {
 		background-size: cover;
@@ -1925,6 +1992,10 @@ span#product-colour, span#product-condition {
 	.product-merchant {
 	    left: 15px;
 	    top: 15px;
+	}
+
+	.login-promotion {
+		padding: 0 20px;
 	}
 
 }
