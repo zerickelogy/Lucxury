@@ -58,14 +58,14 @@ and open the template in the editor.
     </head>
     <body>
         <main>
-            <?php include 'white-menubar.php'; ?>
+            <?php // include 'white-menubar.php'; ?>
             <!--<div class="container product-container container-header">-->
                 <br/>
                 <a class="btn btn-primary" id="clicks" href="Webservices/createCSVfile.php" role="button">Click here to download click statistics</a>
             <!--</div>-->
             <?php include 'footer.php'; ?>
         </main>
-        <?php include 'blue-section.php'; ?>
+        <?php // include 'blue-section.php'; ?>
         <script>
             $(document).ready(function () {
 
