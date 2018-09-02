@@ -14,3 +14,11 @@ $now = $row['now'];
 $query = "INSERT INTO `click_storage` (`click_id`, `user_id`, `item_storage_id`, `datetime_clicked`) VALUES (NULL, '$user_id', '$item_id', '$now');";
 
 $result = mysqli_query($link, $query);
+
+if ($result) {
+    $response["result"] = "success";
+} else {
+    $response["result"] = "fail";
+}
+
+echo json_encode($response);
