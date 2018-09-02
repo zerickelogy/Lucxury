@@ -59,7 +59,7 @@ and open the template in the editor.
     <body>
         <main>
             <?php include 'white-menubar.php'; ?>
-            <div class="container-fluid">
+            <div class="container product-container container-header">
                 <br/>
                 <a class="btn btn-primary" id="clicks" href="Webservices/createCSVfile.php" role="button">Click here to download click statistics</a>
             </div>
