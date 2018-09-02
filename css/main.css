@@ -52,6 +52,10 @@ main {
 	overflow: hidden;
 }
 
+@font-face {
+    font-family: 'Bodoni';
+    src: url(../font/bodoni-regular.TTF);
+}
 
 /*start of navigation bar*/
 
