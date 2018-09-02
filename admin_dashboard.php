@@ -64,5 +64,54 @@ and open the template in the editor.
         </div>
         <?php include 'footer.php'; ?>
         <?php include 'blue-section.php'; ?>
+                <script>
+            $(document).ready(function () {
+
+                function toggleSidebar() {
+                    $(".button").toggleClass("active");
+                    $("main").toggleClass("move-to-right");
+                    $(".sidebar-item").toggleClass("active");
+                }
+
+                $(".button").on("click tap", function () {
+                    toggleSidebar();
+                });
+
+                $(document).keyup(function (e) {
+                    if (e.keyCode === 27) {
+                        toggleSidebar();
+                    }
+                });
+
+                $(".owl-carousel").owlCarousel({
+                    margin: 0,
+                    center: true,
+                    autoWidth: true,
+                    item: 1,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    autoplayHoverPause: true,
+                    loop: true,
+                    dots: true
+                })
+            });
+        </script>
+
+        <script>
+            function openSearch() {
+                $("#myOverlay").fadeIn(500).css("display", "block");
+            }
+
+            // Close the full screen search box 
+            function closeSearch() {
+                $("#myOverlay").fadeOut(500);
+            }
+        </script>
+
+        <script src="js/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
