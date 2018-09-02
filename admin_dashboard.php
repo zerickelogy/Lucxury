@@ -64,7 +64,7 @@ and open the template in the editor.
         </div>
         <?php include 'footer.php'; ?>
         <?php include 'blue-section.php'; ?>
-                <script>
+        <script>
             $(document).ready(function () {
 
                 function toggleSidebar() {
@@ -83,17 +83,20 @@ and open the template in the editor.
                     }
                 });
 
-                $(".owl-carousel").owlCarousel({
-                    margin: 0,
-                    center: true,
-                    autoWidth: true,
-                    item: 1,
-                    autoplay: true,
-                    autoplayTimeout: 4000,
-                    autoplayHoverPause: true,
-                    loop: true,
-                    dots: true
-                })
+            });
+
+            // group filter into dropdown on mobile devices here
+
+            $(document).ready(function () {
+                if ($(window).width() < 1049) {
+                    $('.dropdown-container').wrapAll('<div class="drop-down">');
+                    $('.drop-down').wrapAll('<div class="tab-content">');
+                    $('<label for="tab-one" id="label-tab-one">Filter</label>').insertBefore($('.tab-content'));
+                    $('<input id="tab-one" type="checkbox" name="tabs">').insertBefore($('.tab-content'));
+                    $('#label-tab-one, #tab-one, .tab-content').wrapAll('<div class="tab">');
+                    $('.tab').wrapAll('<div class="half">');
+
+                }
             });
         </script>
 
@@ -113,5 +116,7 @@ and open the template in the editor.
         <script>
             AOS.init();
         </script>
+
+        <script src="js/dropdown.js"></script>
     </body>
 </html>
