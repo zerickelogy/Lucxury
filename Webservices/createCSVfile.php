@@ -6,7 +6,7 @@ include './dbconn.php';
 header('Content-Type: text/csv; charset=utf-8');
 header('Content-Disposition: attachment; filename=data.csv');
 $output = fopen("php://output", "w");
-fputcsv($output, array("click id", "user id", "item storage id", "datetime clicked", "user id", "email", "username", "password", "user type", "first name", "last name", "nric", "country", "dob", "age_range", "gender", "address", "postal code", "merchant id", "item name", "item price currency", "item price amount", "item brand", "item color", "item condition", "item category", "item more info url", "item image url"));
+fputcsv($output, array("click id", "user id", "item storage id", "datetime clicked", "email", "username", "password", "user type", "first name", "last name", "account created", "country", "dob", "age_range", "gender", "address", "postal code", "merchant id", "item name", "item price currency", "item price amount", "item brand", "item color", "item condition", "item category", "item more info url", "item image url"));
 
 $query = "SELECT * FROM `click_storage`
 INNER JOIN `user` ON `click_storage`.`user_id`=`user`.`user_id`
