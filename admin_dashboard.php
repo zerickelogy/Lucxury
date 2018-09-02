@@ -57,12 +57,14 @@ and open the template in the editor.
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     </head>
     <body>
-        <?php include 'white-menubar.php'; ?>
-        <div class="container-fluid">
-            <br/>
-            <a class="btn btn-primary" id="clicks" href="Webservices/createCSVfile.php" role="button">Click here to download click statistics</a>
-        </div>
-        <?php include 'footer.php'; ?>
+        <main>
+            <?php include 'white-menubar.php'; ?>
+            <div class="container-fluid">
+                <br/>
+                <a class="btn btn-primary" id="clicks" href="Webservices/createCSVfile.php" role="button">Click here to download click statistics</a>
+            </div>
+            <?php include 'footer.php'; ?>
+        </main>
         <?php include 'blue-section.php'; ?>
         <script>
             $(document).ready(function () {
@@ -118,5 +120,6 @@ and open the template in the editor.
         </script>
 
         <script src="js/dropdown.js"></script>
+
     </body>
 </html>
