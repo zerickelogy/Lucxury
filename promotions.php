@@ -149,7 +149,7 @@
                     <div class="modal-header">
                         <span class="close" id="close1">&times;</span>
 
-                        <h3>5% off H2Hub watches</h3>
+                        <h3>H2Hub watches</h3>
                         <h4>Scan the QR Code below:</h4>
                     </div>
                     <div class="modal-body">
@@ -171,7 +171,7 @@
                     <div class="modal-header">
                         <span class="close" id="close2">&times;</span>
 
-                        <h3>5% off 51Label</h3>
+                        <h3>51Label</h3>
                         <h4>Scan the QR Code below:</h4>
                     </div>
                     <div class="modal-body">
