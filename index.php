@@ -48,7 +48,7 @@
                     <div class="item-carousel item">
                         <div class="carousel-des">
                             <h2>Dorcas Stitch</h2>
-                            <h4>Bespoke Menswear</h4>
+                            <!--<h4>#</h4>-->
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="DORCAS STITCH">
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
@@ -60,7 +60,7 @@
                     <div class="item-carousel item">
                         <div class="carousel-des">  <!-- "carousel-des-black" for black heading -->
                             <h2>H2 Hub</h2>
-                            <h4>Classic Timepieces</h4>
+                            <!--<h4>#</h4>-->
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="H2 HUB">
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button> <!-- "carousel-btn-black" for black btn -->
@@ -73,7 +73,7 @@
                     <div class="item-carousel item">
                         <div class="carousel-des">
                             <h2>51Label</h2>
-                            <h4>Effortless Luxury</h4>
+                            <!--<h4>Effortless Luxury</h4>-->
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="51 LABEL">
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
