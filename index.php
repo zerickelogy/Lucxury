@@ -141,7 +141,7 @@
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
 
                     <div class="before-submitting-newsletter">
-                        <p>*By clicking on the subscribe button you agree to our <a href="terms_of_use.php.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        <p>*By clicking on the subscribe button you agree to our <a href="terms_of_use.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
                     </div>
 
                     <div class="btn-container email-btn">
