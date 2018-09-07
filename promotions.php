@@ -98,7 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="promo-card"  id="modal-6">
+                    <!--<div class="promo-card"  id="modal-6">
                         <div class="promo-img">
                             <img src="img/merchant-card6.png">
                         </div>
@@ -106,7 +106,7 @@
                             <h3>5% off</h3>
                             <h4>Click for QR Code</h4>
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="promo-card"  id="modal-7">
                         <div class="promo-img">
