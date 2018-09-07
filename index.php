@@ -44,7 +44,7 @@
             <?php include 'white-menubar.php'; ?>
 
             <div class="container" id="main-header">
-                <div class="owl-carousel owl-theme">
+                <div id="banner_container" class="owl-carousel owl-theme">
                     <div class="item-carousel item">
                         <div class="carousel-des">
                             <h2>Dorcas Stitch</h2>
