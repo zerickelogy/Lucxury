@@ -239,7 +239,7 @@
                     <div class="modal-header">
                         <span class="close" id="close5">&times;</span>
 
-                        <h3>Foundation Jewellers</h3><br><br>
+                        <h3>Foundation Jewellers</h3>
                         <h4>Scan the QR Code below:</h4>
                     </div>
                     <div class="modal-body">
