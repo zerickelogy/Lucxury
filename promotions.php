@@ -234,7 +234,7 @@
 
             <!-- end of modal box 4  -->
 
-            <div id="modal0" class="modal">
+            <div id="modal5" class="modal">
                 <div class="modal-content">
                     <div class="modal-header">
                         <span class="close" id="close5">&times;</span>
