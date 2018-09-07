@@ -73,13 +73,22 @@
                     <div class="item-carousel item">
                         <div class="carousel-des">
                             <h2>51Label</h2>
-                            <!--<h4>Effortless Luxury</h4>-->
+                            <!--<h4>#</h4>-->
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="51 LABEL">
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/image3.png">
+                    </div>
+                    
+                     <div class="item-carousel item">
+                        <div class="carousel-des">
+                             <h2>Test</h2>
+                             <!--<h4>#</h4>-->
+                           <button class="block-btn carousel-btn"><a href="https://www.lucxury.com/Website2/products.php">shop now <i class="fas fa-chevron-right"></i></a></button>
+                        </div>
+                    <img src="img/image3.png">
                     </div>
                 </div>
             </div>
