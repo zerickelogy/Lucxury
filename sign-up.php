@@ -120,7 +120,7 @@
                     </div>
 
                     <div class="before-submitting">
-                        <p>*By clicking on the Register button you agree to our <a href="terms_of_use.php.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
+                        <p>*By clicking on the Register button you agree to our <a href="terms_of_use.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
                     </div>
 
                     <div class="submit-line-btn">
