@@ -94,7 +94,7 @@
                         </div>
                         <div class="promo-des">
                             <h3>$100 OFF MIN $5,000 SPENT</h3>
-                            <!--<h4>Click for QR Code</h4>-->
+                            <h4>Click for QR Code</h4>
                         </div>
                     </div>
 
@@ -240,11 +240,11 @@
                         <span class="close" id="close5">&times;</span>
 
                         <h3>Foundation Jewellers</h3><br><br>
-                        <!--<h4>Scan the QR Code below:</h4>-->
+                        <h4>Scan the QR Code below:</h4>
                     </div>
                     <div class="modal-body">
                         <div class="QR-container">
-                            <!--<img src="img/qr/foundation-qrcode.png">-->
+                            <img src="img/qr/QR_Code_fj.png">
                             <h4>$100 OFF MIN $5,000 SPENT</h4>
                             <div class="promotion-terms">
                                 <p>*<a href="https://lucxury.com/lucxury_wp/2018/05/22/terms-and-conditions-of-lucxury-promotional-code-and-qr-code/">Terms & Conditions</a> apply.</p>
