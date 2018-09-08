@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 session_start();
-include 'scripts/bootstrap_scripts/bootstrap_scripts.php';
+include '../../scripts/bootstrap_scripts/bootstrap_scripts.php';
 ?>
 <html>
     <head>
