@@ -40,6 +40,9 @@
 
     <body>
         <main>
+            <div class="login-promotion">
+                <p>Shop at Lucxury to gain exclusive promotional deals to Singapore Luxury Brands!</p>
+            </div>
             <div class="container login-container">
                 <p>Welcome to</p>
                 <img src="img/logo-colour.png">
@@ -71,10 +74,7 @@
                 
             </div>
 
-            <div class="login-promotion">
-                <p>Shop at Lucxury to gain exclusive promotional deals to Singapore Luxury Brands!</p>
-            </div>
-
+            
             
 
             <div id="modalForget" class="modal">

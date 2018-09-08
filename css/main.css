@@ -912,7 +912,7 @@ ul.point-indent {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 10px;
-    margin-top: 16vh;
+    margin-top: 8vh;
 }
 
 .login-container img {
@@ -1006,10 +1006,7 @@ a.options-light {
 }
 
 .login-promotion {
-	position: absolute;
-	/*float: right;*/
-	right: 0px;
-	top: 38vh;
+	position: relative;
 }
 
 .login-promotion p {
@@ -1017,8 +1014,8 @@ a.options-light {
 	font-size: 14px;
 	letter-spacing: 0px;
 	text-transform: none;
-	width: 300px;
-	text-align: left;
+	width: 100%;
+	text-align: center;
 	padding: 20px 200px 20px 30px;
 	background: #fff;
 
