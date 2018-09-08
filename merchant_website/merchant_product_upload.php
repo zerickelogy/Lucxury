@@ -215,7 +215,7 @@
 //                        dataType: "JSON",
                         success: function (response) {
                             console.log("result for deletion: " + response);
-                            location.reload();
+//                            location.reload();
                         },
                         error: function (obj, textStatus, errorThrown) {
                             console.log("Error " + textStatus + ": " + errorThrown);
