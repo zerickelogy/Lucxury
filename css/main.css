@@ -677,7 +677,7 @@ main {
 }
 
 
-.pedro {
+.long-left{
 	width: 25%;
 	height: 50vw;
 	background: url(../img/merchants1.png) no-repeat;
@@ -686,7 +686,7 @@ main {
 
 }
 
-.calvin-klein {
+.square-top {
 	width: 25%;
 	height: 25vw;
 	background: url(../img/merchants2.png) no-repeat;
@@ -694,7 +694,7 @@ main {
 	background-position: center;
 }
 
-.ralph-lauren {
+.rectangle-top {
 	width: 50%;
 	height: 25vw;
 	background: url(../img/merchants3.png) no-repeat;
@@ -702,7 +702,7 @@ main {
 	background-position: center;
 }
 
-.tommy-hilfiger {
+.rectange-bottom {
 	width: 50%;
 	height: 25vw;
 	background: url(../img/merchants4.png) no-repeat;
