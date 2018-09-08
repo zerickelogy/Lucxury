@@ -148,15 +148,15 @@
                     </div>
                 </div>
                 <div class="btn-container">
-                    <button class="line-btn card-btn"><a target="_blank" href="./categories.php">browse <i class="fas fa-chevron-right"></i></a></button>
+                    <a target="_blank" href="./categories.php"><button class="line-btn card-btn">browse <i class="fas fa-chevron-right"></i></button></a>
                 </div>
             </div>
 
             <div class="container merchants-container">
-                <div class="merchant-box pedro"></div>
-                <div class="merchant-box calvin-klein"></div>
-                <div class="merchant-box ralph-lauren"></div>
-                <div class="merchant-box tommy-hilfiger"></div>
+                <div class="merchant-box pedro long-left"></div>
+                <div class="merchant-box calvin-klein square-top"></div>
+                <div class="merchant-box ralph-lauren rectangle-top"></div>
+                <div class="merchant-box tommy-hilfiger rectange-bottom"></div>
                 <div class="merchant-box more-merchant-btn"><a target="_blank" href="promotions.php">more merchants<i class="fas fa-chevron-right"></i></a></div>
             </div>
 
