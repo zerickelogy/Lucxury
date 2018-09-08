@@ -122,7 +122,7 @@
                 $('#brand_container').empty();
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getAllBrands.php",
+                    url: "../Webservices/getAllBrands.php",
                     cache: false,
                     dataType: "JSON",
                     success: function (response) {
@@ -142,7 +142,7 @@
                 $('#color_container').empty();
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getAllColors.php",
+                    url: "../Webservices/getAllColors.php",
                     cache: false,
                     dataType: "JSON",
                     success: function (response) {
@@ -162,7 +162,7 @@
                 $('#productcategory_container').empty();
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getAllCategories.php",
+                    url: "../Webservices/getAllCategories.php",
                     cache: false,
                     dataType: "JSON",
                     success: function (response) {
@@ -182,7 +182,7 @@
 
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getItemFromProductId.php",
+                    url: "../Webservices/getItemFromProductId.php",
                     data: {item_id: item_storage_id},
                     cache: false,
                     dataType: "JSON",
@@ -207,7 +207,7 @@
                 if (confirm("Are you sure?")) {
                     $.ajax({
                         type: "GET",
-                        url: "Webservices/deleteProductById.php",
+                        url: "../Webservices/deleteProductById.php",
                         data: {item_storage_id: item_storage_id},
                         cache: false,
 //                        dataType: "JSON",
@@ -225,7 +225,7 @@
             function checkProductName(product_name) {
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getProductNameByName.php",
+                    url: "../Webservices/getProductNameByName.php",
                     data: {product_name: product_name},
                     cache: false,
 //                    dataType: "JSON",
