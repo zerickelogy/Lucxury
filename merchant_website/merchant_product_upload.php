@@ -48,11 +48,11 @@
                     }
                 });
 
-                $('#productname2').blur(function () {
-                    if ($(this).val() != "") {
-                        checkProductName($(this).val());
-                    }
-                });
+//                $('#productname2').blur(function () {
+//                    if ($(this).val() != "") {
+//                        checkProductName($(this).val());
+//                    }
+//                });
 
                 $.ajax({
                     type: "GET",
