@@ -72,7 +72,7 @@ and open the template in the editor.
     <body>
         <div id="logininfo">
             <!--<h1 style="font-size: 8vw;">L U C ⚔ U R Y</h1>-->
-            <img src="images/login_page_images/Lucxury Website (Logo) 1.png" alt="" style="max-width: 80%;"/>
+            <img src="../img/merchantLoginImages/LucxuryWebsiteLogo1.png" alt="" style="max-width: 80%;"/>
             <h3 style="word-wrap: normal; font-size: 3vw;"><b>MERCHANT'S LOGIN PORTAL</b></h3>
             <br/>
             <form method="post" action="../Webservices/merchant_webservices/do_merchant_login.php">
