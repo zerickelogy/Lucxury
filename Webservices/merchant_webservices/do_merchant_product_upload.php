@@ -14,8 +14,8 @@ $url = $_POST["url"];
 $category = $_POST['category'];
 //$image = $_POST["image"];
 //MAKE DIR if not exists
-if (!file_exists('merchant_images/' . $merchant_name)) {
-    mkdir('merchant_images/' . $merchant_name, 0777, true);
+if (!file_exists('../../../merchant_images/' . $merchant_name)) {
+    mkdir('../../../merchant_images/' . $merchant_name, 0777, true);
 }
 
 $filename = $_FILES["fileToUpload"]["name"];
