@@ -510,8 +510,8 @@ main {
 }
 
 .item-carousel img {
-	width: auto;
-	height: 100vh;
+	/*width: auto;*/
+	height: 100vw;
 }
 
 .carousel-des {
