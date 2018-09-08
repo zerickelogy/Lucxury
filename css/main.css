@@ -527,15 +527,7 @@ main {
 .carousel-sm {
 	position: absolute;
 	z-index: 10;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	top: 13vh;
-=======
 	top: 14vh;
->>>>>>> da755f844108235c24a894e18a77ed44142145cc
-=======
-	top: 14vh;
->>>>>>> da755f844108235c24a894e18a77ed44142145cc
 	color: #fff;
 	text-align: center;
 	width: 100%;
