@@ -523,6 +523,41 @@ main {
 	width: 100%;
 }
 
+
+.carousel-sm {
+	position: absolute;
+	z-index: 10;
+	top: 18vh;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+
+.carousel-sm h2 {
+	font-size: 60px;
+	font-weight: 700;
+	font-family: 'Playfair Display', serif;
+	line-height: 140px;
+}
+
+.carousel-sm h4 {
+	font-size: 24px;
+	font-weight: 200;
+	font-family: 'Playfair Display', serif;
+	padding-left: 5px;
+	padding-top: 20px;
+}
+
+
+.luc-logo {
+	width: 40vw;
+	height: 4vw;
+	margin: 0 auto;
+	background: url(../img/logo-white.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .carousel-des h2 {
 	font-size: 90px;
 	font-weight: 700;
@@ -1269,6 +1304,32 @@ span#product-colour, span#product-condition {
 		padding-top: 45px;
 	}
 
+	.carousel-sm {
+		width: 30%;
+		left: 83vw;
+		top: 28vh;
+		text-align: center;
+	}
+
+	.luc-logo {
+		width: 70vw;
+		height: 7vw;
+		margin: 20px auto 0 auto;
+	}
+
+	.carousel-sm h2 {
+		font-size: 80px;
+		line-height: 120px;
+	}
+
+	.carousel-sm h4 {
+		font-size: 24px;
+		font-weight: 200;
+		font-family: 'Playfair Display', serif;
+		padding-left: 5px;
+		padding-top: 50px;
+	}
+
 	.carousel-btn {
 		padding: 20px 15px 20px 25px;
 		text-transform: uppercase;
@@ -1425,6 +1486,26 @@ span#product-colour, span#product-condition {
 		padding-top: 45px;
 	}
 
+	.carousel-sm {
+		top: 22vh;
+	}
+
+	.luc-logo {
+		width: 70vw;
+		height: 7vw;
+		margin: 20px auto 0 auto;
+	}
+
+	.carousel-sm h2 {
+		font-size: 60px;
+		line-height: 120px;
+	}
+
+	.carousel-sm h4 {
+		font-size: 24px;
+		padding-top: 50px;
+	}
+
 	.carousel-btn {
 		font-size: 10px;
 		padding: 20px 15px 20px 25px;
@@ -1549,6 +1630,32 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-des h4 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		padding-top: 25px;
+	}
+
+	.carousel-sm {
+		top: 18vh;
+		width: 20%;
+		left: 71vh;
+		/*background: #123;*/
+	}
+
+	.luc-logo {
+		width: 75vw;
+		height: 7.5vw;
+		margin: 30px auto 0 auto;
+		position: relative;
+		left: -20px;
+	}
+
+	.carousel-sm h2 {
+		font-size: 3em;
+		line-height: 0.9em;
+	}
+
+	.carousel-sm h4 {
 		font-size: 1.2em;
 		line-height: 1.2em;
 		padding-top: 25px;
@@ -1909,6 +2016,32 @@ span#product-colour, span#product-condition {
 		top: 16vh;
 	}
 
+	.carousel-sm {
+		top: 18vh;
+		width: 25%;
+		left: 67vh;
+		/*background: #123;*/
+	}
+
+	.carousel-sm h2 {
+		font-size: 2.8em;
+		line-height: 0.9em;
+	}
+
+	.carousel-sm h4 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		padding-top: 25px;
+	}
+
+	.luc-logo {
+		width: 75vw;
+		height: 7.5vw;
+		margin: 30px auto 0 auto;
+		position: relative;
+		left: 0px;
+	}
+
 	.user-id {
 		font-family: 'Playfair Display', serif;
 		color: #fff;
@@ -1930,6 +2063,16 @@ span#product-colour, span#product-condition {
 		letter-spacing: 5px;
 	}
 }
+
+/*@media (max-width: 376px) {
+	.luc-logo {
+		width: 75vw;
+		height: 7.5vw;
+		margin: 30px auto 0 auto;
+		position: relative;
+		left: 0px;
+	}
+}*/
 
 /*iphone SE */
 
