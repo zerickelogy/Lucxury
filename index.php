@@ -87,23 +87,22 @@
                             <h2>Welcome to</h2>
                             <div class="luc-logo"></div>
                             <h4>Discover the world of coveted brands and contemporary labels on Lucxury,<br>your modern guide and one-stop premier destination for Singapore luxury labels.</h4>
-                            <form method="post" action="products.php">
-                                <!--<input type="hidden" name="merchant" value="51 LABEL">-->
+                            <form method="post" action="products.php">                                
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/luc_banner1.png">
                     </div>
                     
-                      <!--<div class="item-carousel item">
+                      <div class="item-carousel item">
                         <div class="carousel-des">
-                            <h2>Test</h2>
-                            <!--<h4>#5</h4>
+                            <!--<h2>Test</h2>-->
+                            <h4>Check out our exclusive promotional tie-up deals with Singapore luxury labels</h4>
                             <form method="post" action="products.php">
-                                <button class="block-btn carousel-btn"><a href="https://www.lucxury.com/Website2/products.php">shop now <i class="fas fa-chevron-right"></i></a></button>
+                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
-                        <img src="img/image3.png">
+                        <img src="img/luc_banner2.png">
                     </div>-->
                     
                     <!--<div class="item-carousel item">
