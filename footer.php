@@ -11,7 +11,7 @@
     <div class="footer-item lucxury">
         <h5>Lucxury</h5>
         <div class="footer-subitem">
-            <a href="./terms-condition.php">Terms Of Use</a><br/>
+            <a href="./terms_of_use.php">Terms Of Use</a><br/>
             <a href="./privacy-policy.php">Privacy Policy</a><br/>
             <a href="https://lucxury.com/lucxury_wp/contact-us/">Contact Us</a><br/>
         </div>
