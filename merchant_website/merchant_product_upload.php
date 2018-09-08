@@ -56,7 +56,7 @@
 
                 $.ajax({
                     type: "GET",
-                    url: "Webservices/getMerchantsProductsByMerchantId.php",
+                    url: "../Webservices/getMerchantsProductsByMerchantId.php",
                     data: {merchant_id: merchant_id},
                     cache: false,
                     dataType: "JSON",
