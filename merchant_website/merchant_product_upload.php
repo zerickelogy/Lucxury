@@ -293,7 +293,7 @@
                 <button id="btn_upload_hide" type="button" class="btn btn-primary btn-sm">Hide/View Product Upload</button>
 
                 <h1 align="center">PRODUCT UPLOAD</h1>
-                <form id="form_product_upload" method="post" action="do_merchant_product_upload.php" enctype="multipart/form-data">
+                <form id="form_product_upload" method="post" action="../Webservices/merchant_webservices/do_merchant_product_upload.php" enctype="multipart/form-data">
                     <!--merchant name-->
                     <div class="form-group">
                         <label for="merchant">MERCHANT NAME</label>
