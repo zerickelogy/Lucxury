@@ -427,7 +427,7 @@
                                 <!--Category-->
                                 <div class="form-group">
                                     <label for="productcategory2">PRODUCT CATEGORY</label>
-                                    <select id="productcategory2_container" name="productcategory2" class="form-control">
+                                    <select id="productcategory2_container" name="category2" class="form-control">
                                     </select>
                                     <small id="productcategory2Help" class="form-text text-muted"></small>
                                     <small id="productcategory2_output" class=""></small>
