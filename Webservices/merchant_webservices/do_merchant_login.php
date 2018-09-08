@@ -14,9 +14,9 @@ if (mysqli_num_rows($result) > 0) {
     $_SESSION["merchant_name"] = $row['merchant_name'];
     $_SESSION["user_type"] = 'merchant';
 
-    $msg = "<img src='../images/WebsiteStatusImages/loadingImage.jpg'>";
+    $msg = "<img src='../../img/WebsiteStatusImages/loadingImage.jpg'>";
 } else {
-    $msg = "<img src='../images/WebsiteStatusImages/wrongUserOrPass.jpg'>";
+    $msg = "../../img/WebsiteStatusImages/wrongUserOrPass.jpg'>";
 }
 ?>
 <html>
