@@ -149,7 +149,7 @@
                 <div class="merchant-box more-merchant-btn"><a target="_blank" href="promotions.php">more merchants<i class="fas fa-chevron-right"></i></a></div>
             </div>
 
-            <div class="container email-newsletter">
+            <!--<div class="container email-newsletter">
                 <h3>New to us?</h3>
                 <h4>Join our community.</h4>
                 <form action="https://lucxury.us12.list-manage.com/subscribe/post?u=5e744d54c978e566fa533d954&amp;id=ceb70c82f3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> 
@@ -158,9 +158,9 @@
 
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>-->
+                    <!--</div>-->    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <!--<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5e744d54c978e566fa533d954_ceb70c82f3" tabindex="-1" value=""></div>
 
                     <div class="before-submitting-newsletter">
                         <p>*By clicking on the subscribe button you agree to our <a href="terms_of_use.php">Terms of Use</a> & <a href="privacy-policy.php">Privacy Policy</a></p>
@@ -172,7 +172,7 @@
                 </form>
 
 
-            </div>
+            </div>-->
 
             <?php include 'footer.php'; ?>
 
