@@ -24,7 +24,8 @@ $file_ext = substr($filename, strripos($filename, '.')); // get file name
 $filesize = $_FILES["fileToUpload"]["size"];
 $allowed_file_types = array('.png', '.PNG', '.jpg', '.JPG', '.jpeg', '.JPEG');
 
-$target_dir = '../../../merchant_images/' . $merchant_name . '/';
+$target_dir = '../../../merchant_images/' . $merchant_name . '/'; // to move the image to a customized folder
+$target_dir2 = '/merchant_images/' . $merchant_name . '/'; // inserts into database without the ../../ 
 
 if (in_array($file_ext, $allowed_file_types) && ($filesize < 4194304)) {
     // Rename file
@@ -62,7 +63,7 @@ if ($result) {
 }
 
 // Insert into image_storage table via the item_storage_id
-$query3 = "INSERT INTO `image_storage` (`item_image_id`, `item_storage_id`, `itemstorage_image_url`) VALUES (NULL, '$item_storage_id', '$target_dir$newfilename');";
+$query3 = "INSERT INTO `image_storage` (`item_image_id`, `item_storage_id`, `itemstorage_image_url`) VALUES (NULL, '$item_storage_id', '$target_dir2$newfilename');";
 $result3 = mysqli_query($link, $query3);
 //echo json_encode($response);
 mysqli_close($link);
