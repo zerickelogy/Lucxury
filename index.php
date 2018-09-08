@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="btn-container">
-                    <button class="line-btn card-btn"><a target="_blank" href="./categories.php">browse <i class="fas fa-chevron-right"></i></a></button>
+                    <a target="_blank" href="./categories.php"><button class="line-btn card-btn">browse <i class="fas fa-chevron-right"></i></button></a>
                 </div>
             </div>
 
