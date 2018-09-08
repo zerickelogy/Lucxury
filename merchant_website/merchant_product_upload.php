@@ -14,7 +14,7 @@
         <?php
         include 'merchant_navbar.php';
         if (!isset($_SESSION['merchant_id'])) {
-            header("Location: merchant_dashboard_login.php");
+            header("Location: ../merchant_website/merchant_dashboard_login.php");
             die();
         }
         ?>
@@ -215,7 +215,7 @@
 //                        dataType: "JSON",
                         success: function (response) {
                             console.log("result for deletion: " + response);
-//                            location.reload();
+                            location.reload();
                         },
                         error: function (obj, textStatus, errorThrown) {
                             console.log("Error " + textStatus + ": " + errorThrown);

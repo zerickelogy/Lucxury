@@ -527,7 +527,11 @@ main {
 .carousel-sm {
 	position: absolute;
 	z-index: 10;
-	top: 18vh;
+<<<<<<< HEAD
+	top: 13vh;
+=======
+	top: 14vh;
+>>>>>>> da755f844108235c24a894e18a77ed44142145cc
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -541,11 +545,13 @@ main {
 }
 
 .carousel-sm h4 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 200;
 	font-family: 'Playfair Display', serif;
-	padding-left: 5px;
+	padding-left: 0px;
 	padding-top: 20px;
+	width: 70%;
+	margin: 0 auto;
 }
 
 
@@ -553,7 +559,7 @@ main {
 	width: 40vw;
 	height: 4vw;
 	margin: 0 auto;
-	background: url(../img/logo-white.png);
+	background: url(../img/logo-white2.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1326,8 +1332,8 @@ span#product-colour, span#product-condition {
 		font-size: 24px;
 		font-weight: 200;
 		font-family: 'Playfair Display', serif;
-		padding-left: 5px;
 		padding-top: 50px;
+		width: 90%;
 	}
 
 	.carousel-btn {
@@ -1502,7 +1508,6 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 24px;
 		padding-top: 50px;
 	}
 
@@ -1656,9 +1661,10 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 1.2em;
-		line-height: 1.2em;
+		font-size: 1em;
+		line-height: 1.4;
 		padding-top: 25px;
+		width: 100%;
 	}
 
 	.carousel-btn {
@@ -2029,9 +2035,8 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 1.2em;
-		line-height: 1.2em;
-		padding-top: 25px;
+		font-size: 1em;
+		line-height: 1.4;
 	}
 
 	.luc-logo {
@@ -2112,6 +2117,10 @@ span#product-colour, span#product-condition {
 	.more-merchant-btn {
 		font-size: 12px;
 		letter-spacing: 6px;
+	}
+
+	.carousel-sm {
+		top: 8vh;
 	}
 
 	.carousel-des h2 {
