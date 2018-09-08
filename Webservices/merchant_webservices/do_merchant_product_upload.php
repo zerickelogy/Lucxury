@@ -24,7 +24,7 @@ $file_ext = substr($filename, strripos($filename, '.')); // get file name
 $filesize = $_FILES["fileToUpload"]["size"];
 $allowed_file_types = array('.png', '.PNG', '.jpg', '.JPG', '.jpeg', '.JPEG');
 
-$target_dir = '../../../merchant_images/' . $merchant_name . '/';
+$target_dir = 'merchant_images/' . $merchant_name . '/';
 
 if (in_array($file_ext, $allowed_file_types) && ($filesize < 4194304)) {
     // Rename file
