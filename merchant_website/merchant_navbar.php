@@ -11,7 +11,7 @@ include '../../scripts/bootstrap_scripts/bootstrap_scripts.php';
             $(document).ready(function () {
                 $('#logout').click(function () {
                     if (confirm("Are you sure to logout?")) {
-                        window.location.replace("./Webservices/doLogout.php");
+                        window.location.replace("../Webservices/merchant_webservices/doLogout.php");
                     }
                 });
             });
