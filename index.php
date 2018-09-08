@@ -95,7 +95,7 @@
                     </div>
                     
                       <div class="item-carousel item">
-                        <div class="carousel-des">
+                        <div class="carousel-sm">
                             <h2>Check out our exclusive promotional tie-up deals with Singapore luxury labels</h2>
                             <!--<h4>#</h4>-->
                             <form method="post" action="products.php">
