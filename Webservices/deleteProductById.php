@@ -12,7 +12,7 @@ if (isset($_GET)) {
         $item_url = $row;
     }
     // originally is ../only
-    $image_dir = "../../../" . $item_url["itemstorage_image_url"];
+    $image_dir = "../../" . $item_url["itemstorage_image_url"];
 
     if (unlink($image_dir)) {
         echo sprintf("The file %s deleted successfully", $image_dir);
