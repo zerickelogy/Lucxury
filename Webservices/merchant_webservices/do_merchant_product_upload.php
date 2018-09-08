@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
 session_start();
-include 'scripts/bootstrap_scripts/bootstrap_scripts.php';
-include 'Webservices/dbconn.php';
+include '../../scripts/bootstrap_scripts/bootstrap_scripts.php';
+include '../dbconn.php';
 $productname = $_POST["productname"];
 $price = $_POST["price"];
 $brand = $_POST["brand"];

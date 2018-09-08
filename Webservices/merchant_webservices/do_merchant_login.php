@@ -1,5 +1,5 @@
 <?php
-include 'dbconn.php';
+include '../dbconn.php';
 session_start();
 $merchant_username = $_POST["username"];
 $merchant_password = $_POST["password"];
