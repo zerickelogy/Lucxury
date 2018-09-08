@@ -19,22 +19,22 @@ if (isset($_GET)) {
         echo sprintf("An error occurred deleting the file %s", $image_dir);
     }
 
-//    $query = "DELETE FROM `image_storage` WHERE `item_storage_id` = '$item_storage_id'";
-//    $result = mysqli_query($link, $query);
-//
-//    if ($result) {
-//        $response["result_firstpart"] = "image can delete";
-//    } else {
-//        $response["result"] = "Fail to delete data";
-//    }
-//
-//    $query2 = "DELETE FROM `item_storage` WHERE `item_storage_id` = '$item_storage_id'";
-//    $result2 = mysqli_query($link, $query2);
-//    if ($result2) {
-//        $response["result"] = "item entry Deleted successfully";
-//    } else {
-//        $response["result"] = "Fail to delete data";
-//    }
+    $query = "DELETE FROM `image_storage` WHERE `item_storage_id` = '$item_storage_id'";
+    $result = mysqli_query($link, $query);
+
+    if ($result) {
+        $response["result_firstpart"] = "image can delete";
+    } else {
+        $response["result"] = "Fail to delete data";
+    }
+
+    $query2 = "DELETE FROM `item_storage` WHERE `item_storage_id` = '$item_storage_id'";
+    $result2 = mysqli_query($link, $query2);
+    if ($result2) {
+        $response["result"] = "item entry Deleted successfully";
+    } else {
+        $response["result"] = "Fail to delete data";
+    }
 
     mysqli_close($link);
     echo json_encode($response);
