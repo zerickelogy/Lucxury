@@ -11,7 +11,8 @@ if (isset($_GET)) {
     while ($row = mysqli_fetch_assoc($result0)) {
         $item_url = $row;
     }
-    $image_dir = "../" . $item_url["itemstorage_image_url"];
+    // originally is ../only
+    $image_dir = "../../../" . $item_url["itemstorage_image_url"];
 
     if (unlink($image_dir)) {
         echo sprintf("The file %s deleted successfully", $image_dir);
