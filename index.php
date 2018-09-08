@@ -46,12 +46,12 @@
             <div class="container" id="main-header">
                 <div id="banner_container" class="owl-carousel owl-theme">
                     <div class="item-carousel item">
-                        <div class="carousel-des">
+                        <div class="carousel-des carousel-des-black">
                             <h2>Dorcas Stitch</h2>
                             <!--<h4>#1</h4>-->
                             <form method="post" action="products.php">
                                 <input type="hidden" name="merchant" value="DORCAS STITCH">
-                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
+                                <button class="block-btn carousel-btn-black">shop now <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/image1.png">
