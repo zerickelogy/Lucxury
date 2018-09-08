@@ -89,7 +89,7 @@ and open the template in the editor.
                         
                     </div>
                     <br/><br/>
-                    <a href="./login_page.php"><small>Return to user login page</small></a>
+                    <a href="../login.php"><small>Return to user login page</small></a>
                 </div>
             </form>
         </div>
