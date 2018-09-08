@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'dbconn.php';
+include '../dbconn.php';
 include '../scripts/bootstrap_scripts/bootstrap_scripts.php';
 $product_id = $_POST['product_id2'];
 $product_name = $_POST['productname2'];
