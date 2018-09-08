@@ -103,6 +103,17 @@
                         </div>
                         <img src="img/image3.png">
                     </div>-->
+                    
+                                        <!--<div class="item-carousel item">
+                        <div class="carousel-des">
+                            <h2>Test</h2>
+                            <!--<h4>#6</h4>
+                            <form method="post" action="products.php">
+                                <button class="block-btn carousel-btn"><a href="https://www.lucxury.com/Website2/products.php">shop now <i class="fas fa-chevron-right"></i></a></button>
+                            </form>
+                        </div>
+                        <img src="img/image3.png">
+                    </div>-->
                 </div>
             </div>
 
