@@ -25,7 +25,7 @@ $filesize = $_FILES["fileToUpload"]["size"];
 $allowed_file_types = array('.png', '.PNG', '.jpg', '.JPG', '.jpeg', '.JPEG');
 
 $target_dir = '../../../merchant_images/' . $merchant_name . '/'; // to move the image to a customized folder
-$target_dir2 = '/merchant_images/' . $merchant_name . '/'; // inserts into database without the ../../ 
+$target_dir2 = 'merchant_images/' . $merchant_name . '/'; // inserts into database without the ../../ 
 
 if (in_array($file_ext, $allowed_file_types) && ($filesize < 4194304)) {
     // Rename file
