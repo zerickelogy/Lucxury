@@ -45,7 +45,7 @@ and open the template in the editor.
         <style>
             body{
                 width: 100%;
-                background-image: url("images/login_page_images/Untitled.png");
+                background-image: url("../img/merchantLoginImages/Untitled.png");
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size: cover;
