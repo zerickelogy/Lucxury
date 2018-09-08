@@ -84,7 +84,7 @@
                                 // Inner ajax for retrieving multiple images per item
                                 $.ajax({
                                     type: "GET",
-                                    url: "Webservices/getImagesFromItemId.php",
+                                    url: "../Webservices/getImagesFromItemId.php",
                                     data: {item_storage_id: response[i]['item_storage_id']},
                                     cache: false,
                                     dataType: "JSON",
