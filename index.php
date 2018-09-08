@@ -86,7 +86,7 @@
                         <div class="carousel-sm">
                             <h2>Welcome to</h2>
                             <div class="luc-logo"></div>
-                            <h4>Discover the world of coveted brands and contemporary labels on Lucxury,<br> your modern guide and one-stop premier destination for Singapore luxury labels.</h4>
+                            <h4>Discover the world of coveted brands and contemporary labels on Lucxury, your modern guide and one-stop premier destination for Singapore luxury labels.</h4>
                             <form method="post" action="products.php">
                                 <!--<input type="hidden" name="merchant" value="51 LABEL">-->
                                 <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
