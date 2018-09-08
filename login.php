@@ -56,7 +56,7 @@
 
                     <div class="login-btn-container">
                         <button type="submit" class="login-btn">Login <i class="fas fa-chevron-right"></i></button>
-                        <a href="https://www.lucxury.com/merchant_dashboard_login.php" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
+                        <a href="merchant_website/merchant_dashboard_login.php" id="merchant-btn">merchant login <i class="fas fa-chevron-right"></i></a>
                     </div>
                 </form>
 
