@@ -95,7 +95,7 @@
                     </div>
                     
                       <div class="item-carousel item">
-                        <div class="carousel-des carousel-des-black">
+                        <div class="carousel-des">
                             <h2>Check out</h2>
                             <h4>Our exclusive promotional tie-up deals with Singapore luxury labels</h4>
                             <form method="post" action="products.php">
