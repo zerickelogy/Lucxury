@@ -75,7 +75,7 @@ and open the template in the editor.
             <img src="images/login_page_images/Lucxury Website (Logo) 1.png" alt="" style="max-width: 80%;"/>
             <h3 style="word-wrap: normal; font-size: 3vw;"><b>MERCHANT'S LOGIN PORTAL</b></h3>
             <br/>
-            <form method="post" action="Webservices/do_merchant_login.php">
+            <form method="post" action="../Webservices/merchant_webservices/do_merchant_login.php">
                 <input required class="w3-input w3-text-white w3-small" name="username" type="text" placeholder="USERNAME" style="background: transparent">
                 <br/>
                 <input required class="w3-input w3-text-white w3-small" name="password" type="password" placeholder="PASSWORD" style="background: transparent">
