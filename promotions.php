@@ -128,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="promo-card"  id="modal-9">
+                    <!-- <div class="promo-card"  id="modal-9">
                         <div class="promo-img">
                             <img src="img/merchant-card9.png">
                         </div>
@@ -136,7 +136,7 @@
                             <h3>5% off</h3>
                             <h4>Click for Promo Code</h4>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -404,7 +404,7 @@
             // var modal6 = document.getElementById("modal6");
             var modal7 = document.getElementById("modal7");
             var modal8 = document.getElementById("modal8");
-            var modal9 = document.getElementById("modal9");
+            // var modal9 = document.getElementById("modal9");
 
             // Get the button that opens the modal
             var btn1 = document.getElementById("modal-1");
@@ -415,7 +415,7 @@
             // var btn6 = document.getElementById("modal-6");
             var btn7 = document.getElementById("modal-7");
             var btn8 = document.getElementById("modal-8");
-            var btn9 = document.getElementById("modal-9");
+            // var btn9 = document.getElementById("modal-9");
 
             // Get the <span> element that closes the modal
             var span1 = document.getElementById("close1");
@@ -426,7 +426,7 @@
             // var span6 = document.getElementById("close6");
             var span7 = document.getElementById("close7");
             var span8 = document.getElementById("close8");
-            var span9 = document.getElementById("close9");
+            // var span9 = document.getElementById("close9");
 
             // When the user clicks on the button, open the modal 
             btn1.onclick = function () {
@@ -453,9 +453,9 @@
             btn8.onclick = function () {
                 modal8.style.display = "block";
             }
-            btn9.onclick = function () {
-                modal9.style.display = "block";
-            }
+            // btn9.onclick = function () {
+            //     modal9.style.display = "block";
+            // }
 
             // When the user clicks on <span> (x), close the modal
             span1.onclick = function () {
@@ -483,9 +483,9 @@
             span8.onclick = function () {
                 modal8.style.display = "none";
             }
-            span9.onclick = function () {
-                modal9.style.display = "none";
-            }
+            // span9.onclick = function () {
+            //     modal9.style.display = "none";
+            // }
 
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function (event) {
@@ -513,9 +513,9 @@
                 if (event.target == modal8) {
                     modal8.style.display = "none";
                 }
-                if (event.target == modal9) {
-                    modal9.style.display = "none";
-                }
+                // if (event.target == modal9) {
+                //     modal9.style.display = "none";
+                // }
             }
         </script>
 
