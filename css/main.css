@@ -510,8 +510,8 @@ main {
 }
 
 .item-carousel img {
-	width: auto;
-	height: 100vh;
+	/*width: auto;*/
+	height: 100vw;
 }
 
 .carousel-des {
@@ -527,7 +527,7 @@ main {
 .carousel-sm {
 	position: absolute;
 	z-index: 10;
-	top: 18vh;
+	top: 12vh;
 	color: #fff;
 	text-align: center;
 	width: 100%;
@@ -541,11 +541,13 @@ main {
 }
 
 .carousel-sm h4 {
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 200;
 	font-family: 'Playfair Display', serif;
-	padding-left: 5px;
+	padding-left: 0px;
 	padding-top: 20px;
+	width: 50%;
+	margin: 0 auto;
 }
 
 
@@ -608,6 +610,7 @@ main {
 }
 
 .carousel-btn-black {
+	margin-top: 100px;
 	background: #333;
 	color: #fff;
 }
@@ -1138,6 +1141,7 @@ span#product-colour, span#product-condition {
 
 
 .promo-card img, .product-card img  {
+	/*height: 100%;*/
 	width: 100%;
 	position: relative;
 
@@ -1147,7 +1151,7 @@ span#product-colour, span#product-condition {
 	max-height: 38vh;
 	overflow: hidden;
 	height: 40vh;
-	background: #333;
+	background: #fff;
 }
 
 .product-merchant {
@@ -1326,8 +1330,8 @@ span#product-colour, span#product-condition {
 		font-size: 24px;
 		font-weight: 200;
 		font-family: 'Playfair Display', serif;
-		padding-left: 5px;
 		padding-top: 50px;
+		width: 90%;
 	}
 
 	.carousel-btn {
@@ -1502,7 +1506,6 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 24px;
 		padding-top: 50px;
 	}
 
@@ -1656,9 +1659,10 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 1.2em;
-		line-height: 1.2em;
+		font-size: 1em;
+		line-height: 1.4;
 		padding-top: 25px;
+		width: 100%;
 	}
 
 	.carousel-btn {
@@ -2029,9 +2033,8 @@ span#product-colour, span#product-condition {
 	}
 
 	.carousel-sm h4 {
-		font-size: 1.2em;
-		line-height: 1.2em;
-		padding-top: 25px;
+		font-size: 1em;
+		line-height: 1.4;
 	}
 
 	.luc-logo {
@@ -2112,6 +2115,10 @@ span#product-colour, span#product-condition {
 	.more-merchant-btn {
 		font-size: 12px;
 		letter-spacing: 6px;
+	}
+
+	.carousel-sm {
+		top: 8vh;
 	}
 
 	.carousel-des h2 {
