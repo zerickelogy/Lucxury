@@ -16,7 +16,7 @@ if (mysqli_num_rows($result) > 0) {
 
     $msg = "<img src='../../img/WebsiteStatusImages/loadingImage.jpg'>";
 } else {
-    $msg = "<img src='../../img/WebsiteStatusImages/wrongUserOrPass.jpg'>";
+//    $msg = "<img src='../../img/WebsiteStatusImages/wrongUserOrPass.jpg'>";
 }
 ?>
 <html>
