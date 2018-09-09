@@ -140,14 +140,14 @@
                             </form>
                         </a>
                     </div>
-                    <div class="card c3" data-aos="fade-up" data-aos-duration="1000">
-                        <a href="#" onclick="bags1.submit();">
-                            <form name="bags1" method="post" action="products.php">
-                                <input type="hidden" name="categories" value="BAGS">
-                                <div class="card-img"><img src="img/card-bags.png"></div>
-                                <div class="card-des">Bags</div>
-                            </form>
-                        </a>
+                     <div class="card c3" data-aos="fade-up" data-aos-duration="1000">
+                            <a href="#" onclick="clothings2.submit();">
+                                <form name="clothings2" method="post" action="products.php">
+                                    <input type="hidden" name="categories" value="CLOTHINGS">
+                                    <div class="card-img"><img src="img/card-clothings.png"></div>
+                                    <div class="card-des">Clothings</div>
+                                </form>
+                            </a>
                     </div>
                 </div>
                 <div class="btn-container">
