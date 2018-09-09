@@ -1141,7 +1141,8 @@ span#product-colour, span#product-condition {
 
 
 .promo-card img, .product-card img  {
-	height: 102%;
+	height: 100%;
+	width: 100%;
 	position: relative;
 
 }
