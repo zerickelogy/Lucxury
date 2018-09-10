@@ -375,7 +375,7 @@
 
                     <!--image_upload-->
                     <div class="form-group">
-                        <label for="image">IMAGE (Recommended size 483px by 334px)</label>
+                        <label for="image">IMAGE (Recommended Dimension 483px by 334px)</label>
                         <input type="file" accept="image/*" class="form-control" name="fileToUpload" id="fileToUpload" required placeholder="">
                     </div>
                     <small id="urlImageUpload" class="form-text text-muted">Max file size 4MB</small>
