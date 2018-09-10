@@ -98,8 +98,8 @@
                         <div class="carousel-des">
                             <h2>Check out</h2>
                             <h4>Our exclusive promotional tie-up deals with Singapore luxury labels</h4>
-                            <form method="post" action="products.php">
-                                <button class="block-btn carousel-btn">shop now <i class="fas fa-chevron-right"></i></button>
+                            <form method="post" action="promotions.php">
+                                <button class="block-btn carousel-btn">Promotions <i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                         <img src="img/luc_banner2.png">
