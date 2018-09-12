@@ -1150,6 +1150,10 @@ span#product-colour, span#product-condition {
 
 }
 
+.product-card img {
+	height: 100%;
+}
+
 .product-img {
 	overflow: hidden;
 	height: 28.8vw;
