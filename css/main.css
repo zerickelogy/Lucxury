@@ -1088,7 +1088,7 @@ a.options-light {
 	/*padding*/
 }
 
-.promo-card, .product-card {
+.promo-card {
 	width: 30.3%;
 	padding: 1.5%;
 	float: left;
@@ -1096,9 +1096,13 @@ a.options-light {
 }
 
 .product-card {
+	width: 28.8vw;
+	float: left;
+	position: relative;
+	padding: 1.5%;
 	min-height: 20vh;
-	height: 50vh;
-	max-height: 50vh;
+	height: 60vh;
+	max-height: 60vh;
 }
 
 .promo-des {
@@ -1141,16 +1145,14 @@ span#product-colour, span#product-condition {
 
 
 .promo-card img, .product-card img  {
-	/*height: 100%;*/
 	width: 100%;
 	position: relative;
 
 }
 
 .product-img {
-	max-height: 38vh;
 	overflow: hidden;
-	height: 40vh;
+	height: 28.8vw;
 	background: #fff;
 }
 
@@ -1435,18 +1437,8 @@ span#product-colour, span#product-condition {
 	    top: 30px;
 	}
 
-	.product-card {
-		min-height: 20vh;
-		height: 30vh;
-		max-height: 50vh;
-	}
-
 	.product-card-container {
 		margin: 80px auto;
-	}
-
-	.product-img {
-		height: 20vh;
 	}
 
 	.product-card {
@@ -1580,12 +1572,22 @@ span#product-colour, span#product-condition {
 	.container-header h2 {
 		padding-bottom: 20px;
 	}
-	.promo-card, .product-card {
+	.promo-card {
 		width: 46%;
 		padding: 2%;
 		float: left;
 		max-height: 30vh;
         height: 30vh;
+	}
+
+	.product-card {
+		width: 44vw;
+		padding: 1.5%;
+		max-height: 85vh;
+	}
+
+	.product-img {
+		height: 44vw;
 	}
 
 	.product-card-container {
@@ -1597,21 +1599,19 @@ span#product-colour, span#product-condition {
 /* ipad */
 
 @media (max-width: 769px) {
-	.product-card {
-		min-height: 20vh;
-		height: 42vh;
-		max-height: 50vh;
-	}
 	.terms-container {
 		width: 75%;
 	}
-	.product-img {
-		height: 25vh;
-	}
 
 	.product-card {
-		height: 35vh;
+		width: 44vw;
+		padding: 1.5%;
+		max-height: 85vh;
 	}
+	.product-img {
+		height: 44vw;
+	}
+}
 }
 
 
@@ -1783,9 +1783,13 @@ span#product-colour, span#product-condition {
 	}
 
 	.product-card {
-		min-height: 20vh;
-		height: auto;
-		max-height: 50vh;
+		width: 100vw;
+		padding: 0%;
+		max-height: 100vh;
+	}
+
+	.product-img {
+		height: 100vw;
 	}
 
 }
@@ -1927,7 +1931,7 @@ span#product-colour, span#product-condition {
 	    /*float: left; */
 	}
 
-	.promo-card, .product-card {
+	.promo-card { 
 		width: 96%;
 		padding: 2%;
 		float: left;
@@ -1955,12 +1959,16 @@ span#product-colour, span#product-condition {
 		margin-left: 40px;
 	}
 
-	.product-img {
-		height: 35vh;
+	.product-card {
+		width: 90.6vw;
+		padding: 2%;
+		max-height: 150vh;
+		margin-top: 20px;
+        height: auto;
 	}
 
-	.product-card {
-		height: auto;
+	.product-img {
+		height: 90.6vw;
 	}
 
 	.login-promotion {
