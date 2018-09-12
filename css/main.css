@@ -610,7 +610,6 @@ main {
 }
 
 .carousel-btn-black {
-	margin-top: 100px;
 	background: #333;
 	color: #fff;
 	margin-top: 100px;
@@ -1101,9 +1100,9 @@ a.options-light {
 	float: left;
 	position: relative;
 	padding: 1.5%;
-	min-height: 20vh;
-	height: 60vh;
-	max-height: 60vh;
+	/*min-height: 20vh;*/
+	height: 36vw;
+	max-height: 45vw;
 }
 
 .promo-des {
@@ -1458,7 +1457,7 @@ span#product-colour, span#product-condition {
 	}*/
 
 	.product-card {
-		height: auto;
+		height: 40vw;
 	}
 
 	.login-container p {
@@ -1599,7 +1598,8 @@ span#product-colour, span#product-condition {
 	.product-card {
 		width: 44vw;
 		padding: 1.5%;
-		max-height: 85vh;
+		height: 60vw;
+		max-height: 70vw;
 	}
 
 	.product-img {
