@@ -401,7 +401,7 @@
             var modal3 = document.getElementById("modal3");
             var modal4 = document.getElementById("modal4");
             var modal5 = document.getElementById("modal5");
-            // var modal6 = document.getElementById("modal6");
+            var modal6 = document.getElementById("modal6");
             var modal7 = document.getElementById("modal7");
             var modal8 = document.getElementById("modal8");
             // var modal9 = document.getElementById("modal9");
@@ -444,9 +444,9 @@
             btn5.onclick = function () {
                 modal5.style.display = "block";
             }
-            // btn6.onclick = function () {
-            //     modal6.style.display = "block";
-            // }
+            btn6.onclick = function () {
+                 modal6.style.display = "block";
+            }
             btn7.onclick = function () {
                 modal7.style.display = "block";
             }
@@ -474,9 +474,9 @@
             span5.onclick = function () {
                 modal5.style.display = "none";
             }
-            // span6.onclick = function () {
-            //     modal6.style.display = "none";
-            // }
+            span6.onclick = function () {
+                 modal6.style.display = "none";
+            }
             span7.onclick = function () {
                 modal7.style.display = "none";
             }
@@ -504,9 +504,9 @@
                 if (event.target == modal5) {
                     modal5.style.display = "none";
                 }
-                // if (event.target == modal6) {
-                //     modal6.style.display = "none";
-                // }
+                if (event.target == modal6) {
+                     modal6.style.display = "none";
+                }
                 if (event.target == modal7) {
                     modal7.style.display = "none";
                 }
